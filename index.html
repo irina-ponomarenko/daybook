@@ -52,7 +52,7 @@
             <p>Оберіть роль, яку ви граєте в навчальному процесі.</p>
         </div>
         <div class="card-deck deck-width">
-            <div class="card card-width">
+            <div class="card card-width fade_open">
                 <img class="img-card" src="images/image-card.svg"/>
                 <div class="card-body">
                     <h3 class="action-title">
@@ -253,9 +253,63 @@
     </div>
 </footer>
 
+<div class="modal-teacher" id="fade">
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Вчитель</h2>
+            <p>Доступ до електроного онлайн журналу
+                та можливості управління данними учнів.</p>
+        </header>
+        <form class="teacher">
+            <div class="user-data">
+                <h3>Особисті дані</h3>
+                <input type="text" placeholder="Ім'я"/>
+                <input type="text" placeholder="Прізвище"/>
+                <input type="email" placeholder="Email"/>
+            </div>
+            <div class="user-data">
+                <h3>Безпека</h3>
+                <input type="text" placeholder="Пароль"/>
+                <input type="text" placeholder="Повторіть пароль"/>
+            </div>
+            <div class="user-data city-date">
+                <h3>Навчальний заклад</h3>
+                <select class="country">
+                    <option value="">Країна</option>
+                    <option value="">Країна</option>
+                    <option value="">Країна</option>
+                    <option value="">Країна</option>
+                    <option value="">Країна</option>
+                </select>
+                <select class="city">
+                    <option value="">Місто або Населений пункт</option>
+                    <option value="">Місто або Населений пункт</option>
+                    <option value="">Місто або Населений пункт</option>
+                    <option value="">Місто або Населений пункт</option>
+                    <option value="">Місто або Населений пункт</option>
+                </select>
+                <textarea rows="4" cols="38" name="text" class="textarea-city"></textarea>
+                <p class="info-textarea">Якщо вашого навчального закладу
+                        немає в списку, введіть його повну
+                        назву
+                        та адресу.
+                </p>
+            </div>
+            <button type="submit" class="register">Зареєструватись</button>
+            <div class="custom-control custom-checkbox info-submit">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Якщо вашого навчального закладу
+                    немає в списку, введіть його повну
+                    назву
+                    та адресу.</label>
+            </div>
+        </form>
+    </div>
+</div>
 
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
