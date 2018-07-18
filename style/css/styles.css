@@ -588,9 +588,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
     padding: 100px 0;
     background: #FFFFFF;
-}
-.modal-teacher .container{
-
+    position: relative;
 }
 .header-modal h2{
     text-align: center;
@@ -761,5 +759,22 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #B3B3B3;
+}
+.close-modal{
+    background: transparent;
+    background-image: url("../../images/close.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: -105px;
+    top: 0;
+    cursor: pointer;
+}
+.close-modal:focus{
+    outline: none;
 }
 
