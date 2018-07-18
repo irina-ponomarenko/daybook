@@ -63,7 +63,7 @@
                         та можливості управління данними учнів.</p>
                 </div>
             </div>
-            <div class="card card-width">
+            <div class="card card-width parents_open">
                 <img class="img-card" src="images/image-card-2.svg"/>
                 <div class="card-body">
                     <h3>
@@ -308,9 +308,48 @@
     </div>
 </div>
 
+<div class="modal-parents" id="parents">
+    <button type="button" class="close-modal parents_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Батьки</h2>
+            <p>Перегляд онлайн щоденика та можливість приймати
+                пряму участь в житті класу своєї дитини.</p>
+        </header>
+        <div data-addui='tabs'>
+            <div role='tabs'>
+                <div>Реєстрація по коду</div>
+                <div>Звичайна реєстрація</div>
+            </div>
+            <div role='contents'>
+                <div>
+                    <form class="parents-form">
+                        <div class="user-data parents-date">
+                            <h3>Код запрошення</h3>
+                            <input type="text" class="parents-input" placeholder="X X X X X X"/>
+                            <button type="button" class="question-form"></button>
+                        </div>
+                        <button type="submit" class="register">Зареєструватись</button>
+                        <div class="custom-control custom-checkbox info-submit">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</label>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <p>Nam dictum posuere viverra. Vivamus eget pretium quam. Pellentesque in justo gravida, posuere purus quis, faucibus sapien. Donec eu aliquam elit. Aenean a arcu dapibus, rutrum purus a, pellentesque dolor. Nullam lacinia tincidunt nibh eget consequat. Nullam interdum efficitur posuere. Fusce posuere eu orci at tempor. Etiam luctus lacinia malesuada. Integer luctus sem tellus. Fusce scelerisque dapibus urna, ut scelerisque mauris consectetur eu. Phasellus a orci est. Duis ac lectus eu turpis lacinia dignissim. Integer malesuada tincidunt sem, ut pellentesque diam lobortis sit amet. Sed cursus enim et enim mattis, non scelerisque quam pharetra. Nam eu iaculis erat, ut vestibulum mi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap_4.1.1/js/bootstrap.js"></script>
 <script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
