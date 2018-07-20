@@ -60,20 +60,43 @@ $(document).ready(function () {
         })();
     });
 
-
-    $('.hint-js').focus(function() {
-        $(this)
-            .parent()
-            .find('.hint')
-            .addClass('hint-active');
+    $('.question-form').hover(function(){
+            $('.hint').show();
+        },
+        function(){
+            $('.hint').hide();
     });
 
-    $('.hint-js').on('blur', function() {
-        setTimeout(() => {
-            $(this)
-                .parent()
-                .find('.hint')
-                .removeClass('hint-active');
-        }, 100);
+
+    $('.tree-dots').click(function() {
+        $(this)
+            .parent()
+            .find('.class-delete')
+            .addClass('class-delete-active');
+    });
+
+    $('.class-delete').on('click', function() {
+            $(this).removeClass('class-delete-active');
+    });
+    $(document).mouseup(function (e){
+        if (jQuery(e.target).closest(".class-delete").length > 0){
+            return false;
+        }
+
+        else $(".class-delete").removeClass('class-delete-active');
+        clickCount = 1;
+    });
+    $('.user-registered').click(function () {
+        $(this).addClass('active-user-cabinet');
+        $('.drop-down-user').show();
+    });
+    $(document).mouseup(function (e){
+        if (jQuery(e.target).closest(".drop-down-user").length > 0){
+            return false;
+        }
+
+        else $(".drop-down-user").hide();
+        $('.user-registered').removeClass('active-user-cabinet');
+        clickCount = 1;
     });
 });
