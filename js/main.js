@@ -137,8 +137,16 @@ $(document).ready(function () {
         }
     });
 
+    let data = [
+        'Історія україни',
+        'Історія мистецтва',
+        'Приклад три',
+        'Приклад чотири',
+        'Приклад П’ять'
+    ];
 
-
-
+    $('#autocomplete').autocomplete({
+        lookup: data
+    });
 
 });

@@ -787,6 +787,27 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     float: right;
     outline: none;
 }
+.more-open{
+    width: 180px;
+    padding: 15px 0;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 .register:focus,
 .login-submit:focus{
     outline: none;
@@ -795,7 +816,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin-top: 40px;
 }
 .register:hover,
-.login-submit:hover{
+.login-submit:hover,
+.more-open:hover{
     color: #FFFFFF;
     background: #1A3EFF;
     transition: .3s;
@@ -910,12 +932,24 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .parents-input::placeholder,
 .student-input::placeholder,
-.user-input::placeholder{
+.user-input::placeholder,
+.name-student-input::placeholder,
+.surname-student::placeholder{
     color: #262626;
+}
+.name-student-input,
+.surname-student{
+    max-width: 200px;
+}
+.name-student-input{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .parents-form input,
 .student-form input,
-.usert-form input{
+.usert-form input,
+.name-student-input,
+.surname-student{
     padding: 15px 20px;
     width: 100%;
     background: #F2F2F2;
@@ -1182,19 +1216,41 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #1A1A1A;
 
 }
-.add{
+.add,
+.add-student,
+.add-student-sortable{
     position: relative;
     background: #FFFFFF;
-    padding: 14px 12px;
+    padding: 15px 12px;
     padding-left: 44px;
     cursor: pointer;
     border-radius: 4px;
+}
+.some-class{
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    background-image: url("../../images/some-btn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.add-student-sortable{
+    padding: 15px 16px;
+    padding-left: 50px;
+
+}
+.add-student-new{
+    margin-right: 10px;
 }
 .add:hover{
     transition: .3s;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
-.add:before{
+.add:before,
+.add-student:before{
     content: '';
     position: absolute;
     background: url("../../images/plus.svg") no-repeat center;
@@ -1202,6 +1258,26 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: 12px;
     width: 24px;
     height: 24px;
+}
+.add-student-sortable{
+    position: relative;
+
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+
+}
+.add-student-sortable:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/burger-class.svg") no-repeat center;
+    left: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px
 }
 .card-class{
     background: #FFFFFF;
@@ -1492,6 +1568,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .added-class h4{
     margin-top: 40px;
 }
+.add-new-information{
+    display: flex;
+    align-items: center;
+}
 .name-class{
     padding: 14px 20px;
     font-style: normal;
@@ -1581,4 +1661,189 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .cancel{
     margin-right: 10px;
+}
+.title-class{
+    display: flex;
+}
+.no-active-title{
+    color: #B2B2B2 !important;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 14px;
+    margin-right: 10px;
+}
+.no-active-title:before{
+   content: '';
+    background: url("../../images/chevron-left.svg") no-repeat center;
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 30px;
+    cursor: pointer;
+}
+.no-active-title:after{
+    content: '';
+    background: url("../../images/little-circule.svg") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+}
+
+/*--------------------table student---------------*/
+
+.response-table-student{
+    margin-top: 30px;
+    font-family: 'Roboto' !important;
+}
+.table-student tbody{
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+.table-student th, .table-student td{
+    border-top: 1px solid #E5E5E5;
+    padding: 17px 0;
+    vertical-align: middle;
+
+}
+.table-student thead th{
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    vertical-align: middle;
+}
+.row-title{
+    width: 30px !important;
+    padding: 17px 5px !important;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+}
+.name-student{
+    width: 26.2%;
+    line-height: 19px;
+}
+.date-birthday{
+    position: relative;
+}
+.date-birthday:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/birthday.svg") no-repeat;
+    width: 46px;
+    height: 18px;
+    left: 0;
+    top: -2px;
+}
+.more-info-student,
+.parents,
+.code-info{
+    display: flex;
+    flex-direction: column;
+}
+.date-birthday{
+    padding-left: 27px;
+    margin-top: 7px;
+}
+.grey-text,
+.not-used,
+.used,
+.used-email,
+.used-solely{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+}
+.not-used,
+.used,
+.used-email,
+.used-solely{
+    margin-bottom: 8px;
+}
+.title-code{
+    max-width: 264px;
+}
+.more-info{
+    width: 20.8%;
+}
+.male,
+.female{
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+.male:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/male.svg") no-repeat;
+    width: 46px;
+    height: 18px;
+    left: 0;
+    top: 4px;
+}
+.female:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/female.svg") no-repeat;
+    width: 46px;
+    height: 18px;
+    left: 0;
+    top: 4px;
+}
+.blue-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #1A3EFF;
+}
+.parent-info{
+    width: 22.2%;
+}
+.pre-code{
+    position: relative;
+    padding-left: 28px;
+}
+.code-per{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pre-code:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/copy.svg") no-repeat;
+    width: 44px;
+    height: 18px;
+    left: 0;
+    top: 2px;
+}
+.copy-code{
+    width: 6px;
+    height: 18px;
+    background: url("../../images/copy-code.svg") no-repeat;
+    cursor: pointer;
+    padding-left: 30px;
 }

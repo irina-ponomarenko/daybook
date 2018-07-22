@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Daybook class</title>
+    <title>Table student</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
@@ -18,7 +18,7 @@
         </div>
         <form id="search-header" class="search-header">
             <button type="button" class="search-btn"></button>
-            <input type="search" class="search" placeholder="Искать" id="autocomplete-ajax"/>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
             <button type="button" class="close-search"></button>
         </form>
         <button type="button" class="nav-menu-btn"></button>
@@ -104,111 +104,453 @@
     </nav>
     <div class="container">
         <header class="header-class">
-            <h3>Школа №20</h3>
-            <div class="add-class">
-                <span class="add">Додати клас</span>
-                <div class="add-class-modal">
-                    <form class="add-classes">
-                         <div class="add-class-info">
-                         <h4>Додайте клас та виберіть для нього урок</h4>
-                         <div class="wrapper-variants">
-                             <select class="name-class">
-                                 <option>1</option>
-                                 <option>2</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                                 <option>6</option>
-                                 <option>7</option>
-                                 <option>8</option>
-                                 <option>9</option>
-                                 <option>10</option>
-                                 <option>11</option>
-                             </select>
-                              <select class="name-class">
-                                 <option>А</option>
-                                 <option>Б</option>
-                                 <option>В</option>
-                                 <option>Г</option>
-                             </select>
-                              <select class="name-class medium-select">
-                                 <option>Алгебра</option>
-                                 <option>Геометрія</option>
-                                 <option>Правознавство</option>
-                                 <option>Фізика</option>
-                             </select>
-                             <button type="button" class="add-new-categories"></button>
-                         </div>
+            <ul class="title-class">
+                <li>
+                    <h3 class="no-active-title">Школа №20</h3>
+                </li>
+                <li>
+                    <h3>Клас 10-А</h3>
+                </li>
+            </ul>
+            <div class="add-new-information">
+                <div class="some-class">
+                    <div class="add-class-modal">
+                        <form class="add-classes">
+                            <div class="add-class-info">
+                                <h4>Додайте клас та виберіть для нього урок</h4>
+                                <div class="wrapper-variants">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="add-class-info added-class">
+                                <h4>Додані класи</h4>
+                                <div class="wrapper-variants">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="class-add-button">
+                                <button type="button" class="btn-class cancel">Скасувати</button>
+                                <button type="button" class="btn-class save">Зберегти</button>
+                            </div>
+                        </form>
                     </div>
-                     <div class="add-class-info added-class">
-                         <h4>Додані класи</h4>
-                         <div class="wrapper-variants">
-                             <select class="name-class">
-                                 <option>1</option>
-                                 <option>2</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                                 <option>6</option>
-                                 <option>7</option>
-                                 <option>8</option>
-                                 <option>9</option>
-                                 <option>10</option>
-                                 <option>11</option>
-                             </select>
-                              <select class="name-class">
-                                 <option>А</option>
-                                 <option>Б</option>
-                                 <option>В</option>
-                                 <option>Г</option>
-                             </select>
-                              <select class="name-class medium-select">
-                                 <option>Алгебра</option>
-                                 <option>Геометрія</option>
-                                 <option>Правознавство</option>
-                                 <option>Фізика</option>
-                             </select>
-                             <button type="button" class="add-new-categories"></button>
-                         </div>
+                </div>
+                <div class="add-student-new">
+                    <span class="add-student-sortable">А-Я</span>
+                    <div class="add-class-modal">
+                        <form class="add-classes">
+                            <div class="add-class-info">
+                                <h4>Додайте клас та виберіть для нього урок</h4>
+                                <div class="wrapper-variants">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="add-class-info added-class">
+                                <h4>Додані класи</h4>
+                                <div class="wrapper-variants">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="class-add-button">
+                                <button type="button" class="btn-class cancel">Скасувати</button>
+                                <button type="button" class="btn-class save">Зберегти</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="class-add-button">
-                        <button type="button" class="btn-class cancel">Скасувати</button>
-                        <button type="button" class="btn-class save">Зберегти</button>
+                </div>
+                <div class="add-student-new">
+                    <span class="add-student">Додати учня</span>
+                    <div class="add-student-modal">
+                        <form class="add-classes">
+                            <div class="add-class-info">
+                                <h4>Додайте клас та виберіть для нього урок</h4>
+                                <div class="wrapper-variants">
+                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище"/>
+                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя"/>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="add-class-info added-class">
+                                <h4>Додані класи</h4>
+                                <div class="wrapper-variants">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                            <div class="class-add-button">
+                                <button type="button" class="btn-class cancel">Скасувати</button>
+                                <button type="button" class="btn-class save">Зберегти</button>
+                            </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </header>
         <div class="container-class">
-            <div class="container-card-class">
-                <h4>Алгебра</h4>
-                <div class="class-wrapper-card">
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>10-A клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">О.С.Кравченко</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-card-class">
-                <h4>Геометрія</h4>
-                <div class="class-wrapper-card">
-                    <div class="card-class none-card">
-                        <p class="margin-bottom-none">Класи не додані</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-card-class">
-                <h4>Правознавство</h4>
-                <div class="class-wrapper-card">
-                    <div class="card-class none-card">
-                        <p class="margin-bottom-none">Класи не додані</p>
-                    </div>
-                </div>
+            <div class="table-responsive response-table-student">
+                <table class="table table-student">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="row-title">#</th>
+                        <th scope="col">Прізвище та Імя</th>
+                        <th scope="col">Додаткова інформація</th>
+                        <th scope="col">Батьки</th>
+                        <th scope="col">Per-код</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="row-title">1</th>
+                        <td class="name-student grey-text">Безкоровайний Володимир
+                            Степанович</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                                <span class="date-birthday grey-text">12.05.1999</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="male">Безкровний Степан</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">ch_gs1hmg680n</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">2</th>
+                        <td class="name-student grey-text">Білоус Василь
+                            Михайлович</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                                <span class="date-birthday grey-text">12.05.1999</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="male">Білоус Анатолий</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">vm_bilousv1a366n</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">3</th>
+                        <td class="name-student">Гагауз Валентина</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="none-info grey-text">Інформація відсутня</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="no-male grey-text">Батьки не прив’язані</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">ch_gagauzv1a366k</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">4</th>
+                        <td class="name-student">Дідик Олена</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="date-birthday grey-text">12.05.1999</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="no-male grey-text">Батьки не прив’язані</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code used">Дитина зареєстрована по коду:</span>
+                                <span class="pre-code-used grey-text"> mh_didiko1a366n</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">5</th>
+                        <td class="name-student grey-text">Еонова Софа
+                            Орфеївна</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="female">Еонова Сара</span>
+                                <span class="male">Білоус Анатолий</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code used-email">Реєстрація по Email адресу:</span>
+                                <span class="pre-code-used grey-text">eonova@mylo.hru</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">6</th>
+                        <td class="name-student grey-text">Жолудь Петро
+                            Антонович</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="male">Жолудь Антон</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code used-email">Реєстрація по Email адресу:</span>
+                                <span class="pre-code-used grey-text">zholud@mylo.jopt</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">7</th>
+                        <td class="name-student">Дідик Олена</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="no-male grey-text">Батьки не прив’язані</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code used-solely">Дитина зареєстрована самостійно:</span>
+                                <span class="pre-code-solely grey-text"> zaichik@mylo.thu</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">8</th>
+                        <td class="name-student">Левчук Олександ</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="none-info grey-text">Інформація відсутня</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="female">Левчук Галина</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">iy_dovganazvar1a366g</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">9</th>
+                        <td class="name-student grey-text">Ісілдур Арагорн
+                            Араторнович</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="male">Ісілдур Аратор</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">pb_dovganazvar1a366a</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-title">10</th>
+                        <td class="name-student">Шевчук Олег</td>
+                        <td class="more-info">
+                            <div class="more-info-student">
+                                <span class="phone-student grey-text">+38 060 234 6789</span>
+                                <span class="date-birthday grey-text">12.05.1999</span>
+                            </div>
+                        </td>
+                        <td class="parent-info">
+                            <div class="parents">
+                                <span class="no-male grey-text">Батьки не прив’язані</span>
+                            </div>
+                        </td>
+                        <td class="code-per">
+                            <div class="code-info">
+                                <span class="title-code not-used">Не использован</span>
+                                <span class="pre-code blue-text">ng_dovganazva1a366u</span>
+                            </div>
+                            <div class="copy-code"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="more-open">Показати ще 19</button>
             </div>
         </div>
     </div>
@@ -386,8 +728,6 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-<script type="text/javascript" src="js/countries.js"></script>
-<script type="text/javascript" src="js/demo.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
