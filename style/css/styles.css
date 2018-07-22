@@ -154,9 +154,12 @@ a img {
     color: #1A1A1A;
 }
 
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
+}
+
+.display-block {
+    display: block !important;
 }
 
 /*-----------------------------header------------------------------*/
@@ -179,29 +182,29 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .block-logo{
     display: flex;
     align-items: center;
+    max-width: 751px;
+    width: 100%;
+}
+.search-header{
+   display: flex;
 }
 .search {
-    border: solid 1px #ccc;
-    padding: 9px 10px 9px 32px;
-
-    -webkit-border-radius: 10em;
-    -moz-border-radius: 10em;
-    border-radius: 10em;
-
+    padding: 9px 10px;
+    padding-right: 0;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
+    background-color: #E5E5E5;
+    border: none;
+    max-width: 573px;
+    width: 100%;
+    display: none;
 }
-.search:focus {
-    width: 140px;
-    background-color: #fff;
-    border-color: #6dcff6;
+.search:focus{
+    outline: none;
+}
 
-    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-    box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
-.search-header input[type=search] {
+.search-btn{
     width: 48px;
     height: 48px;
     border-radius: 4px;
@@ -216,16 +219,35 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin-left: 10px;
     background-position: 16px 50%;
 }
-.search-header input[type=search]:hover {
-    background-color: #fff;
-    border: 1px solid #1A3EFF;
+.close-search{
+    background: #E5E5E5;
+    background-image: url("../../images/close-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    padding-right: 35px;
+    cursor: pointer;
+    display: none;
 }
-.search-header input[type=search]:focus {
-    width: 140px;
-    padding-left: 48px;
-    color: #000;
-    background-color: #fff;
-    cursor: auto;
+.open-search .search,
+.open-search .close-search{
+    display: block;
+    transition: .5s;
+}
+.open-search{
+    max-width: 621px;
+    width: 100%;
+}
+.open-search .search-btn{
+    background: #E5E5E5;
+    background-image: url("../../images/search-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 16px 50%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
 .search-header input:-moz-placeholder {
     color: transparent;
@@ -237,6 +259,26 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.nav-menu-btn{
+    width: 48px;
+    height: 48px;
+    background: #F2F2F2;
+    background-image: url("../../images/menu-burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+.nav-menu-btn:hover{
+    transition: .3s;
+    background: #1A3EFF;
+    background-image: url("../../images/menu-burger-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .nav-menu{
     display: flex;
@@ -655,34 +697,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     max-width: 360px;
     position: relative;
 }
-.user-data select{
-    padding: 14px 20px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    color: #262626;
-    border-radius: 4px;
-    background: #F2F2F2;
-    border: none;
-    outline:#1A3EFF;
-    margin-bottom: 10px;
-    width: 100%;
-    /*for WebKit*/
-    -webkit-appearance: none;
-    /* for FF */
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    /* for IE */
-    -ms-appearance: none;
-    appearance: none!important;
-    background-image: url('../../images/select-button.svg');
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
 .textarea-city{
     border-radius: 4px;
     background: #F2F2F2;
@@ -703,9 +717,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: relative;
 }
 .info-textarea{
-  position: absolute;
-  bottom: 22px;
-  right: -331px;
+    position: absolute;
+    bottom: 22px;
+    right: -331px;
 }
 .info-textarea{
     max-width: 292px;
@@ -1067,40 +1081,51 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .nav-list a{
     position: relative;
     cursor: pointer;
-    padding: 0 22px;
+    padding: 2px 22px;
 }
 .nav-list a:hover{
     transition: .3s;
 }
+.nav-span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    display: none;
+
+}
 .journal{
-    background: url("../../images/journal.svg") no-repeat center;
+    background: url("../../images/journal.svg") no-repeat;
 }
 .journal:hover{
-    background: url("../../images/journal-hover.svg") no-repeat center;
+    background: url("../../images/journal-hover.svg") no-repeat;
 }
 .class{
-    background: url("../../images/class.svg") no-repeat center;
+    background: url("../../images/class.svg") no-repeat;
 }
 .class:hover{
-    background: url("../../images/class-hover.svg") no-repeat center;
+    background: url("../../images/class-hover.svg") no-repeat;
 }
 .timetable{
-    background: url("../../images/timetable.svg") no-repeat center;
+    background: url("../../images/timetable.svg") no-repeat;
 }
 .timetable:hover{
-    background: url("../../images/timetable-hover.svg") no-repeat center;
+    background: url("../../images/timetable-hover.svg") no-repeat;
 }
 .diary{
-    background: url("../../images/diary.svg") no-repeat center;
+    background: url("../../images/diary.svg") no-repeat;
 }
 .diary:hover{
-    background: url("../../images/diary-hover.svg") no-repeat center;
+    background: url("../../images/diary-hover.svg") no-repeat;
 }
 .profile{
-    background: url("../../images/profile.svg") no-repeat center;
+    background: url("../../images/profile.svg") no-repeat;
 }
 .profile:hover{
-    background: url("../../images/profile-hover.svg") no-repeat center;
+    background: url("../../images/profile-hover.svg") no-repeat;
 }
 
 /*----------------------content-class----------------*/
@@ -1120,7 +1145,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 }
 .add{
-   position: relative;
+    position: relative;
     background: #FFFFFF;
     padding: 14px 12px;
     padding-left: 44px;
@@ -1289,13 +1314,16 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .drop-down-user{
     display: none;
     position: absolute;
-    bottom: -244px;
+    bottom: -247px;
     z-index: 1000;
     background: #FFFFFF;
     left: 0;
     right: 0;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+.active-user-cabinet .drop-down-user{
+    display: block;
 }
 .user-cabinet{
     border-bottom: 2px solid #E5E5E5;
@@ -1367,4 +1395,152 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .active-user-cabinet .chevron-down{
     transform: rotate(180deg);
     transition: .3s;
+}
+
+/*--------------------------short-class-----------------*/
+
+.margin-bottom-none{
+    margin-bottom: 0 !important;
+}
+.none-card{
+    background: transparent;
+    border: 2px dashed #B3B3B3;
+}
+.add-classes{
+    background: #FFFFFF;
+}
+.add-class{
+    position: relative;
+}
+.add-class-modal{
+    background: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+}
+.add-class-active{
+    display: flex;
+}
+.add-class-modal:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/white-hint.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    left: 84%;
+}
+.wrapper-variants{
+    display: flex;
+    align-items: center;
+}
+.add-class-info{
+    padding: 0 20px;
+}
+.add-class-info h4{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.added-class h4{
+    margin-top: 40px;
+}
+.name-class{
+    padding: 14px 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    border-radius: 4px;
+    background: #F2F2F2;
+    border: none;
+    outline:#1A3EFF;
+    width: 100px;
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background-image: url('../../images/select-button.svg');
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.name-class:last-child{
+    margin-right: 0;
+}
+.medium-select{
+    width: 200px;
+    background-position: 90% 50%;
+}
+.add-new-categories{
+    position: relative;
+    background: #F2F2F2;;
+    width: 49px;
+    padding-left: 44px;
+    cursor: pointer;
+    height: 49px;
+    border-radius: 4px;
+    border: none;
+}
+.add-new-categories:hover{
+    background: #D9D9D9;
+    transition: .3s;
+}
+.add-new-categories:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/plus.svg") no-repeat center;
+    left: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+}
+.class-add-button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px 0;
+    margin-top: 20px;
+    border-top: 2px solid #F2F2F2;
+}
+.btn-class{
+    width: 160px;
+    padding: 15px 0;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    float: right;
+    outline: none;
+}
+.btn-class:hover{
+    background: #1A3EFF;
+    color: #FFFFFF;
+    transition: .3s;
+}
+.cancel{
+    margin-right: 10px;
 }

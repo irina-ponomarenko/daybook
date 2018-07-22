@@ -65,7 +65,7 @@ $(document).ready(function () {
         },
         function(){
             $('.hint').hide();
-    });
+        });
 
 
     $('.tree-dots').click(function() {
@@ -76,7 +76,7 @@ $(document).ready(function () {
     });
 
     $('.class-delete').on('click', function() {
-            $(this).removeClass('class-delete-active');
+        $(this).removeClass('class-delete-active');
     });
     $(document).mouseup(function (e){
         if (jQuery(e.target).closest(".class-delete").length > 0){
@@ -86,17 +86,54 @@ $(document).ready(function () {
         else $(".class-delete").removeClass('class-delete-active');
         clickCount = 1;
     });
-    $('.user-registered').click(function () {
-        $(this).addClass('active-user-cabinet');
-        $('.drop-down-user').show();
+
+
+    $('.add-class').click(function() {
+        $(this)
+            .parent()
+            .find('.add-class-modal')
+            .addClass('add-class-active');
     });
+
+    $('.cancel').on('click', function() {
+        $('.add-class-modal').removeClass('add-class-active');
+    });
+
     $(document).mouseup(function (e){
-        if (jQuery(e.target).closest(".drop-down-user").length > 0){
+        if (jQuery(e.target).closest(".add-class-modal").length > 0){
             return false;
         }
 
-        else $(".drop-down-user").hide();
-        $('.user-registered').removeClass('active-user-cabinet');
+        else $(".add-class-modal").removeClass('add-class-active');
         clickCount = 1;
+    });
+
+
+    $('.user-registered').click(function () {
+        $(this).toggleClass('active-user-cabinet');
+    });
+
+    $(document).mouseup(function (e){
+        if ($(e.target).closest(".active-user-cabinet").length > 0){
+            return false;
+        }
+        else {
+            $('.user-registered').removeClass('active-user-cabinet');
+        }
+    });
+
+    $('.search-btn').on('click', function () {
+        $('.search-header').toggleClass('open-search');
+    });
+    $('.close-search').on('click', function () {
+        $('.search-header').removeClass('open-search');
+    });
+    $(document).mouseup(function (e){
+        if ($(e.target).closest(".open-search").length > 0){
+            return false;
+        }
+        else {
+            $('.search-header').removeClass('open-search');
+        }
     });
 });

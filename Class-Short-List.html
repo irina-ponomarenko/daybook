@@ -21,6 +21,7 @@
             <input type="search" class="search" placeholder="Искать">
             <button type="button" class="close-search"></button>
         </form>
+        <button type="button" class="nav-menu-btn"></button>
     </div>
     <div class="wrapper-nav-authorization">
         <ul class="nav-menu">
@@ -106,6 +107,76 @@
             <h3>Школа №20</h3>
             <div class="add-class">
                 <span class="add">Додати клас</span>
+                <div class="add-class-modal">
+                    <form class="add-classes">
+                         <div class="add-class-info">
+                         <h4>Додайте клас та виберіть для нього урок</h4>
+                         <div class="wrapper-variants">
+                             <select class="name-class">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                             </select>
+                              <select class="name-class">
+                                 <option>А</option>
+                                 <option>Б</option>
+                                 <option>В</option>
+                                 <option>Г</option>
+                             </select>
+                              <select class="name-class medium-select">
+                                 <option>Алгебра</option>
+                                 <option>Геометрія</option>
+                                 <option>Правознавство</option>
+                                 <option>Фізика</option>
+                             </select>
+                             <button type="button" class="add-new-categories"></button>
+                         </div>
+                    </div>
+                     <div class="add-class-info added-class">
+                         <h4>Додані класи</h4>
+                         <div class="wrapper-variants">
+                             <select class="name-class">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                                 <option>11</option>
+                             </select>
+                              <select class="name-class">
+                                 <option>А</option>
+                                 <option>Б</option>
+                                 <option>В</option>
+                                 <option>Г</option>
+                             </select>
+                              <select class="name-class medium-select">
+                                 <option>Алгебра</option>
+                                 <option>Геометрія</option>
+                                 <option>Правознавство</option>
+                                 <option>Фізика</option>
+                             </select>
+                             <button type="button" class="add-new-categories"></button>
+                         </div>
+                    </div>
+                    <div class="class-add-button">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Зберегти</button>
+                    </div>
+                    </form>
+                </div>
             </div>
         </header>
         <div class="container-class">
@@ -121,92 +192,25 @@
                         <p>учнів:<span> 25</span></p>
                         <p class="teacher-class">О.С.Кравченко</p>
                     </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>11-A клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">Н.В.Петренко</p>
-                    </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>11-Б клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">Т.А.Іванова</p>
-                    </div>
                 </div>
             </div>
             <div class="container-card-class">
                 <h4>Геометрія</h4>
                 <div class="class-wrapper-card">
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>8-A клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">О.С.Мельниченко</p>
-                    </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>8-Б клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">О.К.Кушнір</p>
-                    </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>9-A клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">Г.Б.Сидоренко</p>
-                    </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>9-Б клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">С.Н.Мартинюк</p>
-                    </div>
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>9-В клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">М.І.Шевчук</p>
+                    <div class="card-class none-card">
+                        <p class="margin-bottom-none">Класи не додані</p>
                     </div>
                 </div>
             </div>
             <div class="container-card-class">
-                <h4>Природознавство</h4>
+                <h4>Правознавство</h4>
                 <div class="class-wrapper-card">
-                    <div class="card-class">
-                        <div class="class-delete">
-                            <p>Видалити клас</p>
-                        </div>
-                        <div class="tree-dots"></div>
-                        <h3>5-а клас</h3>
-                        <p>учнів:<span> 25</span></p>
-                        <p class="teacher-class">П.І.Вовк</p>
+                    <div class="card-class none-card">
+                        <p class="margin-bottom-none">Класи не додані</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <button type="button" class="questions"></button>
 </section>

@@ -1,0 +1,72 @@
+@media only screen and (max-width: 922px) and (min-width: 360px) {
+    .navigation{
+        flex-direction: row;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+        height: 46px;
+        background: #E5E5E5;
+        top: 20px;
+        border-bottom: 2px solid #dbdbdb;
+
+    }
+    .nav-list a{
+        padding: 2px 0;
+        padding-right: 0;
+        padding-left: 33px;
+        background-position: 0 50%;
+    }
+    .nav-list a:hover{
+        background-position: 0 50%;
+    }
+    .class-wrapper .container{
+        max-width: 100% !important;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .nav-list{
+        padding: 13px 20px;
+        display: flex;
+        align-items: center;
+    }
+    .active-nav-li{
+        position: relative;
+    }
+    .active-nav-li:before{
+        content: '';
+        position: absolute;
+        height: 2px;
+        background: #B2B2B2;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+    }
+    .nav-list:last-child{
+        margin-right: 0;
+    }
+    .header-class{
+        margin-top: 40px;
+    }
+    .container-card-class h4{
+        margin-top: 40px;
+    }
+    .nav-span{
+        display: block;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .wrapper-registered{
+        margin-left: 10px;
+    }
+    .open-search {
+        max-width: 400px;
+        width: 100%;
+    }
+    .wrapper-nav-authorization{
+        width: 50%;
+    }
+}
