@@ -18,7 +18,7 @@
         </div>
         <form id="search-header" class="search-header">
             <button type="button" class="search-btn"></button>
-            <input type="search" class="search" placeholder="Искать">
+            <input type="search" class="search" placeholder="Искать" id="autocomplete-ajax">
             <button type="button" class="close-search"></button>
         </form>
     </div>
@@ -106,6 +106,76 @@
             <h3>Школа №20</h3>
             <div class="add-class">
                 <span class="add">Додати клас</span>
+                <div class="add-class-modal">
+                    <form class="add-classes">
+                        <div class="add-class-info">
+                            <h4>Додайте клас та виберіть для нього урок</h4>
+                            <div class="wrapper-variants">
+                                <select class="name-class">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                </select>
+                                <select class="name-class">
+                                    <option>А</option>
+                                    <option>Б</option>
+                                    <option>В</option>
+                                    <option>Г</option>
+                                </select>
+                                <select class="name-class medium-select">
+                                    <option>Алгебра</option>
+                                    <option>Геометрія</option>
+                                    <option>Правознавство</option>
+                                    <option>Фізика</option>
+                                </select>
+                                <button type="button" class="add-new-categories"></button>
+                            </div>
+                        </div>
+                        <div class="add-class-info added-class">
+                            <h4>Додані класи</h4>
+                            <div class="wrapper-variants">
+                                <select class="name-class">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                </select>
+                                <select class="name-class">
+                                    <option>А</option>
+                                    <option>Б</option>
+                                    <option>В</option>
+                                    <option>Г</option>
+                                </select>
+                                <select class="name-class medium-select">
+                                    <option>Алгебра</option>
+                                    <option>Геометрія</option>
+                                    <option>Правознавство</option>
+                                    <option>Фізика</option>
+                                </select>
+                                <button type="button" class="add-new-categories"></button>
+                            </div>
+                        </div>
+                        <div class="class-add-button">
+                            <button type="button" class="btn-class cancel">Скасувати</button>
+                            <button type="button" class="btn-class save">Зберегти</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </header>
         <div class="container-class">
@@ -380,6 +450,10 @@
 <script src="bootstrap_4.1.1/js/bootstrap.js"></script>
 <script src="js/jquery.popupoverlay.js"></script>
 <script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/countries.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
