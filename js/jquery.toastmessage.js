@@ -62,7 +62,7 @@
 				sticky: 			false,				// should the toast item sticky or not?
 				type: 				'notice', 			// notice, warning, error, success
                 position:           'top-right',        // top-left, top-center, top-right, middle-left, middle-center, middle-right ... Position of the toast container holding different toast. Position can be set only once at the very first call, changing the position after the first call does nothing
-                closeText:          '',                 // text which will be shown as close button, set to '' when you want to introduce an image via css
+                closeText:          'Скасувати',                 // text which will be shown as close button, set to '' when you want to introduce an image via css
                 close:              null                // callback function when the toastmessage is closed
             };
 

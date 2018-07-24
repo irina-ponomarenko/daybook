@@ -86,6 +86,15 @@ $(document).ready(function () {
             $('.hint-male').removeClass('open-hint-male');
         });
 
+    $('.leader-title').hover(function(){
+            $(this)
+                .parent()
+                .find('.hint-male')
+                .addClass('open-hint-male');
+        },
+        function(){
+            $('.hint-male').removeClass('open-hint-male');
+        });
     $('.date-birthday').hover(function(){
             $(this)
                 .parent()
@@ -95,6 +104,17 @@ $(document).ready(function () {
         function(){
             $('.hint-male').removeClass('open-hint-male');
         });
+
+    // $(window).resize(function () {
+    //     if($(window).width() > 922){
+    //         $('.navigation').hover(function(){
+    //                 $(this).toggleClass('active-hover-menu');
+    //             },
+    //             function(){
+    //                 $('.navigation').toggleClass('active-hover-menu');
+    //         });
+    // };
+
 
 
     $('.tree-dots').click(function() {
@@ -159,6 +179,26 @@ $(document).ready(function () {
     });
 
 
+    $('.some-class').click(function() {
+        $(this)
+            .parent()
+            .find('.add-some-modal')
+            .addClass('active-some');
+    });
+
+    $('.cancel').on('click', function() {
+        $('.add-some-modal').removeClass('active-some');
+    });
+    $(document).mouseup(function (e){
+        if (jQuery(e.target).closest(".add-some-modal").length > 0){
+            return false;
+        }
+
+        else $(".add-some-modal").removeClass('active-some');
+        clickCount = 1;
+    });
+
+
     $('.sortable-new').click(function() {
         $(this)
             .parent()
@@ -178,9 +218,6 @@ $(document).ready(function () {
         else $(".add-class-modal-sort").removeClass('add-sort-active');
         clickCount = 1;
     });
-
-
-
 
 
     $('.user-registered').click(function () {

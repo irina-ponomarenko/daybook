@@ -110,24 +110,14 @@
                     <h3 class="no-active-title">Школа №20</h3>
                 </li>
                 <li>
-                    <h3>Клас 10-А</h3>
+                    <h3>Клас 9-А</h3>
                 </li>
             </ul>
             <div class="add-new-information">
-                <div class="some-class">
-                    <div class="add-some-modal">
-                       <div class="wrapper-some">
-                           <h4>Класний керівник</h4>
-                           <p>Включивши режим, ви отримаєте
-                               можливість управління данними учнів.</p>
-                           <div class="turn">
-                               <span>Включити режим</span>
-                               <div class="row-switch">
-                                   <input type="checkbox" id="unchecked" class="cbx hidden"/>
-                                   <label for="unchecked" class="lbl"></label>
-                               </div>
-                           </div>
-                       </div>
+                <div class="leader-class">
+                    <h4 class="leader-title">М.І.Шевчук</h4>
+                    <div class="hint-male female-hint birthday-width top-leader">
+                        <span>Класний керівник</span>
                     </div>
                 </div>
                 <div class="add-student-new sortable-new">
@@ -242,6 +232,11 @@
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">ch_gs1hmg680n</span>
                                 </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
@@ -278,11 +273,16 @@
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">vm_bilousv1a366n</span>
                                 </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="border-active-drop">
                         <th scope="row" class="row-title">3</th>
                         <td class="name-student">Гагауз Валентина</td>
                         <td class="more-info">
@@ -301,6 +301,11 @@
                                 <div class="wrapper-copy-code">
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">ch_gagauzv1a366k</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -327,7 +332,14 @@
                         <td class="code-per">
                             <div class="code-info">
                                 <span class="title-code used">Дитина зареєстрована по коду:</span>
-                                <span class="pre-code-used grey-text"> mh_didiko1a366n</span>
+                                <div class="wrapper-copy-code">
+                                    <span class="pre-code-used grey-text"> mh_didiko1a366n</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
@@ -360,12 +372,19 @@
                         <td class="code-per">
                             <div class="code-info">
                                 <span class="title-code used-email">Реєстрація по Email адресу:</span>
-                                <span class="pre-code-used grey-text">eonova@mylo.hru</span>
+                                <div class="wrapper-copy-code">
+                                    <span class="pre-code-used grey-text">eonova@mylo.hru</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="drag-and-drop">
                         <th scope="row" class="row-title">6</th>
                         <td class="name-student grey-text">Жолудь Петро
                             Антонович</td>
@@ -384,13 +403,38 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="code-per">
+                        <td class="code-per last-block-width">
                             <div class="code-info">
                                 <span class="title-code used-email">Реєстрація по Email адресу:</span>
-                                <span class="pre-code-used grey-text">zholud@mylo.jopt</span>
+                                <div class="wrapper-copy-code">
+                                    <span class="pre-code-used grey-text">zholud@mylo.jopt</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
+                    </tr>
+                    <tr class="none-info-table">
+                        <th>
+                            <div class="row-none-info left-dashed"></div>
+                        </th>
+                        <td>
+                            <div class="row-none-info"></div>
+                        </td>
+                        <td>
+                            <div class="row-none-info"></div>
+                        </td>
+                        <td>
+                            <div class="row-none-info"></div>
+                        </td>
+                        <td>
+                            <div class="row-none-info right-dashed"></div>
+                        </td>
+
                     </tr>
                     <tr>
                         <th scope="row" class="row-title">7</th>
@@ -407,8 +451,18 @@
                         </td>
                         <td class="code-per">
                             <div class="code-info">
-                                <span class="title-code used-solely">Дитина зареєстрована самостійно:</span>
-                                <span class="pre-code-solely grey-text"> zaichik@mylo.thu</span>
+                                <div class="code-info">
+                                    <div class="wrapper-copy-code">
+                                        <p class="title-code used-solely">Дитина зареєстрована самостійно:
+                                            <span class="pre-code-solely grey-text"> zaichik@mylo.thu</span>
+                                        </p>
+                                    </div>
+                                    <div class="tree-dots dots-table">
+                                        <div class="class-delete">
+                                            <p>Видалити клас</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
@@ -437,6 +491,11 @@
                                 <div class="wrapper-copy-code">
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">iy_dovganazvar1a366g</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -468,6 +527,11 @@
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">pb_dovganazvar1a366a</span>
                                 </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="copy-code"></div>
                         </td>
@@ -497,6 +561,11 @@
                                 <div class="wrapper-copy-code">
                                     <button class="copy-btn"></button>
                                     <span class="pre-code blue-text">ng_dovganazva1a366u</span>
+                                </div>
+                                <div class="tree-dots dots-table">
+                                    <div class="class-delete">
+                                        <p>Видалити клас</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
