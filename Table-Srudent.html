@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
 </head>
@@ -114,196 +115,63 @@
             </ul>
             <div class="add-new-information">
                 <div class="some-class">
-                    <div class="add-class-modal">
-                        <form class="add-classes">
-                            <div class="add-class-info">
-                                <h4>Додайте клас та виберіть для нього урок</h4>
-                                <div class="wrapper-variants">
-                                    <select class="name-class">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                    </select>
-                                    <select class="name-class">
-                                        <option>А</option>
-                                        <option>Б</option>
-                                        <option>В</option>
-                                        <option>Г</option>
-                                    </select>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
-                                    <button type="button" class="add-new-categories"></button>
-                                </div>
-                            </div>
-                            <div class="add-class-info added-class">
-                                <h4>Додані класи</h4>
-                                <div class="wrapper-variants">
-                                    <select class="name-class">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                    </select>
-                                    <select class="name-class">
-                                        <option>А</option>
-                                        <option>Б</option>
-                                        <option>В</option>
-                                        <option>Г</option>
-                                    </select>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
-                                    <button type="button" class="add-new-categories"></button>
-                                </div>
-                            </div>
-                            <div class="class-add-button">
-                                <button type="button" class="btn-class cancel">Скасувати</button>
-                                <button type="button" class="btn-class save">Зберегти</button>
-                            </div>
-                        </form>
+                    <div class="add-some-modal">
                     </div>
                 </div>
-                <div class="add-student-new">
-                    <span class="add-student-sortable">А-Я</span>
-                    <div class="add-class-modal">
-                        <form class="add-classes">
-                            <div class="add-class-info">
-                                <h4>Додайте клас та виберіть для нього урок</h4>
-                                <div class="wrapper-variants">
-                                    <select class="name-class">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                    </select>
-                                    <select class="name-class">
-                                        <option>А</option>
-                                        <option>Б</option>
-                                        <option>В</option>
-                                        <option>Г</option>
-                                    </select>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
-                                    <button type="button" class="add-new-categories"></button>
-                                </div>
-                            </div>
-                            <div class="add-class-info added-class">
-                                <h4>Додані класи</h4>
-                                <div class="wrapper-variants">
-                                    <select class="name-class">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                    </select>
-                                    <select class="name-class">
-                                        <option>А</option>
-                                        <option>Б</option>
-                                        <option>В</option>
-                                        <option>Г</option>
-                                    </select>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
-                                    <button type="button" class="add-new-categories"></button>
-                                </div>
-                            </div>
-                            <div class="class-add-button">
-                                <button type="button" class="btn-class cancel">Скасувати</button>
-                                <button type="button" class="btn-class save">Зберегти</button>
-                            </div>
-                        </form>
+                <div class="add-student-new sortable-new">
+                    <span class="add-student-sortable">А - Я</span>
+                    <div class="add-class-modal-sort">
+                        <span>Сортувати:</span>
+                        <ul class="list-sortable">
+                            <li class="active-sort">А - Я</li>
+                            <li>Я - А</li>
+                            <li>Час реєстрації</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="add-student-new">
+                <div class="add-student-new new-student">
                     <span class="add-student">Додати учня</span>
                     <div class="add-student-modal">
                         <form class="add-classes">
                             <div class="add-class-info">
                                 <h4>Додайте клас та виберіть для нього урок</h4>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище"/>
-                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя"/>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
+                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value=""/>
+                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value=""/>
+                                    <div class="gender-option">
+                                        <select class="name-class">
+                                            <option>Стать</option>
+                                            <option>Чоловік</option>
+                                            <option>Жінка</option>
+                                        </select>
+                                    </div>
                                     <button type="button" class="add-new-categories"></button>
                                 </div>
                             </div>
                             <div class="add-class-info added-class">
-                                <h4>Додані класи</h4>
+                                <h4>Додані Учні</h4>
                                 <div class="wrapper-variants">
-                                    <select class="name-class">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                        <option>11</option>
-                                    </select>
-                                    <select class="name-class">
-                                        <option>А</option>
-                                        <option>Б</option>
-                                        <option>В</option>
-                                        <option>Г</option>
-                                    </select>
-                                    <select class="name-class medium-select">
-                                        <option>Алгебра</option>
-                                        <option>Геометрія</option>
-                                        <option>Правознавство</option>
-                                        <option>Фізика</option>
-                                    </select>
+                                    <input type="name" id="added-surname-student" class="surname-student" placeholder="Ісілдур" value=""/>
+                                    <input type="name" id="added-name-student-input" class="name-student-input" placeholder="Арагорн" value=""/>
+                                    <div class="gender-option">
+                                        <select class="name-class">
+                                            <option>Стать</option>
+                                            <option>Чоловік</option>
+                                            <option>Жінка</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                                <div class="wrapper-variants">
+                                    <input type="name" id="added-surname-student2" class="surname-student" placeholder="Прізвище" value="Ізабелла"/>
+                                    <input type="name" id="added-name-student-input2" class="name-student-input" placeholder="Імя" value="Росселліні"/>
+                                    <div class="gender-option">
+                                        <select class="name-class">
+                                            <option>Стать</option>
+                                            <option>Чоловік</option>
+                                            <option>Жінка</option>
+                                        </select>
+                                    </div>
                                     <button type="button" class="add-new-categories"></button>
                                 </div>
                             </div>
@@ -336,12 +204,23 @@
                         <td class="more-info">
                             <div class="more-info-student">
                                 <span class="phone-student grey-text">+38 060 234 6789</span>
-                                <span class="date-birthday grey-text">12.05.1999</span>
+                                <div class="wrapper-male">
+                                    <span class="date-birthday grey-text">12.05.1999</span>
+                                    <div class="hint-male female-hint birthday-width">
+                                        <span>Дата народження</span>
+                                    </div>
+                                </div>
+
                             </div>
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="male">Безкровний Степан</span>
+                                <div class="wrapper-male">
+                                    <span class="male">Безкровний Степан</span>
+                                    <div class="hint-male">
+                                        <span>Батько учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -359,12 +238,22 @@
                         <td class="more-info">
                             <div class="more-info-student">
                                 <span class="phone-student grey-text">+38 060 234 6789</span>
-                                <span class="date-birthday grey-text">12.05.1999</span>
+                                <div class="wrapper-male">
+                                    <span class="date-birthday grey-text">12.05.1999</span>
+                                    <div class="hint-male female-hint birthday-width">
+                                        <span>Дата народження</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="male">Білоус Анатолий</span>
+                                <div class="wrapper-male">
+                                    <span class="male">Білоус Анатолий</span>
+                                    <div class="hint-male">
+                                        <span>Батько учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -401,7 +290,12 @@
                         <td class="name-student">Дідик Олена</td>
                         <td class="more-info">
                             <div class="more-info-student">
-                                <span class="date-birthday grey-text">12.05.1999</span>
+                                <div class="wrapper-male">
+                                    <span class="date-birthday grey-text">12.05.1999</span>
+                                    <div class="hint-male female-hint birthday-width">
+                                        <span>Дата народження</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="parent-info">
@@ -428,8 +322,18 @@
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="female">Еонова Сара</span>
-                                <span class="male">Білоус Анатолий</span>
+                                <div class="wrapper-male">
+                                    <span class="female">Еонова Сара</span>
+                                    <div class="hint-male female-hint">
+                                        <span>Мати учня</span>
+                                    </div>
+                                </div>
+                                <div class="wrapper-male">
+                                    <span class="male">Білоус Анатолий</span>
+                                    <div class="hint-male">
+                                        <span>Батько учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -451,7 +355,12 @@
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="male">Жолудь Антон</span>
+                                <div class="wrapper-male">
+                                    <span class="male">Жолудь Антон</span>
+                                    <div class="hint-male">
+                                        <span>Батько учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -493,7 +402,12 @@
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="female">Левчук Галина</span>
+                                <div class="wrapper-male">
+                                    <span class="female">Левчук Галина</span>
+                                    <div class="hint-male female-hint">
+                                        <span>Мати учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -515,7 +429,12 @@
                         </td>
                         <td class="parent-info">
                             <div class="parents">
-                                <span class="male">Ісілдур Аратор</span>
+                                <div class="wrapper-male">
+                                    <span class="male">Ісілдур Аратор</span>
+                                    <div class="hint-male">
+                                        <span>Батько учня</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="code-per">
@@ -532,7 +451,12 @@
                         <td class="more-info">
                             <div class="more-info-student">
                                 <span class="phone-student grey-text">+38 060 234 6789</span>
-                                <span class="date-birthday grey-text">12.05.1999</span>
+                                <div class="wrapper-male">
+                                    <span class="date-birthday grey-text">12.05.1999</span>
+                                    <div class="hint-male female-hint birthday-width">
+                                        <span>Дата народження</span>
+                                    </div>
+                                </div>
                             </div>
                         </td>
                         <td class="parent-info">
@@ -728,6 +652,8 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

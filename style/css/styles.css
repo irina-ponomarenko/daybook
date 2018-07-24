@@ -1245,6 +1245,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .add-student-new{
     margin-right: 10px;
 }
+.new-student{
+    position: relative;
+}
 .add:hover{
     transition: .3s;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
@@ -1523,24 +1526,41 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .add-classes{
     background: #FFFFFF;
 }
-.add-class{
+.add-class,
+.sortable-new{
     position: relative;
 }
-.add-class-modal{
+.add-class-modal,
+.add-student-modal,
+.add-class-modal-sort{
     background: #FFFFFF;
     padding: 20px 0;
     border-radius: 4px;
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 42px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     display: none;
     z-index: 1000;
 }
-.add-class-active{
+.add-student-modal{
+    width: 658px;
+}
+.add-class-modal-sort{
+    width: 200px;
+    left: -50%;
+    flex-direction: column;
+    padding: 0;
+}
+.add-class-active,
+.add-student-active,
+.add-sort-active{
     display: flex;
 }
-.add-class-modal:before{
+
+.add-class-modal:before,
+.add-student-modal:before,
+.add-class-modal-sort:before{
     content: '';
     position: absolute;
     background: url("../../images/white-hint.svg") no-repeat;
@@ -1549,9 +1569,19 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: -7px;
     left: 84%;
 }
+.add-student-modal:before{
+    left: 88%;
+}
+.add-class-modal-sort:before{
+    left: 50%;
+}
 .wrapper-variants{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+}
+.wrapper-variants:last-child{
+    margin-bottom: 0;
 }
 .add-class-info{
     padding: 0 20px;
@@ -1603,6 +1633,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .name-class:last-child{
     margin-right: 0;
 }
+.wrapper-name-class{
+    width: 100px;
+    margin-right: 10px;
+}
+.wrapper-name-class-subject{
+    width: 200px;
+    background-position: 90% 50%;
+}
+
+.gender-option{
+    width: 140px;
+}
 .medium-select{
     width: 200px;
     background-position: 90% 50%;
@@ -1616,6 +1658,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 49px;
     border-radius: 4px;
     border: none;
+    margin-left: 10px;
 }
 .add-new-categories:hover{
     background: #D9D9D9;
@@ -1734,6 +1777,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .date-birthday{
     position: relative;
+    padding-left: 27px;
+    cursor: pointer;
 }
 .date-birthday:before{
     content: '';
@@ -1742,17 +1787,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 46px;
     height: 18px;
     left: 0;
-    top: -2px;
+    top: 0;
+}
+.birthday-width{
+    right: 0;
+    max-width: 131px !important;
+    left: -51px !important;
+}
+.birthday-width span{
+    white-space: nowrap;
 }
 .more-info-student,
 .parents,
 .code-info{
     display: flex;
     flex-direction: column;
-}
-.date-birthday{
-    padding-left: 27px;
-    margin-top: 7px;
 }
 .grey-text,
 .not-used,
@@ -1762,10 +1811,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    line-height: normal;
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #B3B3B3;
+    line-height: 30px;
 }
 .not-used,
 .used,
@@ -1790,7 +1839,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #000000;
-
+    cursor: pointer;
+}
+.wrapper-male{
+    position: relative;
 }
 .male:before{
     content: '';
@@ -1799,7 +1851,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 46px;
     height: 18px;
     left: 0;
-    top: 4px;
+    top: 2px;
 }
 .female:before{
     content: '';
@@ -1846,4 +1898,237 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../../images/copy-code.svg") no-repeat;
     cursor: pointer;
     padding-left: 30px;
+}
+
+/*----------------------------dropdown-------------------*/
+.list-sortable li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.list-sortable li:hover{
+    background-color: #EBEBEB;
+    transition: .3s;
+}
+.add-class-modal-sort span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    padding: 13px 20px;
+}
+.active-sort{
+    color: #1A3EFF;
+}
+.hint-male{
+    background-color: #262626;
+    padding: 10px;
+    max-width: 100px;
+    position: absolute;
+    left: -41px;
+    top: 30px;
+    display: none;
+    transition: .3s;
+    z-index: 220;
+}
+.female-hint{
+    left: -37px;
+    top: 35px;
+}
+.open-hint-male{
+    display: flex;
+}
+.hint-male span{
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+}
+.hint-male:before{
+    content: '';
+    position: absolute;
+    left: 43%;
+    right: 0;
+    top: -7px;
+    width: 15px;
+    height: 15px;
+    background: url("../../images/hint-black.svg") no-repeat center;
+}
+
+
+/*-----------------alerts------------------*/
+
+.toast-container {
+    width: 440px;
+    z-index: 9999;
+}
+
+
+* html .toast-container {
+    position: absolute;
+}
+
+.toast-item {
+    height: auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFFFFF;
+    padding: 14px 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    margin: 0 0 12px 0;
+    background: #262626;
+    border-radius: 5px;
+    right: 60px;
+    top: 66px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 440px;
+    width: 100%;
+    z-index: 999;
+}
+
+.toast-item p {
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-left: 35px;
+
+}
+
+/*.toast-item-close {*/
+    /*background: white;*/
+    /*background:url(../../images/close.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
+    /*width: 18px;*/
+    /*height: 18px;*/
+    /*cursor: pointer;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*position: absolute;*/
+    /*right: 20px;*/
+/*}*/
+
+.toast-item-image {
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 10px;
+}
+
+.toast-item-image-success {
+    background:url(../../images/alert.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.toast-item-image-warning {
+    background:url(../../images/alert.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    left: 23px;
+}
+
+
+
+/**
+ * toast types
+ *
+ * pattern: toast-type-[value]
+ * where 'value' is the real value of the plugin option 'type'
+ *
+ */
+.toast-type-notice {
+    color: white;
+    border-bottom: 7px solid dodgerblue;
+}
+
+.toast-type-success {
+    color: #FFFFFF;
+}
+
+.toast-type-warning {
+    color: black;
+    border-bottom: 7px solid #FCBD57;
+}
+
+.toast-type-error {
+    color: black;
+    border-bottom: 7px solid #c75353;
+    min-height: 40px;
+}
+
+/**
+ * positions
+ *
+ * pattern: toast-position-[value]
+ * where 'value' is the real value of the plugin option 'position'
+ *
+ */
+.toast-position-top-left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.toast-position-top-center {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.toast-position-top-right {
+    position: fixed;
+    bottom: 360px;
+    right: 20px;
+}
+
+.toast-position-middle-left {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    margin-top: -40px;
+}
+
+.toast-position-middle-center {
+    position: fixed;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
+
+.toast-position-middle-right {
+    position: fixed;
+    right: 20px;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
 }

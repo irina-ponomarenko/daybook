@@ -69,4 +69,14 @@
     .wrapper-nav-authorization{
         width: 50%;
     }
+    .top-footer .container,
+    .center-footer .container,
+    .bottom-footer .container{
+         margin-right: 0;
+         margin-left: 0;
+        max-width: 922px;
+    }
+    .right-list:first-child {
+        margin-right: 70px;
+    }
 }

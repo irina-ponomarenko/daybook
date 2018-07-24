@@ -67,6 +67,35 @@ $(document).ready(function () {
             $('.hint').hide();
         });
 
+    $('.male').hover(function(){
+            $(this)
+                .parent()
+                .find('.hint-male')
+                .addClass('open-hint-male');
+        },
+        function(){
+            $('.hint-male').removeClass('open-hint-male');
+        });
+    $('.female').hover(function(){
+            $(this)
+                .parent()
+                .find('.hint-male')
+                .addClass('open-hint-male');
+        },
+        function(){
+            $('.hint-male').removeClass('open-hint-male');
+        });
+
+    $('.date-birthday').hover(function(){
+            $(this)
+                .parent()
+                .find('.hint-male')
+                .addClass('open-hint-male');
+        },
+        function(){
+            $('.hint-male').removeClass('open-hint-male');
+        });
+
 
     $('.tree-dots').click(function() {
         $(this)
@@ -109,6 +138,51 @@ $(document).ready(function () {
     });
 
 
+    $('.new-student').click(function() {
+        $(this)
+            .parent()
+            .find('.add-student-modal')
+            .addClass('add-student-active');
+    });
+
+    $('.cancel').on('click', function() {
+        $('.add-student-modal').removeClass('add-student-active');
+    });
+
+    $(document).mouseup(function (e){
+        if (jQuery(e.target).closest(".add-student-modal").length > 0){
+            return false;
+        }
+
+        else $(".add-student-modal").removeClass('add-student-active');
+        clickCount = 1;
+    });
+
+
+    $('.sortable-new').click(function() {
+        $(this)
+            .parent()
+            .find('.add-class-modal-sort')
+            .addClass('add-sort-active');
+    });
+
+    $('.cancel').on('click', function() {
+        $('.add-class-modal-sort').removeClass('add-sort-active');
+    });
+
+    $(document).mouseup(function (e){
+        if (jQuery(e.target).closest(".add-class-modal-sort").length > 0){
+            return false;
+        }
+
+        else $(".add-class-modal-sort").removeClass('add-sort-active');
+        clickCount = 1;
+    });
+
+
+
+
+
     $('.user-registered').click(function () {
         $(this).toggleClass('active-user-cabinet');
     });
@@ -149,4 +223,9 @@ $(document).ready(function () {
         lookup: data
     });
 
+    $('select').customSelect();
+
+    $('.class-delete').click(function () {
+        $().toastmessage('showSuccessToast', "Клас видалено.");
+    });
 });

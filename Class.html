@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
 </head>
@@ -113,62 +114,74 @@
                         <div class="add-class-info">
                             <h4>Додайте клас та виберіть для нього урок</h4>
                             <div class="wrapper-variants">
-                                <select class="name-class">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                </select>
-                                <select class="name-class">
-                                    <option>А</option>
-                                    <option>Б</option>
-                                    <option>В</option>
-                                    <option>Г</option>
-                                </select>
-                                <select class="name-class medium-select">
-                                    <option>Алгебра</option>
-                                    <option>Геометрія</option>
-                                    <option>Правознавство</option>
-                                    <option>Фізика</option>
-                                </select>
+                                <div class="wrapper-name-class">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                </div>
+                                <div class="wrapper-name-class">
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                </div>
+                                <div class="wrapper-name-class-subject">
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                </div>
                                 <button type="button" class="add-new-categories"></button>
                             </div>
                         </div>
                         <div class="add-class-info added-class">
                             <h4>Додані класи</h4>
                             <div class="wrapper-variants">
-                                <select class="name-class">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                </select>
-                                <select class="name-class">
-                                    <option>А</option>
-                                    <option>Б</option>
-                                    <option>В</option>
-                                    <option>Г</option>
-                                </select>
-                                <select class="name-class medium-select">
-                                    <option>Алгебра</option>
-                                    <option>Геометрія</option>
-                                    <option>Правознавство</option>
-                                    <option>Фізика</option>
-                                </select>
+                                <div class="wrapper-name-class">
+                                    <select class="name-class">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                    </select>
+                                </div>
+                                <div class="wrapper-name-class">
+                                    <select class="name-class">
+                                        <option>А</option>
+                                        <option>Б</option>
+                                        <option>В</option>
+                                        <option>Г</option>
+                                    </select>
+                                </div>
+                                <div class="wrapper-name-class-subject">
+                                    <select class="name-class medium-select">
+                                        <option>Алгебра</option>
+                                        <option>Геометрія</option>
+                                        <option>Правознавство</option>
+                                        <option>Фізика</option>
+                                    </select>
+                                </div>
                                 <button type="button" class="add-new-categories"></button>
                             </div>
                         </div>
@@ -454,8 +467,8 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-<script type="text/javascript" src="js/countries.js"></script>
-<script type="text/javascript" src="js/demo.js"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
