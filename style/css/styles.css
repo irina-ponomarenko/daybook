@@ -1162,6 +1162,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: absolute;
     top: 2px;
     bottom: 0;
+    z-index: 10000000;
 }
 .nav-list{
     padding: 16px 21px;

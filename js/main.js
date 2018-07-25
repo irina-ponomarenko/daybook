@@ -104,17 +104,14 @@ $(document).ready(function () {
         function(){
             $('.hint-male').removeClass('open-hint-male');
         });
-
-    $(window).resize(function () {
-        if($(window).width() > 922){
-            $('.navigation').hover(function(){
-                    $(this).toggleClass('active-hover-menu');
-                },
-                function(){
-                    $('.navigation').toggleClass('active-hover-menu');
+    if($(window).width() > 922) {
+        $('.navigation').hover(function () {
+                $(this).addClass('active-hover-menu');
+            },
+            function () {
+                $(this).removeClass('active-hover-menu');
             });
-    };
-
+    }
 
 
     $('.tree-dots').click(function() {
