@@ -2474,10 +2474,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: flex-start;
     background: #FFFFFF;
+    border-radius: 4px;
 }
 .personal-info-title,
 .school,
-.subject-сlass{
+.subject-class{
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -2485,6 +2486,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     letter-spacing: 0.05em;
     color: #262626;
     position: relative;
+    padding-left: 35px;
+}
+.personal-info-title{
     padding-left: 30px;
 }
 .personal-info-title:before{
@@ -2500,18 +2504,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .school:before{
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 18px;
     top: 0;
     left: 0;
     bottom: 0;
     background: url("../../images/school.svg") no-repeat;
 }
-.subject-сlass{
+.subject-class:before{
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 13px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -2551,4 +2555,30 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .margin-top-header{
     margin-top: 60px;
+}
+.class-teacher{
+    position: relative;
+    padding-left: 28px;
+}
+.class-teacher:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 3px;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/status.svg") no-repeat;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.margin-top-none{
+    margin-top: 0 !important;
+}
+.active-class{
+    color: #1A3EFF;
+}
+.margin-top-wrapper{
+    margin-top: 20px;
 }
