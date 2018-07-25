@@ -2354,3 +2354,201 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .border-active-drop td{
     border-bottom: 1px solid #1A3EFF;;
 }
+
+/*------------------------------profile teacher------------------------*/
+
+
+.profile-techer{
+    background: #FFFFFF;
+    max-width: 297px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10px 0;
+    border-right: 2px solid #E5E5E5;
+}
+.img-profile{
+    max-width: 110px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.img-profile  img{
+    max-width: 100px;
+    width: 100%;
+}
+.teacher-title-name{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+.about-teacher{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    max-width: 244px;
+    margin-bottom: 40px;
+}
+.btn-profile{
+    max-width: 200px;
+    width: 100%;
+    background: #D9D9D9;
+    padding: 14px 0;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn-profile:hover{
+    background: #1A3EFF;
+    color: #FFFFFF;
+    transition: .3s;
+}
+.btn-profile:last-child{
+    margin-bottom: 0;
+}
+.phrase{
+    max-width: 277px;
+    width: 100%;
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #262626;
+    padding: 24px 30px 20px 30px;
+}
+.title-phrase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.loader {
+    border: 2px solid #1A3EFF;
+    border-radius: 50%;
+    border-top: 2px solid #D9D9D9;
+    width: 16px;
+    height: 16px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-left: 10px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.class-wrapper-teacher{
+    padding: 72px 0 100px;
+}
+.personal-info{
+    padding: 60px 60px 100px 90px;
+    background: #FFFFFF;
+}
+.container-teacher{
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+}
+.personal-info-title,
+.school,
+.subject-сlass{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    position: relative;
+    padding-left: 30px;
+}
+.personal-info-title:before{
+     content: '';
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     background: url("../../images/profile.svg") no-repeat;
+ }
+.school:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/school.svg") no-repeat;
+}
+.subject-сlass{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/subject.svg") no-repeat;
+}
+.wrapper-contact span{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+}
+.wrapper-contact p{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;/
+    color: #262626;
+    margin-top: 10px;
+}
+.contact-personal{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+.wrapper-contact{
+    margin-right: 90px;
+}
+.wrapper-contact:last-child{
+    margin-right: 0;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.margin-top-header{
+    margin-top: 60px;
+}
