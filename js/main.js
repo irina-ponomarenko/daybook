@@ -105,15 +105,15 @@ $(document).ready(function () {
             $('.hint-male').removeClass('open-hint-male');
         });
 
-    // $(window).resize(function () {
-    //     if($(window).width() > 922){
-    //         $('.navigation').hover(function(){
-    //                 $(this).toggleClass('active-hover-menu');
-    //             },
-    //             function(){
-    //                 $('.navigation').toggleClass('active-hover-menu');
-    //         });
-    // };
+    $(window).resize(function () {
+        if($(window).width() > 922){
+            $('.navigation').hover(function(){
+                    $(this).toggleClass('active-hover-menu');
+                },
+                function(){
+                    $('.navigation').toggleClass('active-hover-menu');
+            });
+    };
 
 
 
