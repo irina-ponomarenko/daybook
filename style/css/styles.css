@@ -1397,7 +1397,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     letter-spacing: 0.05em;
     color: #262626 !important;
     margin-bottom: 0 !important;
-
+}
+.teacher-wrapper{
+    position: relative;
+}
+.teacher-wrapper:hover .hint-male{
+    display: block;
+}
+.teacher-fade{
+    top: 24px !important;
+    left: 53px !important;
+    max-width: 130px !important;
+    white-space: nowrap;
 }
 .teacher-class:before{
     content: '';
@@ -1448,10 +1459,23 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: none;
     z-index: 120;
 }
+.class-delete:hover{
+    background: #D9D9D9;
+    transition: .3s;
+}
 .class-delete:before{
     content: '';
     position: absolute;
     background: url("../../images/white-hint.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    bottom: -7px;
+    left: 50%;
+}
+.class-delete:hover:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/grey-hint.svg") no-repeat;
     width: 15px;
     height: 15px;
     bottom: -7px;
@@ -1670,7 +1694,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
 }
-.name-class{
+.name-class,
+.added-name-class{
     padding: 14px 20px;
     font-style: normal;
     font-weight: normal;
@@ -1698,6 +1723,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     cursor: pointer;
     margin-right: 10px;
 }
+.added-name-class{
+    background-image: none;
+}
 .name-class:last-child{
     margin-right: 0;
 }
@@ -1713,11 +1741,16 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .gender-option{
     width: 140px;
 }
+.gender-added{
+    max-width: 138px;
+    width: 100%;
+}
 .medium-select{
     width: 200px;
     background-position: 90% 50%;
 }
-.add-new-categories{
+.add-new-categories,
+.delete-categories{
     position: relative;
     background: #F2F2F2;;
     width: 49px;
@@ -1728,7 +1761,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border: none;
     margin-left: 10px;
 }
-.add-new-categories:hover{
+.add-new-categories:hover,
+.delete-categories:hover{
     background: #D9D9D9;
     transition: .3s;
 }
@@ -1736,6 +1770,15 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     content: '';
     position: absolute;
     background: url("../../images/plus.svg") no-repeat center;
+    left: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+}
+.delete-categories:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/delete.svg") no-repeat center;
     left: 12px;
     top: 12px;
     width: 24px;

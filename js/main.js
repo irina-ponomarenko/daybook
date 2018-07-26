@@ -104,13 +104,26 @@ $(document).ready(function () {
         function(){
             $('.hint-male').removeClass('open-hint-male');
         });
+
+
+    // $('.teacher-class').hover(function(){
+    //         $(this)
+    //             .parent()
+    //             .find('.teacher-fade')
+    //             .addClass('open-hint-male');
+    //     },
+    //     function(){
+    //         $('.teacher-fade').removeClass('open-hint-male');
+    //     });
+
+
     if($(window).width() > 922) {
         $('.navigation').hover(function () {
                 $(this).addClass('active-hover-menu');
             },
             function () {
                 $(this).removeClass('active-hover-menu');
-            });
+        });
     }
 
 
