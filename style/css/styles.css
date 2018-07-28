@@ -2431,6 +2431,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .img-profile  img{
     max-width: 100px;
     width: 100%;
+    border-radius: 100%;
 }
 .teacher-title-name,
 .parents-title-name{
