@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile teacher editing</title>
+    <title>Profile teacher editing class and subject</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
@@ -111,7 +111,7 @@
                         <h3 class="no-active-title">Профіль</h3>
                     </li>
                     <li>
-                        <h3>Редагування профілю</h3>
+                        <h3>Предмет та клас</h3>
                     </li>
                 </ul>
             </header>
@@ -119,170 +119,139 @@
                 <header class="header-new-profile">
                     <ul class="list-active-info">
                         <li class="active-info">
-                            <a href="" >Базова інформація</a>
-                        </li>
-                        <li>
                             <a href="">Навчальний заклад</a>
                         </li>
                         <li>
-                            <a href="">Пароль</a>
-                        </li>
-                        <li>
-                            <a href="">Сповіщення</a>
+                            <a href="">Предмет та клас</a>
                         </li>
                     </ul>
                 </header>
                 <div class="wrapper-new-info">
                     <div class="new-info">
-                        <h3 class="title-new-info base-info">Базова інформація</h3>
+                        <h3 class="title-new-info class-and-subject">Клас та предмет</h3>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
-                                <h3 class="label-input">Ім’я</h3>
+                                <h3 class="label-input width-change">Додайте клас та виберіть для нього урок</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="Ольга"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Прізвище</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="Степанівна"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">по-Батькові</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="Мельниченко"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Мова</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="Українська"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input  margin-top-30">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Стать</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <div class="wrapper-checkbox">
-                                    <div class="checkbox">
-                                        <input type="radio"id="female" name="gender" checked/>
-                                        <label for="female">Жіноча</label>
+                                <div class="wrapper-variants">
+                                    <div class="wrapper-name-select">
+                                        <select class="name-class">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                        </select>
                                     </div>
-                                    <div class="checkbox">
-                                        <input type="radio"id="male" name="gender"/>
-                                        <label for="male">Чоловіча</label>
+                                    <div class="wrapper-name-select">
+                                        <select class="name-class">
+                                            <option>А</option>
+                                            <option>Б</option>
+                                            <option>В</option>
+                                            <option>Г</option>
+                                        </select>
                                     </div>
+                                    <div class="wrapper-name-class-subject">
+                                        <select class="name-class medium-select">
+                                            <option>Алгебра</option>
+                                            <option>Геометрія</option>
+                                            <option>Правознавство</option>
+                                            <option>Фізика</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="add-new-categories"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="title-new-info add-title-class">Додані класи</h3>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                            </div>
+                            <div class="wrapper-input-field margin-bottom-10">
+                                <div class="wrapper-variants">
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="10" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="А" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-class-subject">
+                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Алгебра" disabled/>
+                                    </div>
+                                    <button type="button" class="delete-categories"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                            </div>
+                            <div class="wrapper-input-field margin-bottom-10">
+                                <div class="wrapper-variants">
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="8" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="Б" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-class-subject">
+                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Геометрія" disabled/>
+                                    </div>
+                                    <button type="button" class="delete-categories"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                            </div>
+                            <div class="wrapper-input-field margin-bottom-10">
+                                <div class="wrapper-variants">
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="6" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-select">
+                                        <input type="text" class="added-name-class margin-bottom-none" value="Г" disabled/>
+                                    </div>
+                                    <div class="wrapper-name-class-subject">
+                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Математика" disabled/>
+                                    </div>
+                                    <button type="button" class="delete-categories"></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="wrapper-new-info">
-                    <div class="new-info padding-top-15">
-                        <h3 class="title-new-info profile-img">Зображення профілю</h3>
+                    <div class="new-info padding-top-none">
+                        <h3 class="title-new-info school">Навчальний заклад</h3>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
-                                <p class="label-input">Рекомендації:</p>
-                                <p class="label-input">200х200 px, до 1MB</p>
-                            </div>
-                            <div class="wrapper-input-field position-center">
-                                <div class="img-profile img-profile-small">
-                                    <img src="images/profile-teacher.svg" alt="profile photo"/>
-                                </div>
-                                <label class="change-img">
-                                    Змінити зображення
-                                    <input type="file" class="choose-img"/>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper-new-info">
-                    <div class="new-info padding-top-15">
-                        <h3 class="title-new-info personal-img">Особиста інформація</h3>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Email</h3>
+                                <h3 class="label-input">Країна</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="Teacheremail@gmail.com"/>
+                                <input type="text" value="Україна"/>
                             </div>
                         </div>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
-                                <h3 class="label-input">Телефон</h3>
+                                <h3 class="label-input width-change-city">Місто або Населений пункт</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="+38 060 234 6789"/>
+                                <input type="text" value="Львів"/>
                             </div>
                         </div>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
-                                <h3 class="label-input">Сайт</h3>
+                                <h3 class="label-input">Навчальний заклад</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value=""/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Про мене</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <textarea>Женитьба отца не обрадовала Феанора; и мало любви питал к Индис Финголфину и Финарфину, ее сыновьям. Он жил отдельно, исследуя Амана занимаясь науками ремеслами. В тех несчастьях, которые произошли после, многие усматривали плоды разлада в доме Финвэ.</textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper-new-info">
-                    <div class="new-info padding-top-15">
-                        <h3 class="title-new-info password-img">Пароль</h3>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                            </div>
-                            <div class="wrapper-input-field position-justify">
-                                <button type="button" class="btn-class change-btn">Змінити пароль</button>
-                                <p class="label-input">Оновлено 2 місяці тому</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper-new-info">
-                    <div class="new-info padding-top-15">
-                        <h3 class="title-new-info addition-img">Додатково</h3>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                            </div>
-                            <div class="wrapper-input-field">
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck1" checked>
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck1">Приховати телефон</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck2" checked>
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck2">Приховати Email</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck3">
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck3">Показувати телефон батьків</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck4">
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck4">Показувати Email батьків</label>
-                                </div>
-                                <div class="acquaintance margin-top-40">
-                                    <h3 class="acquaintance-title">Знайомство з сервісом</h3>
-                                    <p>Ви вже пройшли знайомство. <a href="" class="restart">Перезапустити</a></p>
-                                </div>
+                                <input type="text" value="СЗШ №41"/>
                             </div>
                         </div>
                     </div>

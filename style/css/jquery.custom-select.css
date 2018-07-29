@@ -172,8 +172,9 @@
 }
 
 .custom-select__dropdown {
-  overflow: hidden;
+  overflow-y: auto;
   z-index: 1;
+  max-height: 150px;
   top: calc(100% - 1px);
   background-color: #fff;
   border-width: 0 1px 1px;

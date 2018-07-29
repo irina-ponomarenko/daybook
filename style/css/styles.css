@@ -2788,6 +2788,19 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../../images/profile-img.svg") no-repeat;
     left: 16px;
 }
+.class-and-subject{
+    position: relative;
+    padding-left: 37px;
+}
+.class-and-subject:before{
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 22px;
+    bottom: 2px;
+    background: url("../../images/subject.svg") no-repeat;
+    left: 0;
+}
 .img-profile-small{
     max-width: 80px;
     margin-bottom: 0;
@@ -2914,3 +2927,26 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .margin-bottom-40{
     margin-bottom: 40px;
 }
+.width-change{
+    max-width: 213px;
+}
+.wrapper-name-select{
+    width: 138px;
+    margin-right: 10px;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.add-title-class{
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.width-change-city{
+    max-width: 141px;
+    width: 100%;
+}
+.padding-top-none{
+    padding-top: 0;
+}
+/*----------------scrollbar------------*/
