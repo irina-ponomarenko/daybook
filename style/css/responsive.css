@@ -79,4 +79,7 @@
     .right-list:first-child {
         margin-right: 70px;
     }
+    .response-table-student{
+        overflow-x: auto;
+    }
 }
