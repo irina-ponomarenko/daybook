@@ -2950,3 +2950,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-top: 0;
 }
 /*----------------scrollbar------------*/
+.nicescroll-rails div {
+    background: #C4C4C4 !important;
+}

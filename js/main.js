@@ -267,4 +267,6 @@ $(document).ready(function () {
         $().toastmessage('showSuccessToast', "Клас видалено.");
     });
 
+    var nice = $("html").niceScroll();
+    var nice = $(".custom-select__dropdown").niceScroll();
 });
