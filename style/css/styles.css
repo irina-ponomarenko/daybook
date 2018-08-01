@@ -410,23 +410,32 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-position: center;
 }
 .active-hover-menu.navigation{
-    max-width: 260px;
-    width: 100%;
+    max-width: 260px !important;
+    width: 100% !important;
     background-color: #FFFFFF;
+    transition: .3s;
+     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 }
 .active-hover-menu .nav-list a{
     display: flex;
     align-items: center;
+    transition: .3s;
 }
 .active-hover-menu .nav-list:hover{
     background: #EBEBEB;
     transition: .3s;
 }
 .active-hover-menu .nav-span{
-    display: flex;
+    display: flex !important;
     text-align: left;
     padding-left: 10px;
     white-space: nowrap;
+    transition: .3s;
+}
+.active-hover-menu .nav-list{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
 }
 
 /*--------------------content-registration-----------------*/
@@ -561,6 +570,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #B3B3B3;
+}
+.padding-bottom-80{
+    padding-bottom: 80px !important;
 }
 .social-icon{
     display: flex;
@@ -1156,6 +1168,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     flex-direction: column;
     background: #FFFFFF;
     max-width: 64px;
+    width: 100%;
     position: absolute;
     top: 2px;
     bottom: 0;
@@ -1163,6 +1176,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .nav-list{
     padding: 16px 21px;
+    display: flex;
+    cursor: pointer;
 }
 .nav-list:last-child{
     margin-bottom: 0;
@@ -1170,10 +1185,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .nav-list a{
     position: relative;
     cursor: pointer;
-    padding: 2px 22px;
+    padding: 0 22px;
+    height: 22px;
+    background-position: 0 50%;
 }
 .nav-list a:hover{
     transition: .3s;
+    background-position: 0 50%;
 }
 .nav-span{
     font-style: normal;
@@ -1188,36 +1206,47 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .journal{
     background: url("../../images/journal.svg") no-repeat;
+     transition: .3s;
 }
 .journal:hover{
     background: url("../../images/journal-hover.svg") no-repeat;
+    transition: .3s;
 }
 .class{
     background: url("../../images/class.svg") no-repeat;
+     transition: .3s;
 }
 .class:hover{
     background: url("../../images/class-hover.svg") no-repeat;
+    transition: .3s;
 }
 .timetable{
     background: url("../../images/timetable.svg") no-repeat;
+     transition: .3s;
 }
 .timetable:hover{
     background: url("../../images/timetable-hover.svg") no-repeat;
+    transition: .3s;
 }
 .diary{
     background: url("../../images/diary.svg") no-repeat;
+     transition: .3s;
 }
 .diary:hover{
     background: url("../../images/diary-hover.svg") no-repeat;
+    transition: .3s;
 }
 .profile{
     background: url("../../images/profile.svg") no-repeat;
+     transition: .3s;
 }
 .profile:hover{
     background: url("../../images/profile-hover.svg") no-repeat;
+    transition: .3s;
 }
 .profile-active{
-    background: #EBEBEB;
+    background: #E5E5E5;
+     transition: .3s;
 }
 .profile-active .profile{
     background-image: url("../../images/profile-hover.svg");
@@ -1420,8 +1449,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../../images/teacher-class.svg") no-repeat center;
     left: 0;
     top: 3px;
-    width: 14px;
-    height: 10px;
+    width: 16px;
+    height: 13px;
 }
 .container-card-class{
     display: flex;
@@ -1449,7 +1478,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: absolute;
     right: 30px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 .code-info .tree-dots{
     top: 0;
@@ -1511,8 +1540,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     cursor: pointer;
 }
 .icon-user{
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 100%;
     background: #E5E5E5;
     display: flex;
@@ -1593,11 +1622,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 24px;
     top: -3px;
     left: 0;
-}
-.user-registered:hover,
-.active-user-cabinet{
-    background: #E5E5E5;
-    transition: .3s;
 }
 .user-registered:hover .icon-user,
 .active-user-cabinet .icon-user{
@@ -2703,7 +2727,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: 0;
 }
 .base-info{
-    max-width: 190px;
+    max-width: 200px;
     position: relative;
 }
 .wrapper-input{
@@ -2775,7 +2799,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-top: 15px;
 }
 .profile-img{
-    max-width: 232px;
+    max-width: 242px;
     position: relative;
     padding-left: 53px;
 }
@@ -2873,6 +2897,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../../images/addition.svg") no-repeat;
     left: 0px;
 }
+.add{
+    padding-left: 54px;
+}
 .top-checkbox-before:before{
     background: transparent;
     border: 2px solid #B2B2B2;
@@ -2918,11 +2945,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 0;
     bottom: 0;
+    z-index: 1000;
 }
 .margin-bottom-40{
     margin-bottom: 40px;
