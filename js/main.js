@@ -98,15 +98,6 @@ $(document).ready(function () {
         function () {
             $('.hint-male').removeClass('open-hint-male');
         });
-    $('.date-birthday').hover(function () {
-            $(this)
-                .parent()
-                .find('.hint-male')
-                .addClass('open-hint-male');
-        },
-        function () {
-            $('.hint-male').removeClass('open-hint-male');
-        });
 
     if ($(window).width() > 922) {
         $('.navigation').hover(function () {

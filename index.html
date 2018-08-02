@@ -286,7 +286,8 @@
                     <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input" checked disabled/>
                     <span class="mdl-checkbox__label">Реєструючись я автоматично
                                 погоджуюсь з правилами
-                                та умовами використання</span>
+                                та умовами використання
+                    </span>
                 </label>
             </div>
         </form>
@@ -313,7 +314,7 @@
                     <form class="parents-form" id="code-registered">
                         <div class="user-data parents-date">
                             <h3>Код запрошення</h3>
-                            <input   type="tel"  name="number"  class="parents-input masked" id="parents-input" placeholder="XXXXXX" pattern="\d{6}"  title="6-digit number"/>
+                            <input   type="tel"   name="zipcodeca"  class="parents-input masked" id="parents-input" data-charset="X_X_X_"  placeholder="XXXXXX" pattern="\w\d\w \d\w\d"   title="6-character alphanumeric zip code in the format of A1A 1A1"/>
                             <button type="button" class="question-form hint-js"></button>
                             <div class="hint">
                                 <p>Код запрошення — особливий 6-ти
@@ -380,7 +381,7 @@
                     <form class="student-form" id="code-registered-student">
                         <div class="user-data student-date">
                             <h3>Код запрошення</h3>
-                            <input type="tel"  name="number"  class="student-input masked" id="student-input" placeholder="XXXXXX" pattern="\d{6}"  title="6-digit number"/>
+                            <input   type="tel"   name="zipcodeca"  class="parents-input masked" id="student-input" data-charset="X_X_X_"  placeholder="XXXXXX" pattern="\w\d\w \d\w\d"   title="6-character alphanumeric zip code in the format of A1A 1A1"/>
                             <button type="button" class="question-form hint-js"></button>
                             <div class="hint">
                                 <p>Код запрошення — особливий 6-ти

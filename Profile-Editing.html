@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
@@ -122,7 +124,7 @@
                             <a href="" >Базова інформація</a>
                         </li>
                         <li>
-                            <a href="">Навчальний заклад</a>
+                            <a href="">Особиста інформація</a>
                         </li>
                         <li>
                             <a href="">Пароль</a>
@@ -173,14 +175,14 @@
                             </div>
                             <div class="wrapper-input-field">
                                 <div class="wrapper-checkbox">
-                                    <div class="checkbox">
-                                        <input type="radio"id="female" name="gender" checked/>
-                                        <label for="female">Жіноча</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input type="radio"id="male" name="gender"/>
-                                        <label for="male">Чоловіча</label>
-                                    </div>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect checkbox" for="option-1">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                        <span class="mdl-radio__label">Жіноча</span>
+                                    </label>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect checkbox" for="option-2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1">
+                                        <span class="mdl-radio__label">Чоловіча</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -263,22 +265,22 @@
                             <div class="wrapper-title">
                             </div>
                             <div class="wrapper-input-field">
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck1" checked>
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck1">Приховати телефон</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck2" checked>
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck2">Приховати Email</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck3">
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck3">Показувати телефон батьків</label>
-                                </div>
-                                <div class="custom-control custom-checkbox margin-bottom-16">
-                                    <input type="checkbox" class="custom-control-input " id="customCheck4">
-                                    <label class="custom-control-label top-checkbox-before" for="customCheck4">Показувати Email батьків</label>
-                                </div>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect position-checkbox margin-bottom-16" for="checkbox-3">
+                                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked/>
+                                    <span class="mdl-checkbox__label">Приховати телефон</span>
+                                </label>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect position-checkbox  margin-bottom-16" for="checkbox-4">
+                                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked/>
+                                    <span class="mdl-checkbox__label">Приховати Emai</span>
+                                </label>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect position-checkbox  margin-bottom-16" for="checkbox-5">
+                                    <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input"/>
+                                    <span class="mdl-checkbox__label">Показувати телефон батьків</span>
+                                </label>
+                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect position-checkbox  margin-bottom-16" for="checkbox-6">
+                                    <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input"/>
+                                    <span class="mdl-checkbox__label">Показувати Email батьків</span>
+                                </label>
                                 <div class="acquaintance margin-top-40">
                                     <h3 class="acquaintance-title">Знайомство з сервісом</h3>
                                     <p>Ви вже пройшли знайомство. <a href="" class="restart">Перезапустити</a></p>
@@ -472,6 +474,7 @@
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+<script src="material/material.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

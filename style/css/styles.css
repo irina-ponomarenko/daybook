@@ -1338,7 +1338,7 @@ input.masked{
 .add-student-sortable{
     position: relative;
     background: #FFFFFF;
-    padding: 15px 12px;
+    padding: 15px;
     padding-left: 44px;
     cursor: pointer;
     border-radius: 4px;
@@ -1500,8 +1500,9 @@ input.masked{
 .teacher-fade{
     top: 25px !important;
     left: -44px !important;
-    max-width: 130px !important;
+    width: 130px !important;
     white-space: nowrap;
+    padding: 10px !important;
 }
 .teacher-icon{
     background: url("../../images/teacher-class.svg") no-repeat center;
@@ -1933,6 +1934,10 @@ input.masked{
     padding-left: 30px;
     padding-right: 14px;
     margin-right: 10px;
+    font-family: 'Roboto', Arial;
+}
+.title-class li h3{
+    font-family: 'Roboto', Arial;
 }
 .no-active-title:before{
    content: '';
@@ -1998,26 +2003,24 @@ input.masked{
     padding-right: 18px !important;
 }
 .date-birthday{
-    position: relative;
     padding-left: 27px;
     cursor: pointer;
-}
-.date-birthday:before{
-    content: '';
-    position: absolute;
     background: url("../../images/birthday.svg") no-repeat;
-    width: 46px;
-    height: 18px;
-    left: 0;
-    top: 0;
+    position: relative;
 }
 .birthday-width{
     right: 0;
-    max-width: 131px !important;
-    left: -51px !important;
+    width: 131px !important;
+    left: -52px !important;
+    top: 29px !important;
+    padding: 10px !important;
 }
 .birthday-width span{
     white-space: nowrap;
+}
+.date-birthday:hover .birthday-width{
+    display: block;
+    transition: .3s;
 }
 .more-info-student,
 .parents{
@@ -2055,7 +2058,7 @@ input.masked{
 .male,
 .female{
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -2155,29 +2158,35 @@ input.masked{
 .active-sort{
     color: #1A3EFF;
 }
-.hint-male{
+.hint-male,
+.birthday-width{
     background-color: #000000;
-    padding: 10px;
-    max-width: 100px;
+    padding: 5px 10px;
+    width: 95px;
     position: absolute;
-    left: -41px;
-    top: 30px;
+    left: -43px;
+    top: 27px;
     display: none;
     transition: .3s;
     z-index: 220;
     border-radius: 2px;
 }
+.birthday-width{
+    max-width: 131px;
+}
 .female-hint{
-    left: -37px;
-    top: 35px;
+    left: -39px;
+    top: 30px;
+    width: 85px;
 }
 .top-leader{
     top: 30px;
 }
 .open-hint-male{
-    display: flex;
+    display: block;
 }
-.hint-male span{
+.hint-male span,
+.birthday-width span{
     position: relative;
     font-style: normal;
     font-weight: normal;
@@ -2188,7 +2197,8 @@ input.masked{
     color: #FFFFFF;
 
 }
-.hint-male:before{
+.hint-male:before,
+.birthday-width:before{
     content: '';
     position: absolute;
     left: 43%;
@@ -2693,13 +2703,20 @@ input.masked{
     letter-spacing: 0.05em;
     color: #B3B3B3;
 }
-.wrapper-contact p{
+.wrapper-contact p,
+.wrapper-contact a{
     font-style: normal;
     font-weight: normal;
     line-height: normal;
     font-size: 16px;
     letter-spacing: 0.05em;/
     color: #262626;
+    margin-top: 10px;
+}
+.wrapper-contact p{
+    font-family: 'Roboto', Arial;
+}
+.margin-top-10{
     margin-top: 10px;
 }
 .contact-personal{
@@ -2790,7 +2807,7 @@ input.masked{
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #262626;
-    min-width: 190px;
+    min-width: 198px;
     margin: 0 auto;
     margin-bottom: 23px;
 }
@@ -2865,9 +2882,45 @@ input.masked{
     margin-bottom: 0;
     margin-right: 8px;
 }
+.mdl-radio__outer-circle{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #B2B2B2;
+    top: 3px;
+}
+.mdl-radio__inner-circle{
+    top: 8px;
+    left: 5px;
+    background: #B2B2B2;
+}
+.mdl-radio.is-checked .mdl-radio__outer-circle{
+    border: 2px solid #B2B2B2;
+}
 .wrapper-checkbox{
     display: flex;
     align-items: center;
+}
+.position-checkbox .mdl-checkbox__box-outline,
+.position-checkbox .mdl-checkbox__focus-helper{
+    top: 0;
+}
+.mdl-checkbox__box-outline,
+.mdl-checkbox__focus-helper{
+    width: 18px;
+    height: 18px;
+}
+.position-checkbox.mdl-checkbox.is-upgraded{
+    padding-left: 25px;
+}
+.position-checkbox .mdl-checkbox__label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+
 }
 .margin-top-30{
     margin-top: 24px;
@@ -2975,7 +3028,7 @@ input.masked{
     left: 0px;
 }
 .add{
-    padding-left: 54px;
+    padding-left: 52px;
 }
 .top-checkbox-before:before{
     background: transparent;
