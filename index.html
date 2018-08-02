@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
 </head>
@@ -279,11 +281,13 @@
                 <input type="text" id="repeat-password-teacher" placeholder="Повторіть пароль"/>
             </div>
             <button type="submit" class="register">Зареєструватись</button>
-            <div class="custom-control custom-checkbox info-submit">
-                <input type="checkbox" class="custom-control-input" id="customCheck1"checked disabled/>
-                <label class="custom-control-label" for="customCheck1">Реєструючись я автоматично
-                    погоджуюсь з правилами
-                    та умовами використання</label>
+            <div class="info-submit">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
+                    <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input" checked disabled/>
+                    <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                </label>
             </div>
         </form>
     </div>
@@ -309,7 +313,7 @@
                     <form class="parents-form" id="code-registered">
                         <div class="user-data parents-date">
                             <h3>Код запрошення</h3>
-                            <input type="text" class="parents-input" id="parents-input" placeholder="X X X X X X"/>
+                            <input   type="tel"  name="number"  class="parents-input masked" id="parents-input" placeholder="XXXXXX" pattern="\d{6}"  title="6-digit number"/>
                             <button type="button" class="question-form hint-js"></button>
                             <div class="hint">
                                 <p>Код запрошення — особливий 6-ти
@@ -318,11 +322,13 @@
                             </div>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
-                        <div class="custom-control custom-checkbox info-submit">
-                            <input type="checkbox" class="custom-control-input" id="customCheck2" checked disabled/>
-                            <label class="custom-control-label" for="customCheck2">Реєструючись я автоматично
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+                                <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
                                 погоджуюсь з правилами
-                                та умовами використання</label>
+                                та умовами використання</span>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -340,12 +346,13 @@
                             <input type="text" id="repeat-password-parents" placeholder="Повторіть пароль"/>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
-                        <div class="custom-control custom-checkbox info-submit">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3" checked disabled/>
-                            <label class="custom-control-label" for="customCheck3">Якщо вашого навчального закладу
-                                немає в списку, введіть його повну
-                                назву
-                                та адресу.</label>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -373,7 +380,7 @@
                     <form class="student-form" id="code-registered-student">
                         <div class="user-data student-date">
                             <h3>Код запрошення</h3>
-                            <input type="text" class="student-input" id="student-input" placeholder="X X X X X X"/>
+                            <input type="tel"  name="number"  class="student-input masked" id="student-input" placeholder="XXXXXX" pattern="\d{6}"  title="6-digit number"/>
                             <button type="button" class="question-form hint-js"></button>
                             <div class="hint">
                                 <p>Код запрошення — особливий 6-ти
@@ -382,11 +389,13 @@
                             </div>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
-                        <div class="custom-control custom-checkbox info-submit">
-                            <input type="checkbox" class="custom-control-input" id="customCheck4" checked disabled/>
-                            <label class="custom-control-label" for="customCheck4">Реєструючись я автоматично
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
                                 погоджуюсь з правилами
-                                та умовами використання</label>
+                                та умовами використання</span>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -404,12 +413,13 @@
                             <input type="text" id="repeat-password-student" placeholder="Повторіть пароль"/>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
-                        <div class="custom-control custom-checkbox info-submit">
-                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                            <label class="custom-control-label" for="customCheck5">Якщо вашого навчального закладу
-                                немає в списку, введіть його повну
-                                назву
-                                та адресу.</label>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -440,12 +450,13 @@
                 <input type="text" id="repeat-password-user" placeholder="Повторіть пароль"/>
             </div>
             <button type="submit" class="register">Зареєструватись</button>
-            <div class="custom-control custom-checkbox info-submit">
-                <input type="checkbox" class="custom-control-input" id="customCheck7">
-                <label class="custom-control-label" for="customCheck7">Якщо вашого навчального закладу
-                    немає в списку, введіть його повну
-                    назву
-                    та адресу.</label>
+            <div class="info-submit">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked disabled/>
+                    <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                </label>
             </div>
         </form>
     </div>
@@ -481,6 +492,8 @@
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

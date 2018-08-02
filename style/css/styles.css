@@ -860,35 +860,42 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .info-submit{
     max-width: 292px;
     position: absolute;
-    right: -331px;
-    bottom: -109px;
+    right: -327px;
+    bottom: -80px;
 }
-.custom-control-label::before{
-    top: 1.25rem;
-}
-.custom-control-label::after{
-    cursor: pointer;
-    top: 1.1rem;
-}
-.custom-control-label::after {
-    position: absolute;
-    left: -1.6rem;
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-}
-.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
-    background-color: #B2B2B2;
-}
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
-    background-color: #B2B2B2;
+.mdl-checkbox.is-disabled .mdl-checkbox__ripple-container{
+    top: 11px;
     cursor: pointer;
 }
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+.mdl-checkbox.is-disabled .mdl-checkbox__label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+}
+.mdl-checkbox__box-outline,
+.mdl-checkbox__focus-helper{
+    top: 21px;
+    cursor: pointer;
+}
+.mdl-checkbox.is-upgraded {
+    padding-left: 30px;
+}
+.mdl-checkbox.is-checked .mdl-checkbox__box-outline,
+.mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline{
+    border: 2px solid #B2B2B2;
+    cursor: pointer;
+}
+.mdl-checkbox.is-checked .mdl-checkbox__tick-outline,
+.mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline{
+    background: #B2B2B2;
+    cursor: pointer;
+}
+.mdl-checkbox__box-outline{
+    border: 2px solid #B2B2B2;
     cursor: pointer;
 }
 .info-submit label{
@@ -1178,6 +1185,37 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+
+.shell {
+    position: relative;
+    line-height: 1;
+    width: 100%;
+}
+.shell span {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: #262626;
+    pointer-events: none;
+    z-index: 1;
+}
+.shell span i { /* any of these 3 will work */
+    color: transparent;
+    opacity: 0;
+    visibility: hidden;
+}
+
+input.masked,
+.shell span {
+    font-size: 16px;
+    letter-spacing: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+input.masked{
+    letter-spacing: 10px;
 }
 
 /*---------------------nav-bar---------------*/
