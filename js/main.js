@@ -258,6 +258,10 @@ $(document).ready(function () {
         $().toastmessage('showSuccessToast', "Клас видалено.");
     });
 
+    $('#copy').click(function (){
+        $('').toastmessage('showNoticeToast', "Pre-код скопійовано.");
+    });
+
     var nice = $("html").niceScroll();
     var nice = $(".custom-select__dropdown").niceScroll();
 });

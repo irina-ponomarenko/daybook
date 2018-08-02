@@ -2105,6 +2105,7 @@ input.masked{
 }
 .pre-code{
     position: relative;
+    cursor: pointer;
 }
 .code-per{
     position: relative;
@@ -2141,12 +2142,25 @@ input.masked{
 
 /*----------------------------dropdown-------------------*/
 .list-sortable li{
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
+}
+.list-sortable li:last-child{
+    padding: 2px 0;
+}
+.list-sortable li p{
+    padding: 12px 20px;
 }
 .list-sortable li:hover{
     background-color: #EBEBEB;
     transition: .3s;
+}
+.list-sortable li p:hover{
+    background-color: #EBEBEB;
+    transition: .3s;
+}
+.list-sortable li:last-child:hover{
+    background: transparent;
 }
 .add-class-modal-sort span{
     font-style: normal;
@@ -2300,7 +2314,6 @@ input.masked{
 }
 
 
-
 /**
  * toast types
  *
@@ -2310,7 +2323,6 @@ input.masked{
  */
 .toast-type-notice {
     color: white;
-    border-bottom: 7px solid dodgerblue;
 }
 
 .toast-type-success {
@@ -2318,8 +2330,7 @@ input.masked{
 }
 
 .toast-type-warning {
-    color: black;
-    border-bottom: 7px solid #FCBD57;
+    color: #FFFFFF;
 }
 
 .toast-type-error {

@@ -35,7 +35,7 @@
  *      sticky   : true,
  *      position : 'top-right',
  *      type     : 'success',
- *      close    : function () {console.log("toast is closed ...");}
+ *      close    :( function ) {console.log("toast is closed ...");}
  *   });
  *
  *   To see some more examples please have a look into the Tests in src/test/javascript/ToastmessageTest.js
