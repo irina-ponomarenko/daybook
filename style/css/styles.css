@@ -1017,9 +1017,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-image: url("../../images/question-form.svg");
+    background-color: #B2B2B2;
+    background-image: url("../../images/questions-white.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 8px;
+    background-position: center;;
     position: absolute;
     border: none;
     outline: none;
