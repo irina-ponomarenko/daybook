@@ -171,23 +171,18 @@ $(document).ready(function () {
     });
 
 
+
     $('.some-class').click(function () {
-        $(this)
-            .parent()
-            .find('.add-some-modal')
-            .addClass('active-some');
+        $(this).toggleClass('active-some');
     });
 
-    $('.cancel').on('click', function () {
-        $('.add-some-modal').removeClass('active-some');
-    });
     $(document).mouseup(function (e) {
-        if (jQuery(e.target).closest(".add-some-modal").length > 0) {
+        if ($(e.target).closest(".active-some").length > 0) {
             return false;
         }
-
-        else $(".add-some-modal").removeClass('active-some');
-        clickCount = 1;
+        else {
+            $('.some-class').removeClass('active-some');
+        }
     });
 
 
@@ -258,8 +253,8 @@ $(document).ready(function () {
         $().toastmessage('showSuccessToast', "Клас видалено.");
     });
 
-    $('#copy').click(function (){
-        $('').toastmessage('showNoticeToast', "Pre-код скопійовано.");
+    $('.copy-text').click(function (){
+        $('').toastmessage('showToast', { type: 'notice', text: "Pre-код скопійовано.", closeText: '' });
     });
 
     var nice = $("html").niceScroll();

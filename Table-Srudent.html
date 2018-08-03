@@ -7,6 +7,8 @@
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
 </head>
@@ -148,8 +150,8 @@
                             <div class="add-class-info">
                                 <h4>Додати учня в список класу</h4>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value=""/>
-                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value=""/>
+                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value="" maxlength="20"/>
+                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value="" maxlength="20"/>
                                     <div class="gender-option">
                                         <select class="name-class">
                                             <option>Стать</option>
@@ -163,16 +165,16 @@
                             <div class="add-class-info added-class">
                                 <h4>Додані Учні</h4>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="added-surname-student" class="surname-student" placeholder="Ісілдур" value=""/>
-                                    <input type="name" id="added-name-student-input" class="name-student-input" placeholder="Арагорн" value=""/>
+                                    <input type="name" id="added-surname-student" class="surname-student" placeholder="Прізвище" value="Ісілдур" maxlength="20" disabled/>
+                                    <input type="name" id="added-name-student-input" class="name-student-input" placeholder="Імя" value="Арагорн" maxlength="20"  disabled/>
                                     <div class="gender-option">
                                         <input class="added-name-class gender-added" value="Чоловік" disabled/>
                                     </div>
                                     <button type="button" class="delete-categories"></button>
                                 </div>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="added-surname-student2" class="surname-student" placeholder="Прізвище" value="Ізабелла"/>
-                                    <input type="name" id="added-name-student-input2" class="name-student-input" placeholder="Імя" value="Росселліні"/>
+                                    <input type="name" id="added-surname-student2" class="surname-student" placeholder="Прізвище" value="Ізабелла" maxlength="20" disabled/>
+                                    <input type="name" id="added-name-student-input2" class="name-student-input" placeholder="Імя" value="Росселліні" maxlength="20" disabled/>
                                     <div class="gender-option">
                                         <input class="added-name-class gender-added" value="Жінка" disabled/>
                                     </div>
@@ -234,8 +236,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text" id="copy">ch_gs1hmg680n</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">ch_gs1hmg680n</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -274,8 +276,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text">vm_bilousv1a366n</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">vm_bilousv1a366n</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -298,8 +300,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text">ch_gagauzv1a366k</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">ch_gagauzv1a366k</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -462,8 +464,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text">iy_dovganazvar1a366g</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">iy_dovganazvar1a366g</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -494,8 +496,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text">pb_dovganazvar1a366a</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">pb_dovganazvar1a366a</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -526,8 +528,8 @@
                             <div class="code-info">
                                 <span class="title-code not-used">Не использован</span>
                                 <div class="wrapper-copy-code">
-                                    <button class="copy-btn"></button>
-                                    <span class="pre-code blue-text">ng_dovganazva1a366u</span>
+                                    <button class="copy-btn copy-text"></button>
+                                    <span class="pre-code blue-text copy-text">ng_dovganazva1a366u</span>
                                 </div>
                             </div>
                             <div class="copy-code"></div>
@@ -716,6 +718,8 @@
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

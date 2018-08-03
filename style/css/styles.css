@@ -1388,6 +1388,9 @@ input.masked{
 .add-student-new{
     margin-right: 10px;
 }
+.add-student-new:last-child{
+    margin-right: 0;
+}
 .new-student{
     position: relative;
 }
@@ -1404,6 +1407,9 @@ input.masked{
     top: 12px;
     width: 24px;
     height: 24px;
+}
+.add-student{
+    padding-left: 52px;
 }
 .add-student-sortable{
     position: relative;
@@ -2132,7 +2138,7 @@ input.masked{
     width: 6px;
     height: 18px;
     background: url("../../images/copy-code.svg") no-repeat;
-    cursor: pointer;
+    cursor: move;
     padding-left: 30px;
     float: right;
     right: 0;
@@ -2269,7 +2275,7 @@ input.masked{
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    padding-left: 35px;
+    padding-left: 10px;
 
 }
 
@@ -2298,11 +2304,11 @@ input.masked{
     background-size: contain;
     width: 20px;
     height: 20px;
-    position: absolute;
+    position: relative;
     left: 10px;
-    top: 30px;
+    top: 8px;
+    margin-right: 10px;
 }
-
 .toast-item-image-warning {
     background:url(../../images/alert.svg);
     background-repeat: no-repeat;
@@ -2322,7 +2328,7 @@ input.masked{
  *
  */
 .toast-type-notice {
-    color: white;
+    color: #ffffff;
 }
 
 .toast-type-success {
@@ -2334,9 +2340,7 @@ input.masked{
 }
 
 .toast-type-error {
-    color: black;
-    border-bottom: 7px solid #c75353;
-    min-height: 40px;
+    color: #ffffff;
 }
 
 /**
@@ -2398,7 +2402,7 @@ input.masked{
     right: -190px;
     display: none;
 }
-.active-some{
+.active-some .add-some-modal{
     display: block;
 }
 .wrapper-some{
@@ -2472,9 +2476,12 @@ input.masked{
     width: 20px;
     height: 20px;
     border-radius: 100px;
-    background: #1A3EFF;
+    background: #B2B2B2;
     content: '';
     transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .lbl:active:after { transform: scale(1.15, 0.85); }
@@ -2484,6 +2491,9 @@ input.masked{
 .cbx:checked ~ label:after {
     left: 15px;
     background: #1A3EFF;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .cbx:disabled ~ label {
     background: #d5d5d5;
@@ -2495,7 +2505,6 @@ input.masked{
 .cbx:disabled ~ label:after { background: #bcbdbc; }
 .drag-and-drop{
      position: absolute;
-    display: flex;
     background: #FFFFFF;
     left: 0;
     right: 0;
