@@ -257,6 +257,4 @@ $(document).ready(function () {
         $('').toastmessage('showToast', { type: 'notice', text: "Pre-код скопійовано.", closeText: '' });
     });
 
-    var nice = $("html").niceScroll();
-    var nice = $(".custom-select__dropdown").niceScroll();
 });

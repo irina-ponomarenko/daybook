@@ -7,6 +7,8 @@
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
     <link href="style/css/responsive.css" rel="stylesheet"/>
 </head>
@@ -131,13 +133,13 @@
                     </div>
                 </div>
                 <div class="add-student-new sortable-new">
-                    <span class="add-student-sortable">А - Я</span>
+                    <span class="add-student-sortable">А &#8212; Я</span>
                     <div class="add-class-modal-sort">
                         <span>Сортувати:</span>
                         <ul class="list-sortable">
-                            <li class="active-sort">А - Я</li>
-                            <li>Я - А</li>
-                            <li>Час реєстрації</li>
+                            <li class="active-sort">А &#8212; Я</li>
+                            <li>Я &#8212; А</li>
+                            <li><p>Час реєстрації</p></li>
                         </ul>
                     </div>
                 </div>
@@ -148,8 +150,8 @@
                             <div class="add-class-info">
                                 <h4>Додати учня в список класу</h4>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value=""/>
-                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value=""/>
+                                    <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value="" maxlength="20"/>
+                                    <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value="" maxlength="20"/>
                                     <div class="gender-option">
                                         <select class="name-class">
                                             <option>Стать</option>
@@ -163,16 +165,16 @@
                             <div class="add-class-info added-class">
                                 <h4>Додані Учні</h4>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="added-surname-student" class="surname-student" placeholder="Ісілдур" value=""/>
-                                    <input type="name" id="added-name-student-input" class="name-student-input" placeholder="Арагорн" value=""/>
+                                    <input type="name" id="added-surname-student" class="surname-student" placeholder="Прізвище" value="Ісілдур" maxlength="20" disabled/>
+                                    <input type="name" id="added-name-student-input" class="name-student-input" placeholder="Імя" value="Арагорн" maxlength="20"  disabled/>
                                     <div class="gender-option">
                                         <input class="added-name-class gender-added" value="Чоловік" disabled/>
                                     </div>
                                     <button type="button" class="delete-categories"></button>
                                 </div>
                                 <div class="wrapper-variants">
-                                    <input type="name" id="added-surname-student2" class="surname-student" placeholder="Прізвище" value="Ізабелла"/>
-                                    <input type="name" id="added-name-student-input2" class="name-student-input" placeholder="Імя" value="Росселліні"/>
+                                    <input type="name" id="added-surname-student2" class="surname-student" placeholder="Прізвище" value="Ізабелла" maxlength="20" disabled/>
+                                    <input type="name" id="added-name-student-input2" class="name-student-input" placeholder="Імя" value="Росселліні" maxlength="20" disabled/>
                                     <div class="gender-option">
                                         <input class="added-name-class gender-added" value="Жінка" disabled/>
                                     </div>
@@ -773,7 +775,6 @@
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
