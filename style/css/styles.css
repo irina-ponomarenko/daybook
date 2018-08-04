@@ -2507,7 +2507,7 @@ input.masked{
 }
 .cbx:disabled ~ label:after { background: #bcbdbc; }
 .drag-and-drop{
-     position: absolute;
+    position: absolute;
     background: #FFFFFF;
     left: 0;
     right: 0;
@@ -2515,6 +2515,21 @@ input.masked{
     -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     top: 300px;
+}
+.drag-and-drop .row-title{
+    min-width: 30px;
+}
+.drag-and-drop .name-student{
+    min-width: 223.75px;
+}
+.drag-and-drop .more-info{
+    min-width: 230.82px;
+}
+.drag-and-drop .parents{
+    min-width: 246.25px;
+}
+.drag-and-drop .code-per{
+    min-width: 380px;
 }
 .none-info-table{
     background: transparent;
