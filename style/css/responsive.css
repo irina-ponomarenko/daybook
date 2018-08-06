@@ -82,4 +82,9 @@
     .response-table-student{
         overflow-x: auto;
     }
+    .nav-bar{
+        height: auto;
+        right: 0;
+        left: 0;
+    }
 }

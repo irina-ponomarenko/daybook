@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table journal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style/css/styles.css" rel="stylesheet"/>
+    <link href="style/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <div class="block-logo">
+        <h1></h1>
+        <div class="logo">
+            Лого
+        </div>
+        <form id="search-header" class="search-header">
+            <button type="button" class="search-btn"></button>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
+            <button type="button" class="close-search"></button>
+        </form>
+        <button type="button" class="nav-menu-btn"></button>
+    </div>
+    <div class="wrapper-nav-authorization">
+        <ul class="nav-menu">
+            <li class="nav-li">
+                <a href="">Меню один</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Меню два</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Маню три</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        <div class="wrapper-registered">
+            <div class="user-registered">
+                <div class="icon-user">
+                    <span>ІП</span>
+                </div>
+                <p class="name-surname">Ім’я Прізвище</p>
+                <button type="button" class="chevron-down"></button>
+                <div class="drop-down-user">
+                    <ul class="user-cabinet">
+                        <li>
+                            <a href="">Пункт один</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт два</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт три</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт чотири</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт п’ять</a>
+                        </li>
+                    </ul>
+                    <div class="sign-out">
+                        <span class="logout">Вийти з системи</span>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="purchase"></a>
+        </div>
+    </div>
+</header>
+<section class="content-wrapper-section class-wrapper">
+    <nav class="nav-bar">
+        <ul class="navigation">
+            <li class="nav-list active-nav-li">
+                <a href="" class="journal">
+                    <span class="nav-span">Онлайн журнал</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="class">
+                    <span class="nav-span">Клас</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="timetable">
+                    <span class="nav-span">Розклад</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="diary">
+                    <span class="nav-span">Щоденик</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="profile">
+                    <span class="nav-span">Профіль</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header-journal">
+            <div class="title-journal">
+                <h2>Журнал</h2>
+                <span class="bull">&#8226;</span>
+                <h2>1 <span>&#8211;</span> 31 Вересня</h2>
+            </div>
+
+            <div class="add-new-information">
+                <div class="add-new-class margin-right-10">
+                    <span>10-А</span>
+                </div>
+                <div class="add-new-subject">
+                    <span>Математика</span>
+                </div>
+            </div>
+        </header>
+        <div class="container-class">
+            <div class="header-pagination margin-top-10">
+                <div class="pagination-pages">
+                    <ul>
+                        <li class="pagination-page active-page" data-num="1">
+                            <a href="">Вересень</a>
+                        </li>
+                        <li class="pagination-page" data-num="2">
+                            <a href="">Жовтень</a>
+                        </li>
+                        <li class="pagination-page" data-num="3">
+                            <a href="">Листопад</a>
+                        </li>
+                        <li class="pagination-ellipsis disabled">
+                            <a><span class="page-bull">&#8226;</span></a>
+                        </li>
+                        <li class="pagination-page" data-num="9">
+                            <a href="">Травень</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="redactor-table">
+                    <button type="button" class="btn-redactor margin-right-10"></button>
+                    <button type="button" class="btn-setting"></button>
+                </div>
+            </div>
+            <div class="table-responsive-journal margin-top-20">
+                <table class="table-journal">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="title-journal-table width-col-num-40">#</th>
+                        <th scope="col" class="title-journal-table width-col-169">Учень</th>
+                        <th scope="col" class="title-journal-table width-col">1.09</th>
+                        <th scope="col" class="title-journal-table width-col">2.09</th>
+                        <th scope="col" class="title-journal-table width-col">3.09</th>
+                        <th scope="col" class="title-journal-table width-col">4.09</th>
+                        <th scope="col" class="title-journal-table width-col">5.09</th>
+                        <th scope="col" class="title-journal-table width-col">6.09</th>
+                        <th scope="col" class="title-journal-table width-col">7.09</th>
+                        <th scope="col" class="title-journal-table width-col">8.09</th>
+                        <th scope="col" class="title-journal-table width-col">9.09</th>
+                        <th scope="col" class="title-journal-table width-col">10.09</th>
+                        <th scope="col" class="title-journal-table width-col">11.09</th>
+                        <th scope="col" class="title-journal-table width-col">12.09</th>
+                        <th scope="col" class="title-journal-table width-col">13.09</th>
+                        <th scope="col" class="title-journal-table width-col">14.09</th>
+                        <th scope="col" class="title-journal-table width-col">15.09</th>
+                        <th scope="col" class="title-journal-table width-col">16.09</th>
+                        <th scope="col" class="title-journal-table width-col">17.09</th>
+                        <th scope="col" class="title-journal-table width-col">18.09</th>
+                        <th scope="col" class="title-journal-table width-col">19.09</th>
+                        <th scope="col" class="title-journal-table width-col">20.09</th>
+                        <th scope="col" class="title-journal-table width-col">21.09</th>
+                        <th scope="col" class="title-journal-table width-col">22.09</th>
+                        <th scope="col" class="title-journal-table width-col">23.09</th>
+                        <th scope="col" class="title-journal-table width-col">24.09</th>
+                        <th scope="col" class="title-journal-table width-col">25.09</th>
+                        <th scope="col" class="title-journal-table width-col">26.09</th>
+                        <th scope="col" class="title-journal-table width-col">27.09</th>
+                        <th scope="col" class="title-journal-table width-col">28.09</th>
+                        <th scope="col" class="title-journal-table width-col">29.09</th>
+                        <th scope="col" class="title-journal-table width-col">30.09</th>
+                        <th scope="col" class="title-journal-table width-col">31.09</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">1</th>
+                        <td class="name-student-table width-col-169">Безкоровайний В.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">2</th>
+                        <td class="name-student-table width-col-169">Ткаченко А.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">3</th>
+                        <td class="name-student-table width-col-169">Коваль П.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">5</th>
+                        <td class="name-student-table width-col-169">Шевчук Л.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">6</th>
+                        <td class="name-student-table width-col-169">Геращенко А.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">7</th>
+                        <td class="name-student-table width-col-169">Вовк П.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">8</th>
+                        <td class="name-student-table width-col-169">Савченко П.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">9</th>
+                        <td class="name-student-table width-col-169">Гуменюк Е.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">10</th>
+                        <td class="name-student-table width-col-169">Іванов П.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">11</th>
+                        <td class="name-student-table width-col-169">Козак Р.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">12</th>
+                        <td class="name-student-table width-col-169">Ковтун Р-А.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">13</th>
+                        <td class="name-student-table width-col-169">Назаренко М.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">14</th>
+                        <td class="name-student-table width-col-169">Ісілдур А.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">15</th>
+                        <td class="name-student-table width-col-169">Марчук Е.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">16</th>
+                        <td class="name-student-table width-col-169">Кириченко Д.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">17</th>
+                        <td class="name-student-table width-col-169">Переправа Ю.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">18</th>
+                        <td class="name-student-table width-col-169">Луценко Л.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">19</th>
+                        <td class="name-student-table width-col-169">Кондратюк І.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">20</th>
+                        <td class="name-student-table width-col-169">Чорний Н.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">21</th>
+                        <td class="name-student-table width-col-169">Щербина О.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">22</th>
+                        <td class="name-student-table width-col-169">Гребенюк Р.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">23</th>
+                        <td class="name-student-table width-col-169">Гребля Т.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">24</th>
+                        <td class="name-student-table width-col-169">Волошин Г.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">25</th>
+                        <td class="name-student-table width-col-169">Голуб Р.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">26</th>
+                        <td class="name-student-table width-col-169">Пономаренко К.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">27</th>
+                        <td class="name-student-table width-col-169">Білик Ю.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">28</th>
+                        <td class="name-student-table width-col-169">Таран У.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">29</th>
+                        <td class="name-student-table width-col-169">Дмитренко П.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="title-journal-table width-col-num-40">30</th>
+                        <td class="name-student-table width-col-169">Шевченко Т.</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">9</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center"></td>
+                        <td class="text-center">5</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">10</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">8</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="questions"></button>
+</section>
+<footer class="footer">
+    <div class="top-footer">
+        <div class="container">
+            <div class="info-footer">
+                <div class="logo-footer">
+                    Лого
+                </div>
+                <div class="text-info-footer">
+                    <p>Мудрые говорят, что Первая Война началась до того
+                        творение Арды было завершено, и прежде, появилось что-нибудь, что росло бы на почве земли или бродило.</p>
+                </div>
+            </div>
+            <ul class="social-icon">
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="center-footer">
+        <div class="container">
+            <div class="wrapper-list-footer">
+                <h3>Меню один</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Меню два</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Меню три</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Підтримка</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Про Online Daybook</a>
+                    </li>
+                    <li>
+                        <a href="">Умови та Правила використання</a>
+                    </li>
+                    <li>
+                        <a href="">Поширені запитання</a>
+                    </li>
+                    <li>
+                        <a href="">Повідомити про помилку</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="wrapper-list-footer right-list">
+                <h3 class="phone-icon">Телефон</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>+38 060 234 6789</span>
+                    </li>
+                    <li>
+                        <span> +38 060 234 6789</span>
+                    </li>
+                    <li>
+                        <span>+38 060 234 6789</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer right-list">
+                <h3 class="email-icon">Email</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>Online Daybook@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer right-list">
+                <h3 class="address-icon">Адреса</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>м. Київ, вул. Хрещатик, 12а</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-login" id="login">
+    <button type="button" class="close-modal login_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Вхід в систему</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-email" placeholder="Email"/>
+                <input type="password" id="login-password" placeholder="Пароль">
+                <a href="" class="info-alert">Забули пароль?</a>
+            </div>
+            <button type="submit" class="login-submit">Вхід</button>
+        </form>
+    </div>
+    <div class="options-login">
+        <div class="wrapper-option">
+            <a href="" class="not-registered">Не зареєстровані?</a>
+            <a href="" class="create-account">Створити акаунт</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

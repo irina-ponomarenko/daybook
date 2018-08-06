@@ -3150,3 +3150,213 @@ input.masked{
 .nicescroll-rails div {
     background: #C4C4C4 !important;
 }
+
+/*-------------------table journal------------------*/
+
+.header-journal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-journal{
+    font-family: 'Roboto', Arial;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #1A1A1A;
+    display: flex;
+    align-items: center;
+}
+.title-journal span{
+    font-weight: bolder;
+    font-family: 'Roboto', Arial;
+}
+.bull{
+    color: #C4C4C4;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.add-new-class{
+    background: #ffffff;
+    border-radius: 4px;
+    width: 100px;
+    padding: 15px 20px;
+    background-image: url("../../images/chevron.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    cursor: pointer;
+}
+.add-new-subject{
+    background: #ffffff;
+    border-radius: 4px;
+    width: 200px;
+    padding: 15px 20px;
+    background-image: url("../../images/chevron.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    cursor: pointer;
+}
+.add-new-class span,
+.add-new-subject span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.add-new-class:hover,
+.add-new-subject:hover{
+    -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    transition: .3s;
+}
+
+/*-----------------pagination-------------------*/
+
+.pagination-pages ul{
+    display: flex;
+    align-items: center;
+}
+.pagination-page{
+    padding: 6px 0;
+    width: 100px;
+    background: #E5E5E5;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.pagination-page:last-child{
+    margin-right: 0;
+}
+.pagination-page a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.active-page{
+    background: #ffffff;
+}
+.page-bull{
+    font-size: 14px;
+   color: #C4C4C4;
+    margin: 0 8px;
+}
+.header-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-redactor{
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    background-image: url("../../images/pen.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.btn-redactor:hover{
+    background-image: url("../../images/pen-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-setting{
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    background-image: url("../../images/setting.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.btn-setting:hover{
+    background-image: url("../../images/setting-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+
+/*---------------------table journal-------------------*/
+
+.title-journal-table{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    border-bottom: none;
+    border-top: none;
+}
+.table-journal{
+    table-layout: fixed;
+    width: 100%;
+}
+.width-col{
+    width: 50px;
+    height: 50px;
+}
+.width-col-num-40{
+    width: 40px;
+}
+.table-responsive-journal{
+    overflow-x: auto;
+}
+.name-student-table{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.table-journal tbody th,
+.table-journal tbody tr{
+    background-color: #ffffff;
+}
+.table-journal tbody td{
+    border-bottom: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+}
+.table-journal tbody th{
+    border-bottom: 1px solid #E5E5E5;
+    border-right: none !important;
+    border-left: none !important;
+}
+.width-col-169{
+    width: 169px;
+    text-align: left;
+    height: 50px;
+    border-left: none !important;
+}
+.text-center{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #262626;
+
+}
