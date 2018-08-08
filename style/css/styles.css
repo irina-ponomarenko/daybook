@@ -3147,8 +3147,119 @@ input.masked{
     padding-top: 0;
 }
 /*----------------scrollbar------------*/
-.nicescroll-rails div {
-    background: #C4C4C4 !important;
+#wrapper {
+    max-width: 1140px;
+    margin-top: 20px;
+}
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #E5E5E5;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: #B2B2B2;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 2px;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
 }
 
 /*-------------------table journal------------------*/
@@ -3214,6 +3325,43 @@ input.masked{
     -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     transition: .3s;
+}
+.active-row{
+    position: relative;
+}
+.active-row:before{
+    content: '';
+    width: 46px;
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    right: 0;
+    height: 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #D9D9D9;
+}
+.active-label{
+    position: relative;
+}
+.active-row-label{
+    position: absolute;
+    left: 2px;
+    right: 0;
+    bottom: -49px;
+    background: #D9D9D9;
+    height: 48px;
+    width: 46px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-table{
+    padding-top: 50px;
 }
 
 /*-----------------pagination-------------------*/
@@ -3310,6 +3458,7 @@ input.masked{
 .table-journal{
     table-layout: fixed;
     width: 100%;
+    transform: rotate(180deg) scale(-1, 1);
 }
 .width-col{
     width: 50px;
@@ -3320,6 +3469,11 @@ input.masked{
 }
 .table-responsive-journal{
     overflow-x: auto;
+    transform: rotate(180deg) scale(-1, 1);
+    outline: none;
+}
+.table-responsive-journal:focus{
+    outline: none;
 }
 .name-student-table{
     font-family: 'Roboto';
