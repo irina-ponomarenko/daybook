@@ -220,6 +220,22 @@ $(document).ready(function () {
         }
     });
 
+    $('.add-new-class').click(function () {
+        $(this)
+            .parent()
+            .find('.drop-down-add-new-class')
+            .toggleClass('active-class-block');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-class-block").length > 0) {
+            return false;
+        }
+        else {
+            $('.drop-down-add-new-class').removeClass('active-class-block');
+        }
+    });
+
     $('.search-btn').on('click', function () {
         $('.search-header').toggleClass('open-search');
     });
@@ -256,6 +272,9 @@ $(document).ready(function () {
     $('.copy-text').click(function (){
         $('').toastmessage('showToast', { type: 'notice', text: "Pre-код скопійовано.", closeText: '' });
     });
+
+
+
     $(function(){
         $('#wrapper').jScrollPane();
     });

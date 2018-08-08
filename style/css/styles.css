@@ -2617,7 +2617,8 @@ input.masked{
 .about-parents{
     max-width: 149px;
 }
-.btn-profile{
+.btn-profile,
+.btn-view{
     max-width: 200px;
     width: 100%;
     background: #D9D9D9;
@@ -2627,7 +2628,11 @@ input.masked{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.btn-profile:hover{
+.btn-view{
+    max-width: 210px;
+}
+.btn-profile:hover,
+.btn-view:hover{
     background: #1A3EFF;
     color: #FFFFFF;
     transition: .3s;
@@ -3298,6 +3303,7 @@ input.masked{
     background-repeat: no-repeat;
     background-position: 80% 50%;
     cursor: pointer;
+    position: relative;
 }
 .add-new-subject{
     background: #ffffff;
@@ -3512,5 +3518,77 @@ input.masked{
     text-align: center;
     letter-spacing: 0.05em;
     color: #262626;
-
+}
+.drop-down-add-new-class{
+    width: 250px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 130;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    left: -79px;
+    top: 67px;
+    display: none;
+}
+.drop-down-add-new-class:before{
+    content: '';
+    position: absolute;
+    background: url(../../images/white-hint.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    left: 50%;
+}
+.drop-down-add-new-class h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.margin-right-none{
+    margin-right: 0;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-top-40{
+    margin-top: 40px;
+}
+.margin-left-15{
+    margin-left: 15px;
+}
+.share{
+    border: none;
+    background: transparent;
+    background-image: url("../../images/share.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.share:hover{
+    background-image: url("../../images/share-hover.svg");
+    background-repeat: no-repeat;
+}
+.share-info{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.container-info{
+    padding: 20px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #F2F2F2;
+}
+.btn-view-wrapper{
+    padding: 20px;
+}
+.active-class-block{
+    display: block;
+}
+.result-active{
+    color: #E52222;
 }
