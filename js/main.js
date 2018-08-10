@@ -89,25 +89,6 @@ $(document).ready(function () {
             $('.hint-male').removeClass('open-hint-male');
         });
 
-    $('.leader-title').hover(function () {
-            $(this)
-                .parent()
-                .find('.hint-male')
-                .addClass('open-hint-male');
-        },
-        function () {
-            $('.hint-male').removeClass('open-hint-male');
-        });
-
-    if ($(window).width() > 922) {
-        $('.navigation').hover(function () {
-                $(this).addClass('active-hover-menu');
-            },
-            function () {
-                $(this).removeClass('active-hover-menu');
-            });
-    }
-
 
     $('.tree-dots').click(function () {
         $(this).addClass('class-delete-active')
@@ -186,7 +167,9 @@ $(document).ready(function () {
             $('.some-class').removeClass('active-some');
         }
     });
-
+    $('.add-some-modal').click(function (e) {
+        e.stopPropagation();
+    });
 
     $('.sortable-new').click(function () {
         $(this)

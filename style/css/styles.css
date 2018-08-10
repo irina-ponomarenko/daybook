@@ -523,6 +523,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 60px;
     background: #D9D9D9;
     display: flex;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
 }
@@ -687,7 +688,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #262626;
 }
 .user-data input{
-    padding: 14px 20px;
+    padding: 14px 20px 15px;
     font-style: normal;
     font-weight: normal;
     line-height: 19px;
@@ -703,6 +704,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .user-data input:last-child{
     margin-bottom: 0;
+}
+.user-data input:focus{
+    border: 1px solid #1A3EFF;
 }
 .user-data{
     margin: 0 auto;
@@ -858,6 +862,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border: 2px solid #B2B2B2;
     cursor: pointer;
 }
+.mdl-checkbox__ripple-container{
+    top: -9px;
+    left: -9px;
+}
 .info-submit label{
     font-style: normal;
     font-weight: normal;
@@ -883,7 +891,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .close-modal:focus{
     outline: none;
 }
-
+.hover-red:hover{
+    background: #E52222 !important;
+    transition: .3s;
+}
 .modal-parents .header-modal p,
 .modal-student .header-modal p,
 .modal-user .header-modal p{
@@ -907,8 +918,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: rgba(0, 0, 0, 0.87);
     transition: .3s;
     font-size: 16px;
+    font-family: 'Roboto';
 }
-
 .addui-Tabs .addui-Tabs-tabHolder .addui-Tabs-tab.addui-Tabs-active {
     border-bottom: 3px solid #B2B2B2;
     font-style: normal;
@@ -918,7 +929,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
-
 }
 
 .addui-Tabs .addui-Tabs-content {
@@ -967,7 +977,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .usert-form input,
 .name-student-input,
 .surname-student{
-    padding: 15px 20px;
+    padding: 14px 20px 15px;
     width: 100%;
     background: #F2F2F2;
     border: none;
@@ -1008,7 +1018,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding: 10px;
     position: absolute;
     right: -332px;
-    bottom: -3px;
+    bottom: -13px;
     transition: .3s;
     display: none;
     border-radius: 2px;
@@ -1111,7 +1121,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding: 20px 0;
 }
 .wrapper-option a{
-    padding: 14px 7px;
+    padding: 14px 22px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -1301,7 +1311,7 @@ input.masked{
 .add-student-sortable{
     position: relative;
     background: #FFFFFF;
-    padding: 14px 20px;
+    padding: 15px 20px;
     padding-left: 44px;
     cursor: pointer;
     border-radius: 4px;
@@ -1319,7 +1329,8 @@ input.masked{
     position: relative;
 }
 .leader-class{
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 .leader-title{
     font-style: normal;
@@ -1328,18 +1339,19 @@ input.masked{
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #262626;
-    position: relative;
-    padding-left: 30px;
     margin-right: 20px;
 }
-.leader-title:before{
-    content: '';
-    position: absolute;
+.leader{
+    padding-left: 35px;
+    cursor: pointer;
+    position: relative;
     background: url("../../images/some-btn.svg") no-repeat center;
-    left: 0;
-    top: -3px;
     width: 24px;
     height: 24px;
+}
+.leader:hover .top-leader{
+    display: block;
+    transition: .3s;
 }
 .add-student-sortable{
     padding: 15px 16px;
@@ -1369,8 +1381,11 @@ input.masked{
     width: 24px;
     height: 24px;
 }
+.add-student:before{
+    top: 11px;
+}
 .add-student{
-    padding-left: 52px;
+    padding-left: 47px;
 }
 .add-student-sortable{
     position: relative;
@@ -1422,7 +1437,7 @@ input.masked{
     display: flex;
 }
 .dots-table .class-delete{
-    right: -85px;
+    right: -82px;
     top: -46px;
 }
 .card-class:hover{
@@ -1966,7 +1981,7 @@ input.masked{
     vertical-align: middle;
 }
 .row-title{
-    width: 30px !important;
+    width: 3.4% !important;
     padding: 17px 5px !important;
     text-align: center;
     font-style: normal;
@@ -1980,6 +1995,8 @@ input.masked{
     width: 20.2%;
     line-height: 19px;
     padding-right: 18px !important;
+    font-family: 'Roboto';
+    font-size: 16px;
 }
 .date-birthday{
     padding-left: 27px;
@@ -2021,12 +2038,6 @@ input.masked{
     letter-spacing: 0.05em;
     color: #B3B3B3;
     line-height: 24px;
-}
-.not-used,
-.used,
-.used-email,
-.used-solely{
-    margin-bottom: 8px;
 }
 .title-code{
     max-width: 264px;
@@ -2174,6 +2185,9 @@ input.masked{
 }
 .top-leader{
     top: 30px;
+    width: 131px;
+    padding: 10px;
+    left: -44px;
 }
 .open-hint-male{
     display: block;
@@ -2188,7 +2202,9 @@ input.masked{
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-
+}
+.border-top-none{
+    border-top: none !important;
 }
 .hint-male:before,
 .birthday-width:before{
@@ -2508,8 +2524,7 @@ input.masked{
 .row-none-info{
     border-top: 2px dashed #D9D9D9 !important;
     border-bottom: 2px dashed #D9D9D9 !important;
-    height: 64px;
-    background: #E5E5E5;
+    height: 65px;
 }
 .left-dashed{
     border-left: 2px dashed #D9D9D9 !important;
@@ -2523,7 +2538,7 @@ input.masked{
 }
 .none-info-table th,
 .none-info-table td{
-    background: #E5E5E5;
+    background: #F2F2F2;
     padding: 10px 0 !important;
 }
 .border-active-drop th,
