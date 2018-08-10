@@ -110,7 +110,7 @@ $(document).ready(function () {
 
 
     $('.tree-dots').click(function () {
-        $(this)
+        $(this).addClass('class-delete-active')
             .parent()
             .find('.class-delete')
             .addClass('class-delete-active');
@@ -118,6 +118,7 @@ $(document).ready(function () {
 
     $('.class-delete').on('click', function () {
         $(this).removeClass('class-delete-active');
+        $('.tree-dots').removeClass('class-delete-active');
     });
     $(document).mouseup(function (e) {
         if (jQuery(e.target).closest(".class-delete").length > 0) {
@@ -125,6 +126,7 @@ $(document).ready(function () {
         }
 
         else $(".class-delete").removeClass('class-delete-active');
+        $('.tree-dots').removeClass('class-delete-active');
         clickCount = 1;
     });
 
@@ -234,6 +236,9 @@ $(document).ready(function () {
         else {
             $('.drop-down-add-new-class').removeClass('active-class-block');
         }
+    });
+    $('.drop-down-add-new-class').click(function (e) {
+        e.stopPropagation();
     });
 
     $('.search-btn').on('click', function () {

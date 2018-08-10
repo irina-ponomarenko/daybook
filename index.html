@@ -58,7 +58,7 @@
             <p>Оберіть роль, яку ви граєте в навчальному процесі.</p>
         </div>
         <div class="card-deck deck-width">
-            <div class="card card-width teacher_open">
+            <div class="card card-width teacher_open border-none">
                 <img class="img-card" src="images/image-card.svg"/>
                 <div class="card-body">
                     <h3 class="action-title">
@@ -69,7 +69,7 @@
                         та можливості управління данними учнів.</p>
                 </div>
             </div>
-            <div class="card card-width parents_open">
+            <div class="card card-width parents_open border-none">
                 <img class="img-card" src="images/image-card-2.svg"/>
                 <div class="card-body">
                     <h3>
@@ -80,7 +80,7 @@
                         пряму участь в житті класу своєї дитини.</p>
                 </div>
             </div>
-            <div class="card card-width student_open">
+            <div class="card card-width student_open border-none">
                 <img class="img-card" src="images/image-card-3.svg"/>
                 <div class="card-body">
                     <h3>
@@ -89,7 +89,7 @@
                     <p class="card-text">Твій особистий онлайн щоденик.</p>
                 </div>
             </div>
-            <div class="card card-width user_open">
+            <div class="card card-width user_open border-none">
                 <img class="img-card" src="images/image-card-4.svg"/>
                 <div class="card-body">
                     <h3>
@@ -274,12 +274,13 @@
                 <h3>Особисті дані</h3>
                 <input type="text" id="name-teacher" placeholder="Ім'я"/>
                 <input type="text" id="surname-teacher" placeholder="Прізвище"/>
-                <input type="email" id="email-teacher" placeholder="Email"/>
+                <input type="email" id="email-teacher" class="error-type" placeholder="Email"/>
+                <span class="wrong">Something is wrong</span>
             </div>
             <div class="user-data">
                 <h3>Безпека</h3>
-                <input type="text" id="password-teacher" placeholder="Пароль"/>
-                <input type="text" id="repeat-password-teacher" placeholder="Повторіть пароль"/>
+                <input type="password" id="password-teacher" placeholder="Пароль"/>
+                <input type="password" id="repeat-password-teacher" placeholder="Повторіть пароль"/>
             </div>
             <button type="submit" class="register">Зареєструватись</button>
             <div class="info-submit">
@@ -344,8 +345,8 @@
                         </div>
                         <div class="user-data">
                             <h3>Безпека</h3>
-                            <input type="text" id="password-parents" placeholder="Пароль"/>
-                            <input type="text" id="repeat-password-parents" placeholder="Повторіть пароль"/>
+                            <input type="password" id="password-parents" placeholder="Пароль"/>
+                            <input type="password" id="repeat-password-parents" placeholder="Повторіть пароль"/>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
                         <div class="info-submit">
@@ -411,8 +412,8 @@
                         </div>
                         <div class="user-data">
                             <h3>Безпека</h3>
-                            <input type="text" id="password-student" placeholder="Пароль"/>
-                            <input type="text" id="repeat-password-student" placeholder="Повторіть пароль"/>
+                            <input type="password" id="password-student" placeholder="Пароль"/>
+                            <input type="password" id="repeat-password-student" placeholder="Повторіть пароль"/>
                         </div>
                         <button type="submit" class="register">Зареєструватись</button>
                         <div class="info-submit">
@@ -448,8 +449,8 @@
             </div>
             <div class="user-data">
                 <h3>Безпека</h3>
-                <input type="text" id="password-user" placeholder="Пароль"/>
-                <input type="text" id="repeat-password-user" placeholder="Повторіть пароль"/>
+                <input type="password" id="password-user" placeholder="Пароль"/>
+                <input type="password" id="repeat-password-user" placeholder="Повторіть пароль"/>
             </div>
             <button type="submit" class="register">Зареєструватись</button>
             <div class="info-submit">
