@@ -183,7 +183,30 @@
                 </div>
                 <div class="redactor-table">
                     <button type="button" class="btn-redactor margin-right-10"></button>
-                    <button type="button" class="btn-setting"></button>
+                    <button type="button" class="btn-setting">
+                        <div class="drop-down-setting">
+                            <div  class="container-setting">
+                                <h4>Налаштування</h4>
+                                <div class="color-setting">
+                                    <h5>Колір балів</h5>
+                                    <div class="color-list">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings black-color" for="option-1">
+                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                            <span class="mdl-radio__label"></span>
+                                        </label>
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings red-color" for="option-2">
+                                            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1">
+                                            <span class="mdl-radio__label"></span>
+                                        </label>
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings blue-color" for="option-3">
+                                            <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1">
+                                            <span class="mdl-radio__label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="table-responsive-journal margin-top-20" id="wrapper">
@@ -1039,7 +1062,7 @@
                                               його можна буде переглянути нажавши на  карточку з поміткою</p>
                                       </div>
                                       <div class="container-note add-name-note">
-                                          <input type="text" name="name"  placeholder="Назва"/>
+                                          <input type="text" name="name" class="add-name-input" placeholder="Назва"/>
                                       </div>
                                       <div class="container-note add-button-note">
                                           <button type="button" class="btn-class cancel width-change-note">Скасувати</button>

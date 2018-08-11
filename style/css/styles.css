@@ -3435,12 +3435,86 @@ input.masked{
     background-position: center;
     border-radius: 4px;
     border: none;
-    cursor: pointer;
+    position: relative;
 }
 .btn-setting:hover{
     background-image: url("../../images/setting-hover.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+.drop-down-setting{
+    position: absolute;
+    background: #ffffff;
+    width: 440px;
+    right: 0;
+    z-index: 200;
+}
+.container-setting{
+    padding: 20px;
+}
+.settings .mdl-radio__outer-circle{
+    width: 20px;
+    height: 20px;
+}
+
+.black-color .mdl-radio__outer-circle{
+    border: 2px solid #262626;
+    background: #262626;
+}
+.red-color .mdl-radio__outer-circle {
+    border: 2px solid #E52222;
+    background: #E52222;
+}
+.blue-color .mdl-radio__outer-circle {
+    border: 2px solid #1A3EFF;
+    background: #1A3EFF;
+}
+.red-color.mdl-radio.is-checked .mdl-radio__outer-circle{
+    border: 2px solid #E52222;
+    background: transparent;
+}
+.blue-color.mdl-radio.is-checked .mdl-radio__outer-circle{
+    border: 2px solid #1A3EFF;
+    background: transparent;
+}
+.black-color.mdl-radio.is-checked .mdl-radio__outer-circle{
+    border: 2px solid #262626;
+    background: transparent;
+}
+.settings .mdl-radio__inner-circle{
+    width: 11px;
+    height: 11px;
+    top: 6.7px;
+    left: 5px;
+}
+.black-color .mdl-radio__inner-circle,
+.red-color .mdl-radio__inner-circle{
+    left: 4px;
+}
+.black-color .mdl-radio__inner-circle{
+    background: #262626;
+}
+.red-color .mdl-radio__inner-circle{
+    background: #E52222;
+}
+.blue-color .mdl-radio__inner-circle{
+    background: #1A3EFF;
+}
+.color-list{
+    display: flex;
+    align-items: center;
+}
+.color-list .settings{
+    margin-right: 5px;
+}
+.color-list .settings:last-child{
+    margin-right: 0;
+}
+.settings .mdl-radio__ripple-container{
+    top: -5px;
+    left: -8px;;
+    width: 35px;
+    height: 35px;
 }
 .margin-top-20{
     margin-top: 20px;
@@ -3464,9 +3538,11 @@ input.masked{
     table-layout: fixed;
     width: 100%;
     transform: rotate(180deg) scale(-1, 1);
+    background: #ffffff;
 }
 .table-journal thead{
     cursor: pointer;
+    background: #F2F2F2;
 }
 .width-col{
     width: 50px;
@@ -3492,15 +3568,11 @@ input.masked{
     letter-spacing: 0.05em;
     color: #262626;
 }
-.table-journal tbody th,
-.table-journal tbody tr{
-    background-color: #ffffff;
-}
+
 .table-journal tbody td{
     border-bottom: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
     cursor: pointer;
-    padding: 2px;
     height: 50px;
 }
 .table-journal tbody th{
@@ -3614,14 +3686,15 @@ input.masked{
     background-size: 17px;
     padding-left: 21px;
 }
-.add-note{
-position: relative;
-}
 .add-note-active{
+    position: relative;
+}
+.add-note-active:before{
+    content: '';
     position: absolute;
     left: 2px;
     right: 0;
-    bottom: -49px;
+    bottom: -64px;
     background: #D9D9D9;
     height: 48px;
     width: 46px;
@@ -3635,7 +3708,7 @@ position: relative;
     background-position: center;
     cursor: pointer;
 }
-.add-note-active:hover{
+.add-note-active:hover:before{
     background: #1A3EFF;
     background-image: url("../../images/plus-hover.svg");
     background-repeat: no-repeat;
@@ -3645,11 +3718,17 @@ position: relative;
 .drop-down-note{
     position: absolute;
     width: 440px;
-    bottom: 58px;
+    bottom: 0;
+    left: -201px;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     border-radius: 2px;
+    z-index: 100;
+    display: none;
+}
+.active-note{
+    display: block;
 }
 .drop-down-note:before{
     content: '';
@@ -3708,4 +3787,24 @@ position: relative;
 .active-row-table{
     background: #E6E6E6;
     border-bottom: 2px solid #F2F2F2 !important;
+}
+.text-center{
+    position: relative;
+    outline: 0;
+}
+#edit:focus{
+   border: none;
+    background: #E6E6E6;
+    outline: none;
+}
+.text-center input{
+    background: #E6E6E6;
+    width: 46px;
+    height: 46px;
+    border: none;
+    text-align: center;
+}
+.add-name-input{
+    width: 100% !important;
+    text-align: left !important;
 }
