@@ -3436,6 +3436,10 @@ input.masked{
     border-radius: 4px;
     border: none;
     position: relative;
+    cursor: pointer;
+}
+.redactor-table{
+    display: flex;
 }
 .btn-setting:hover{
     background-image: url("../../images/setting-hover.svg");
@@ -3447,14 +3451,49 @@ input.masked{
     background: #ffffff;
     width: 440px;
     right: 0;
+    top: 65px;
     z-index: 200;
+    border-radius: 2px;
+    webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
+    display: none;
+}
+.active-setting{
+    display: block;
+}
+.container-setting:before{
+    content: '';
+    position: absolute;
+    background: url(../../images/white-hint.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    left: 93%;
 }
 .container-setting{
     padding: 20px;
+    border-bottom: 2px solid #F2F2F2;
+    position: relative;
+}
+.wrapper-btn{
+    padding: 20px;
+    display: flex;
+}
+.container-setting h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    text-align: left;
 }
 .settings .mdl-radio__outer-circle{
     width: 20px;
     height: 20px;
+    top: -10px;
 }
 
 .black-color .mdl-radio__outer-circle{
@@ -3484,12 +3523,8 @@ input.masked{
 .settings .mdl-radio__inner-circle{
     width: 11px;
     height: 11px;
-    top: 6.7px;
+    top: -5px;
     left: 5px;
-}
-.black-color .mdl-radio__inner-circle,
-.red-color .mdl-radio__inner-circle{
-    left: 4px;
 }
 .black-color .mdl-radio__inner-circle{
     background: #262626;
@@ -3499,6 +3534,13 @@ input.masked{
 }
 .blue-color .mdl-radio__inner-circle{
     background: #1A3EFF;
+}
+.color-setting,
+.hide-empty{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 .color-list{
     display: flex;
@@ -3511,8 +3553,8 @@ input.masked{
     margin-right: 0;
 }
 .settings .mdl-radio__ripple-container{
-    top: -5px;
-    left: -8px;;
+    top: -17px;
+    left: -7px;
     width: 35px;
     height: 35px;
 }

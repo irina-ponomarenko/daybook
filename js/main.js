@@ -243,6 +243,25 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    $('.btn-setting').click(function () {
+        $(this)
+            .parent()
+            .find('.drop-down-setting')
+            .toggleClass('active-setting');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-setting").length > 0) {
+            return false;
+        }
+        else {
+            $('.drop-down-setting').removeClass('active-setting');
+        }
+    });
+    $('.drop-down-setting').click(function (e) {
+        e.stopPropagation();
+    });
+
     $('.search-btn').on('click', function () {
         $('.search-header').toggleClass('open-search');
     });
