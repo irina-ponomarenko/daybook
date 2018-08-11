@@ -3846,6 +3846,20 @@ input.masked{
     border: none;
     text-align: center;
 }
+.table-journal td{
+    position: relative;
+}
+.table-journal td:hover::after{
+    content: '';
+    height: 46px;
+    top: 2px;
+    bottom: 2px;
+    left: -5000px;
+    position: absolute;
+    width: 10000px;
+    z-index: -1;
+    background-color: #EBEBEB;
+}
 .add-name-input{
     width: 100% !important;
     text-align: left !important;
