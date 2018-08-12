@@ -78,7 +78,7 @@
 <section class="content-wrapper-section class-wrapper">
     <nav class="nav-bar">
         <ul class="navigation">
-            <li class="nav-list active-nav-li">
+            <li class="nav-list active-nav-li journal-active">
                 <a href="" class="journal">
                     <span class="nav-span">Онлайн журнал</span>
                 </a>
@@ -182,7 +182,22 @@
                     </ul>
                 </div>
                 <div class="redactor-table">
-                    <button type="button" class="btn-redactor margin-right-10"></button>
+                    <div  class="btn-redactor margin-right-10">
+                        <div class="drop-down-redactor">
+                            <div class="container-redactor">
+                                <h4>Режим редагування таблиці</h4>
+                                <p class="info-redactor">Включивши режим, ви можете додавати
+                                    та видаляти колонки.</p>
+                                <div class="turn-on-mode">
+                                    <h5>Включити режим</h5>
+                                    <div class="row-switch">
+                                        <input type="checkbox" id="unchecked1" class="cbx hidden"/>
+                                        <label for="unchecked1" class="lbl"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="btn-setting">
                         <div class="drop-down-setting">
                             <div  class="container-setting">
@@ -273,7 +288,7 @@
                       <tbody>
                       <tr>
                           <th scope="row" class="title-journal-table width-col-num-40">1
-                              <div class="btn-"
+                              <div class="btn-book"></div>
                           </th>
                           <td class="name-student-table width-col-169">Безкоровайний В.</td>
                           <td class="text-center"></td>

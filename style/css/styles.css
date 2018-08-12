@@ -3420,6 +3420,7 @@ input.masked{
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 .btn-redactor:hover{
     background-image: url("../../images/pen-hover.svg");
@@ -3446,7 +3447,8 @@ input.masked{
     background-repeat: no-repeat;
     background-position: center;
 }
-.drop-down-setting{
+.drop-down-setting,
+.drop-down-redactor{
     position: absolute;
     background: #ffffff;
     width: 440px;
@@ -3458,6 +3460,14 @@ input.masked{
     -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     display: none;
+}
+.active-redactor{
+    display: block;
+}
+.btn-redactor-active{
+    background-image: url(../../images/pen-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .active-setting{
     display: block;
@@ -3471,7 +3481,17 @@ input.masked{
     top: -7px;
     left: 93%;
 }
-.container-setting{
+.container-redactor:before{
+    content: '';
+    position: absolute;
+    background: url(../../images/white-hint.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    left: 93%;
+}
+.container-setting,
+.container-redactor{
     padding: 20px;
     border-bottom: 2px solid #F2F2F2;
     position: relative;
@@ -3480,7 +3500,8 @@ input.masked{
     padding: 20px;
     display: flex;
 }
-.container-setting h4{
+.container-setting h4,
+.container-redactor h4{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -3490,12 +3511,27 @@ input.masked{
     color: #262626;
     text-align: left;
 }
+.info-redactor{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    margin: 10px 0 20px 0;
+}
 .settings .mdl-radio__outer-circle{
     width: 20px;
     height: 20px;
     top: -10px;
 }
-
+.turn-on-mode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 .black-color .mdl-radio__outer-circle{
     border: 2px solid #262626;
     background: #262626;
@@ -3863,4 +3899,33 @@ input.masked{
 .add-name-input{
     width: 100% !important;
     text-align: left !important;
+}
+.journal-active{
+    background: #E5E5E5;
+    transition: .3s;
+}
+.journal-active .journal{
+    background-image: url("../../images/journal-hover.svg");
+    background-repeat: no-repeat;
+}
+.title-journal-table{
+    position: relative;
+}
+.btn-book{
+    width: 16px;
+    height: 20px;
+    background: #EBEBEB;
+    background-image: url("../../images/book.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 28%;
+    left: 34%;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+}
+.btn-book:hover{
+    background-image: url("../../images/book-hover.svg");
+    background-repeat: no-repeat;
 }

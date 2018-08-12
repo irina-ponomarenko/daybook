@@ -262,6 +262,27 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    $('.btn-redactor').click(function () {
+        $(this)
+            .addClass('btn-redactor-active')
+            .parent()
+            .find('.drop-down-redactor')
+            .toggleClass('active-redactor');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-redactor").length > 0) {
+            return false;
+        }
+        else {
+            $('.drop-down-redactor').removeClass('active-redactor');
+            $('.btn-redactor').removeClass('btn-redactor-active');
+        }
+    });
+    $('.drop-down-redactor').click(function (e) {
+        e.stopPropagation();
+    });
+
     $('.search-btn').on('click', function () {
         $('.search-header').toggleClass('open-search');
     });
