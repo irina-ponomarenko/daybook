@@ -347,4 +347,14 @@ $(document).ready(function () {
             $('#edit').blur();
         }
     });
+
+    $('.table-journal td').hover( function() {
+        $(this).parent()
+            .find('.btn-book')
+            .addClass('btn-book-active');
+    }, function() {
+        $(this).parent()
+            .find('.btn-book')
+            .removeClass('btn-book-active');
+    });
 });
