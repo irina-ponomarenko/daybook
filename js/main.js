@@ -283,6 +283,27 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+    $('.add-new-column').click(function () {
+        $(this)
+            .addClass('btn-column-active')
+            .parent()
+            .find('.drop-down-add-column')
+            .toggleClass('active-column');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-column").length > 0) {
+            return false;
+        }
+        else {
+            $('.drop-down-add-column').removeClass('active-column');
+            $(this).removeClass('btn-column-active');
+        }
+    });
+    $('.drop-down-redactor').click(function (e) {
+        e.stopPropagation();
+    });
+
     $('.search-btn').on('click', function () {
         $('.search-header').toggleClass('open-search');
     });

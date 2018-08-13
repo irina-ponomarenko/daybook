@@ -191,7 +191,7 @@
                                 <div class="turn-on-mode">
                                     <h5>Включити режим</h5>
                                     <div class="row-switch">
-                                        <input type="checkbox" id="unchecked1" class="cbx hidden"/>
+                                        <input type="checkbox" id="unchecked1" class="cbx hidden" checked/>
                                         <label for="unchecked1" class="lbl"></label>
                                     </div>
                                 </div>
@@ -257,32 +257,488 @@
                   <table class="table-journal">
                       <thead>
                       <tr>
-                          <th scope="col" class="title-journal-table width-col-num-40">#</th>
-                          <th scope="col" class="title-journal-table width-col-169">Учень</th>
-                          <th scope="col" class="title-journal-table width-col">1.09</th>
-                          <th scope="col" class="title-journal-table width-col">2.09</th>
-                          <th scope="col" class="title-journal-table width-col">3.09</th>
-                          <th scope="col" class="title-journal-table width-col">4.09</th>
-                          <th scope="col" class="title-journal-table width-col">5.09</th>
-                          <th scope="col" class="title-journal-table width-col">8.09</th>
-                          <th scope="col" class="title-journal-table width-col">9.09</th>
-                          <th scope="col" class="title-journal-table width-col">10.09</th>
-                          <th scope="col" class="title-journal-table width-col">11.09</th>
-                          <th scope="col" class="title-journal-table width-col">12.09</th>
-                          <th scope="col" class="title-journal-table width-col">15.09</th>
-                          <th scope="col" class="title-journal-table width-col">16.09</th>
-                          <th scope="col" class="title-journal-table width-col">17.09</th>
-                          <th scope="col" class="title-journal-table width-col">18.09</th>
-                          <th scope="col" class="title-journal-table width-col">19.09</th>
-                          <th scope="col" class="title-journal-table width-col">22.09</th>
-                          <th scope="col" class="title-journal-table width-col">23.09</th>
-                          <th scope="col" class="title-journal-table width-col">24.09</th>
-                          <th scope="col" class="title-journal-table width-col">25.09</th>
-                          <th scope="col" class="title-journal-table width-col">26.09</th>
-                          <th scope="col" class="title-journal-table width-col">29.09</th>
-                          <th scope="col" class="title-journal-table width-col">30.09</th>
-                          <th scope="col" class="title-journal-table width-col">31.09</th>
-                          <th scope="col" class="title-journal-table width-col result-active">С.Б.</th>
+                          <th scope="col" class="title-journal-table width-col-num-40 padding-top-bottom">#</th>
+                          <th scope="col" class="title-journal-table width-col-169 add-column">Учень
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">1.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">2.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">3.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">4.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">5.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">8.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">9.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">10.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">11.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">12.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">15.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">16.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">17.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">18.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">19.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">22.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">23.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">24.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">25.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">26.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">29.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">30.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col add-column">31.09
+                              <div class="add-new-column">
+                                  <div class="wrapper-drop-down">
+                                      <div class="drop-down-add-column">
+                                          <div class="container-add-column hint-block">
+                                              <h4>Додати колонку</h4>
+                                              <p class="grey-text">Введіть коротку назву.
+                                                  Наприклад: С.Б. (Середній бал).</p>
+                                          </div>
+                                          <div class="container-add-column add-name-column">
+                                              <input type="text" name="name" class="add-name-input margin-bottom-none" placeholder="Назва"/>
+                                          </div>
+                                          <div class="container-add-column add-button-column">
+                                              <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                                              <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </th>
+                          <th scope="col" class="title-journal-table width-col result-active delete-column">С.Б.</th>
                       </tr>
                       </thead>
                       <tbody>
@@ -1214,7 +1670,12 @@
             </div>
         </div>
     </div>
-    <button type="button" class="questions"></button>
+    <div class="result-form result-table">
+        <p class="on-regime">Режим редагування таблиці включено</p>
+        <button type="submit" class="btn-class save-btn margin-right-10 hover-red">Виключити режим</button>
+        <button type="button" class="btn-class result-btn">Зберегти</button>
+    </div>
+    <button type="button" class="questions margin-bottom-40"></button>
 </section>
 <footer class="footer">
     <div class="top-footer">
@@ -1325,7 +1786,7 @@
             </div>
         </div>
     </div>
-    <div class="bottom-footer">
+    <div class="bottom-footer padding-bottom-80">
         <div class="container">
             <div class="wrapper-list-footer right-list">
                 <h3 class="phone-icon">Телефон</h3>
