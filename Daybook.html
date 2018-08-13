@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style/css/styles.css" rel="stylesheet"/>
+    <link href="style/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <div class="block-logo">
+        <h1></h1>
+        <div class="logo">
+            Лого
+        </div>
+        <form id="search-header" class="search-header">
+            <button type="button" class="search-btn"></button>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
+            <button type="button" class="close-search"></button>
+        </form>
+        <button type="button" class="nav-menu-btn"></button>
+    </div>
+    <div class="wrapper-nav-authorization">
+        <ul class="nav-menu">
+            <li class="nav-li">
+                <a href="">Меню один</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Меню два</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Маню три</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        <div class="wrapper-registered">
+            <div class="user-registered">
+                <div class="icon-user">
+                    <span>ІП</span>
+                </div>
+                <p class="name-surname">Ім’я Прізвище</p>
+                <button type="button" class="chevron-down"></button>
+                <div class="drop-down-user">
+                    <ul class="user-cabinet">
+                        <li>
+                            <a href="">Пункт один</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт два</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт три</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт чотири</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт п’ять</a>
+                        </li>
+                    </ul>
+                    <div class="sign-out">
+                        <span class="logout">Вийти з системи</span>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="purchase"></a>
+        </div>
+    </div>
+</header>
+<section class="content-wrapper-section class-wrapper">
+    <nav class="nav-bar">
+        <ul class="navigation">
+            <li class="nav-list active-nav-li journal-active">
+                <a href="" class="journal">
+                    <span class="nav-span">Онлайн журнал</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="class">
+                    <span class="nav-span">Клас</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="timetable">
+                    <span class="nav-span">Розклад</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="diary">
+                    <span class="nav-span">Щоденик</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="profile">
+                    <span class="nav-span">Профіль</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header-journal">
+            <div class="title-journal">
+                <h2>Щоденник</h2>
+                <span class="bull">&#8226;</span>
+                <h2>Левчук Олександ</h2>
+            </div>
+
+            <div class="add-new-information">
+                <div class="leader-class">
+                     <span class="leader">
+                            <div class="hint-male female-hint top-leader">
+                                <span>Класний керівник</span>
+                            </div>
+                        </span>
+                    <h4 class="leader-title">М.І.Шевчук</h4>
+                </div>
+                <div class="btn-setting">
+                    <div class="drop-down-setting">
+                        <div  class="container-setting">
+                            <h4>Налаштування</h4>
+                            <div class="color-setting">
+                                <h5>Колір балів</h5>
+                                <div class="color-list">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings black-color" for="option-1">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                        <span class="mdl-radio__label"></span>
+                                    </label>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings red-color" for="option-2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1">
+                                        <span class="mdl-radio__label"></span>
+                                    </label>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect settings blue-color" for="option-3">
+                                        <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1">
+                                        <span class="mdl-radio__label"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-btn">
+                            <button type="button" class="btn-class cancel width-change-note">Скасувати</button>
+                            <button type="button" class="btn-class save width-change-note">Зберегти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-class">
+            <div class="header-pagination margin-top-10">
+                <div class="pagination-pages">
+                    <ul>
+                        <li class="pagination-page active-page" data-num="1">
+                            <a href="">Вересень</a>
+                        </li>
+                        <li class="pagination-page" data-num="2">
+                            <a href="">Жовтень</a>
+                        </li>
+                        <li class="pagination-page" data-num="3">
+                            <a href="">Листопад</a>
+                        </li>
+                        <li class="pagination-ellipsis disabled">
+                            <a><span class="page-bull">&#8226;</span></a>
+                        </li>
+                        <li class="pagination-page" data-num="9">
+                            <a href="">Травень</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagination-number">
+                    <ul class="list-pagination">
+                        <li class="active-number">
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-table-daybook">
+            <table class="table-daybook">
+                <tbody>
+                <tr>
+                    <td rowspan="6" class="rotate-90 grey-title">Понеділок</td>
+                    <td>Математика</td>
+                    <td>Завдання 1, 2</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Алгебра</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Географія</th>
+                    <td>Параграф 1-2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Геометрія</th>
+                    <td>Завдання 40, 41, 44</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Етика</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="grey-title">Назва предмету</th>
+                    <th class="grey-title">Домашнє завдання або замітка</th>
+                    <th class="grey-title">the Bird</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button type="button" class="questions"></button>
+</section>
+<footer class="footer">
+    <div class="top-footer">
+        <div class="container">
+            <div class="info-footer">
+                <div class="logo-footer">
+                    Лого
+                </div>
+                <div class="text-info-footer">
+                    <p>Мудрые говорят, что Первая Война началась до того
+                        творение Арды было завершено, и прежде, появилось что-нибудь, что росло бы на почве земли или бродило.</p>
+                </div>
+            </div>
+            <ul class="social-icon">
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="center-footer">
+        <div class="container">
+            <div class="wrapper-list-footer">
+                <h3>Меню один</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Меню два</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Меню три</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Саб меню один</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню два</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню три</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню чотири</a>
+                    </li>
+                    <li>
+                        <a href="">Саб меню п’ять</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer">
+                <h3>Підтримка</h3>
+                <ul class="list-footer">
+                    <li>
+                        <a href="">Про Online Daybook</a>
+                    </li>
+                    <li>
+                        <a href="">Умови та Правила використання</a>
+                    </li>
+                    <li>
+                        <a href="">Поширені запитання</a>
+                    </li>
+                    <li>
+                        <a href="">Повідомити про помилку</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="wrapper-list-footer right-list">
+                <h3 class="phone-icon">Телефон</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>+38 060 234 6789</span>
+                    </li>
+                    <li>
+                        <span> +38 060 234 6789</span>
+                    </li>
+                    <li>
+                        <span>+38 060 234 6789</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer right-list">
+                <h3 class="email-icon">Email</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>Online Daybook@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-list-footer right-list">
+                <h3 class="address-icon">Адреса</h3>
+                <ul class="list-footer list-bottom">
+                    <li>
+                        <span>м. Київ, вул. Хрещатик, 12а</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-login" id="login">
+    <button type="button" class="close-modal login_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Вхід в систему</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-email" placeholder="Email"/>
+                <input type="password" id="login-password" placeholder="Пароль">
+                <a href="" class="info-alert">Забули пароль?</a>
+            </div>
+            <button type="submit" class="login-submit">Вхід</button>
+        </form>
+    </div>
+    <div class="options-login">
+        <div class="wrapper-option">
+            <a href="" class="not-registered">Не зареєстровані?</a>
+            <a href="" class="create-account">Створити акаунт</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
