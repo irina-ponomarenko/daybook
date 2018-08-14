@@ -1814,11 +1814,16 @@ input.masked{
     width: 100px;
     margin-right: 10px;
 }
-.wrapper-name-class-subject{
+.wrapper-name-class-subject,
+.type-school,
+.city{
     width: 200px;
     background-position: 90% 50%;
 }
-
+.type-school .custom-select .custom-select__option--value,
+.city .custom-select .custom-select__option--value{
+    background: #ffffff;
+}
 .gender-option{
     width: 140px;
 }
@@ -3412,6 +3417,13 @@ input.masked{
     justify-content: center;
     cursor: pointer;
 }
+.circle-list{
+    background-color: transparent !important;
+    width: 4px !important;
+    height: 4px !important;
+    margin-right: 8px !important;
+    margin-left: 8px;
+}
 .active-number{
     background-color: #ffffff !important;
 }
@@ -4219,4 +4231,20 @@ input.masked{
 }
 .add-task:hover .task-pen{
     display: block;
+}
+
+/*--------------------card0schol----------------*/
+.width-card-360{
+    max-width: 360px;
+    width: 100%;
+}
+.title-card{
+    font-family: 'Roboto', Arial;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #1A1A1A;
 }
