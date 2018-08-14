@@ -47,6 +47,15 @@ $(document).ready(function () {
         });
     });
 
+    $('.schools_open').on('click', function () {
+        $('#schools').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
     $(function () {
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -171,6 +180,7 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
+
     $('.sortable-new').click(function () {
         $(this)
             .parent()
@@ -188,6 +198,27 @@ $(document).ready(function () {
         }
 
         else $(".add-class-modal-sort").removeClass('add-sort-active');
+        clickCount = 1;
+    });
+
+
+    $('.exit').click(function () {
+        $(this)
+            .parent()
+            .find('.add-school-drop-down')
+            .addClass('active-school');
+    });
+
+    $('.cancel').on('click', function () {
+        $('.add-school-drop-down').removeClass('active-school');
+    });
+
+    $(document).mouseup(function (e) {
+        if (jQuery(e.target).closest(".add-school-drop-down").length > 0) {
+            return false;
+        }
+
+        else $(".add-school-drop-down").removeClass('active-school');
         clickCount = 1;
     });
 

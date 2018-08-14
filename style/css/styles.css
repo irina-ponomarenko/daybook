@@ -1202,7 +1202,7 @@ input.masked{
     position: fixed;
     top: 70px;
     background: white;
-    z-index: 10000000;
+    z-index: 100000;
     height: 100vh;
 }
 .class-wrapper{
@@ -1742,6 +1742,15 @@ input.masked{
     top: -7px;
     left: 84%;
 }
+.container-drop-down-school:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/white-hint.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    left: -7px;
+    top: 50%;
+}
 .add-student-modal:before{
     left: 88%;
 }
@@ -1759,7 +1768,8 @@ input.masked{
 .add-class-info{
     padding: 0 20px;
 }
-.add-class-info h4{
+.add-class-info h4,
+.container-drop-down-school h4{
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -4237,6 +4247,7 @@ input.masked{
 .width-card-360{
     max-width: 360px;
     width: 100%;
+    cursor: pointer;
 }
 .title-card{
     font-family: 'Roboto', Arial;
@@ -4247,4 +4258,262 @@ input.masked{
     text-align: center;
     letter-spacing: 0.05em;
     color: #1A1A1A;
+    margin-top: 20px;
+}
+.card-info-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.icon-text{
+    position: relative;
+}
+.icon-text{
+    background-image: url("../../images/string.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 20px;
+    margin-right: 15px;
+}
+.wrapper-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-name{
+    background-image: url("../../images/crown.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+.margin-top-15{
+    margin-top: 15px;
+}
+.list-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.list-people li{
+    margin-right: 40px;
+}
+.list-people li div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-people li:last-child{
+    margin-right: 0;
+}
+.title-circle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 10px;
+}
+.container-card{
+    display: flex;
+}
+.margin-right-30{
+    margin-right: 30px;
+}
+.card-body{
+    position: relative;
+}
+.height-body{
+    min-height: 378px;
+}
+.container-modal{
+    width: 1140px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+.icon-school{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-school imd{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.about-school{
+    max-width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-right: 2px solid #E5E5E5;
+}
+.about-school h2{
+    font-family: 'Roboto', Arial;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #1A1A1A;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+.exit{
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    padding: 15px 0 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #262626;
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 84px;
+}
+.exit:hover{
+    background-color: #1A3EFF;
+    color: #ffffff;
+    transition: .3s;
+}
+.body-school-info{
+    padding: 24px 35px 20px 34px;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+}
+.margin-top-60{
+    margin-top: 50px;
+}
+.container-modal{
+    display: flex;
+}
+.school-icon{
+    position: relative;
+    padding-left: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.modal-school{
+    display: none;
+    z-index: 100000;
+}
+.wrapper-exit{
+    position: relative;
+}
+.school-icon:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/base.svg") no-repeat;
+}
+.base-info-school{
+    margin-left: 93px;
+}
+.add-school-drop-down{
+    background: #ffffff;
+    position: absolute;
+    z-index: 160;
+    -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    left: 222px;
+    bottom: -92px;
+    display: none;
+}
+.active-school{
+    display: block;
+}
+.container-drop-down-school{
+    width: 658px;
+    padding: 20px;
+    border-bottom: 2px solid #F2F2F2;
+}
+.wrapper-btn-rules{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-end;
+}
+.list-rules{
+    padding-bottom: 20px;
+}
+.list-rules h5{
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.list-rules h5:before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 6px;
+    background-image: url("../../images/black-circle.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 4px;
+}
+.rules{
+    margin-left: 15px;
+}
+.rules li{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+.rules li:last-child{
+    margin-bottom: 0;
+}
+.rules li:before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-image: url(../../images/circle-transparent.svg);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 8px;
 }
