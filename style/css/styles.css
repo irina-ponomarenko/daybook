@@ -4150,6 +4150,11 @@ input.masked{
     background-repeat: no-repeat;
     background-position: center;
 }
+.add-column-new-ative{
+    background-image: url("../../images/plus-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .position-col{
     position: absolute;
     right: -50%;
