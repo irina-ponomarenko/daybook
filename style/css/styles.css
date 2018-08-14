@@ -4145,6 +4145,11 @@ input.masked{
     background-position: center;
     cursor: pointer;
 }
+.add-column-new:hover{
+    background-image: url("../../images/plus-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .position-col{
     position: absolute;
     right: -50%;
@@ -4175,4 +4180,38 @@ input.masked{
     background-color: #1A3EFF;
     color: #ffffff;
     transition: .3s;
+}
+.task{
+    display: flex;
+    align-items: center;
+}
+.task-pen{
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    background-image: url("../../images/pen.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+}
+.add-task{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.add-task:hover::after{
+    content: '';
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    position: absolute;
+    z-index: -1;
+    background-color: #EBEBEB;
+}
+.add-task:hover .task-pen{
+    display: block;
 }
