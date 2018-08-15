@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
-    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
     <link rel="stylesheet" href="material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
@@ -78,12 +78,12 @@
 <section class="content-wrapper-section class-wrapper">
     <nav class="nav-bar">
         <ul class="navigation">
-            <li class="nav-list active-nav-li journal-active">
+            <li class="nav-list active-nav-li">
                 <a href="" class="journal">
                     <span class="nav-span">Онлайн журнал</span>
                 </a>
             </li>
-            <li class="nav-list">
+            <li class="nav-list class-active">
                 <a href="" class="class">
                     <span class="nav-span">Клас</span>
                 </a>
@@ -113,19 +113,109 @@
 
             <div class="add-new-information">
                 <div class="city margin-right-10">
-                    <select class="name-school medium-select">
-                        <option>Місто</option>
-                        <option>Геометрія</option>
-                        <option>Правознавство</option>
-                        <option>Фізика</option>
+                    <select data-placeholder="Місто" class="chosen-select" tabindex="5">
+                        <option value=""></option>
+                        <optgroup label="А">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                        </optgroup>
+                        <optgroup label="В">
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                        </optgroup>
+                        <optgroup label="В">
+                            <option>Atlanta Falcons</option>
+                            <option>Carolina Panthers</option>
+                            <option>New Orleans Saints</option>
+                            <option>Tampa Bay Buccaneers</option>
+                        </optgroup>
+                        <optgroup label="Г">
+                            <option>Arizona Cardinals</option>
+                            <option>St. Louis Rams</option>
+                            <option>San Francisco 49ers</option>
+                            <option>Seattle Seahawks</option>
+                        </optgroup>
+                        <optgroup label="Д">
+                            <option>Buffalo Bills</option>
+                            <option>Miami Dolphins</option>
+                            <option>New England Patriots</option>
+                            <option>New York Jets</option>
+                        </optgroup>
+                        <optgroup label="Е">
+                            <option>Baltimore Ravens</option>
+                            <option>Cincinnati Bengals</option>
+                            <option>Cleveland Browns</option>
+                            <option>Pittsburgh Steelers</option>
+                        </optgroup>
+                        <optgroup label="Ж">
+                            <option>Houston Texans</option>
+                            <option>Indianapolis Colts</option>
+                            <option>Jacksonville Jaguars</option>
+                            <option>Tennessee Titans</option>
+                        </optgroup>
+                        <optgroup label="З">
+                            <option>Denver Broncos</option>
+                            <option>Kansas City Chiefs</option>
+                            <option>Oakland Raiders</option>
+                            <option>San Diego Chargers</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div class="type-school">
-                    <select class="name-school medium-select">
-                        <option>Тип школи</option>
-                        <option>Геометрія</option>
-                        <option>Правознавство</option>
-                        <option>Фізика</option>
+                    <select data-placeholder="Тип школи" class="chosen-select" tabindex="5">
+                        <option value=""></option>
+                        <optgroup label="А">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                        </optgroup>
+                        <optgroup label="В">
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                        </optgroup>
+                        <optgroup label="В">
+                            <option>Atlanta Falcons</option>
+                            <option>Carolina Panthers</option>
+                            <option>New Orleans Saints</option>
+                            <option>Tampa Bay Buccaneers</option>
+                        </optgroup>
+                        <optgroup label="Г">
+                            <option>Arizona Cardinals</option>
+                            <option>St. Louis Rams</option>
+                            <option>San Francisco 49ers</option>
+                            <option>Seattle Seahawks</option>
+                        </optgroup>
+                        <optgroup label="Д">
+                            <option>Buffalo Bills</option>
+                            <option>Miami Dolphins</option>
+                            <option>New England Patriots</option>
+                            <option>New York Jets</option>
+                        </optgroup>
+                        <optgroup label="Е">
+                            <option>Baltimore Ravens</option>
+                            <option>Cincinnati Bengals</option>
+                            <option>Cleveland Browns</option>
+                            <option>Pittsburgh Steelers</option>
+                        </optgroup>
+                        <optgroup label="Ж">
+                            <option>Houston Texans</option>
+                            <option>Indianapolis Colts</option>
+                            <option>Jacksonville Jaguars</option>
+                            <option>Tennessee Titans</option>
+                        </optgroup>
+                        <optgroup label="З">
+                            <option>Denver Broncos</option>
+                            <option>Kansas City Chiefs</option>
+                            <option>Oakland Raiders</option>
+                            <option>San Diego Chargers</option>
+                        </optgroup>
                     </select>
                 </div>
             </div>
@@ -187,7 +277,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360 margin-right-30">
+            <div class="card width-card-360 margin-right-30 schools15_open">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №15</h2>
@@ -218,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360">
+            <div class="card width-card-360 schools20_open">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №20</h2>
@@ -251,7 +341,7 @@
             </div>
         </div>
         <div class="container-card">
-            <div class="card width-card-360 margin-right-30 margin-top-30">
+            <div class="card width-card-360 schools69_open margin-right-30 margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="title-card margin-bottom-20">Школа №69</h2>
@@ -282,7 +372,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360 margin-right-30 margin-top-30">
+            <div class="card width-card-360 schools50_open margin-right-30 margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №50</h2>
@@ -313,7 +403,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360 margin-top-30">
+            <div class="card width-card-360 schools57_open margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №57</h2>
@@ -346,7 +436,7 @@
             </div>
         </div>
         <div class="container-card">
-            <div class="card width-card-360 margin-right-30 margin-top-30">
+            <div class="card width-card-360 schools25_open margin-right-30 margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="title-card margin-bottom-20">Школа №25</h2>
@@ -377,7 +467,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360 margin-right-30 margin-top-30">
+            <div class="card width-card-360 schools1_open margin-right-30 margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №1</h2>
@@ -408,7 +498,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card width-card-360 margin-top-30">
+            <div class="card width-card-360 schools2_open margin-top-30">
                 <img class="card-img-top" src="images/none-card.svg" alt="Card image cap">
                 <div class="card-body height-body">
                     <h2 class="title-card margin-bottom-20">Школа №2</h2>
@@ -656,6 +746,542 @@
     </div>
 </div>
 
+<div class="modal-school" id="schools15">
+    <button type="button" class="close-modal schools15_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №15</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools20">
+    <button type="button" class="close-modal schools20_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №20</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools69">
+    <button type="button" class="close-modal schools69_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №69</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools50">
+    <button type="button" class="close-modal schools50_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №50</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools57">
+    <button type="button" class="close-modal schools57_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №57</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools25">
+    <button type="button" class="close-modal schools25_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №25</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools1">
+    <button type="button" class="close-modal schools1_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №1</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-school" id="schools2">
+    <button type="button" class="close-modal schools2_close"></button>
+    <div class="container-modal">
+        <div class="about-school">
+            <div class="icon-school margin-top-60">
+                <img src="images/icon-school.svg" alt="icon school"/>
+            </div>
+            <h2>Школа №2</h2>
+            <div class="wrapper-exit">
+                <button type="button" class="exit">Приєднатися</button>
+                <div class="add-school-drop-down">
+                    <div class="container-drop-down-school">
+                        <h4 class="title-school-drop-down">Приєднатися до школи</h4>
+                        <p class="grey-text margin-top-20 margin-bottom-40">Феанор первым возроптал против них, они рассудили, что, хотя.</p>
+                        <h4>Правила та можливості</h4>
+                        <div class="list-rules">
+                            <h5>Назва списку</h5>
+                            <ul class="rules">
+                                <li>Деревьев, углубился в Нан Эльм.</li>
+                                <li>Чары поразили его, и бессчетные годы стояли они так.</li>
+                                <li>В последующие дни Эльвэ стал прославленным вождем.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn-rules">
+                        <button type="button" class="btn-class cancel">Скасувати</button>
+                        <button type="button" class="btn-class save">Погоджуюсь</button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-school-info">
+                <div class="title-phrase">
+                    <h5>Сторінка в розробці</h5>
+                    <div class="loader"></div>
+                </div>
+                <p class="phrase-text text-center">
+                    Персональна сторінка Школи,
+                    знаходиться в розробці.
+                    У найближчий час ми додамо:
+                    Про школу, публікації, заходи.
+                </p>
+            </div>
+        </div>
+        <div class="base-info-school">
+            <div class="personal margin-top-header">
+                <header class="header-teacher">
+                    <h3 class="school-icon">Базова інформація</h3>
+                </header>
+                <div class="contact-personal">
+                    <div class="wrapper-contact">
+                        <span>Особливість</span>
+                        <p>Школа з поглибленим вивченням англійської мови</p>
+                    </div>
+                </div>
+                <div class="wrapper-contact">
+                    <span>Адреса</span>
+                    <p>м. Київ, вулиця електриків, 2</p>
+                </div>
+                <div class="wrapper-contact margin-top-20">
+                    <span>Директор</span>
+                    <p>Богунів І.В.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal-login" id="login">
     <button type="button" class="close-modal login_close"></button>
     <div class="wrapper-form-login">
@@ -683,12 +1309,14 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-<script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/mask.js"></script>
 <script src="material/material.min.js"></script>
 <script src="js/jquery.jscrollpane.min.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/prism.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

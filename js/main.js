@@ -55,6 +55,70 @@ $(document).ready(function () {
             }
         });
     });
+    $('.schools15_open').on('click', function () {
+        $('#schools15').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools20_open').on('click', function () {
+        $('#schools20').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools69_open').on('click', function () {
+        $('#schools69').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools50_open').on('click', function () {
+        $('#schools50').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools57_open').on('click', function () {
+        $('#schools57').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools25_open').on('click', function () {
+        $('#schools25').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools1_open').on('click', function () {
+        $('#schools1').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+    $('.schools2_open').on('click', function () {
+        $('#schools2').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
 
     $(function () {
         var _gaq = _gaq || [];

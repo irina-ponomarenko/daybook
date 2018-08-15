@@ -1830,9 +1830,8 @@ input.masked{
     width: 200px;
     background-position: 90% 50%;
 }
-.type-school .custom-select .custom-select__option--value,
-.city .custom-select .custom-select__option--value{
-    background: #ffffff;
+.type-school .chosen-container {
+    width: 200px !important;
 }
 .gender-option{
     width: 140px;
@@ -4027,12 +4026,18 @@ input.masked{
     width: 100% !important;
     text-align: left !important;
 }
-.journal-active{
+.journal-active,
+.class-active{
     background: #E5E5E5;
     transition: .3s;
 }
 .journal-active .journal{
     background-image: url("../../images/journal-hover.svg");
+    background-repeat: no-repeat;
+}
+
+.class-active .class{
+    background-image: url("../../images/class-hover.svg");
     background-repeat: no-repeat;
 }
 .title-journal-table{
@@ -4483,7 +4488,7 @@ input.masked{
     content: '';
     position: absolute;
     width: 7px;
-    height: 6px;
+    height: 7px;
     background-image: url("../../images/black-circle.svg");
     background-repeat: no-repeat;
     left: 0;
