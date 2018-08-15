@@ -473,4 +473,6 @@ $(document).ready(function () {
             .find('.btn-book')
             .removeClass('btn-book-active');
     });
+
+    $(".chosen-select").chosen({disable_search_threshold: 10});
 });
