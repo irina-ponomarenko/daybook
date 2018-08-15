@@ -426,7 +426,6 @@ $(document).ready(function () {
         lookup: data
     });
 
-    $('select').customSelect();
 
     $('.class-delete').click(function () {
         $().toastmessage('showSuccessToast', "Клас видалено.");
@@ -440,31 +439,32 @@ $(document).ready(function () {
 
     $(function(){
         $('#wrapper').jScrollPane();
+        verticalGutter: 0
     });
 
 
-    $(function()	{
-        $('.text-center').click(function(e)	{
-            var t = e.target || e.srcElement;
-            var elm_name = t.tagName.toLowerCase();
-            if(elm_name == 'input')	{return false;}
-            var val = $(this).html();
-            var code = '<input type="text" id="edit" value="'+val+'" />';
-            $(this).empty().append(code);
-            $('#edit').focus();
-            $('#edit').blur(function()	{
-                var val = $(this).val();
-                $(this).parent().empty().html(val);
-            });
-        });
-    });
-    $(window).keydown(function(event){
-        if(event.keyCode == 13) {
-            $('#edit').blur();
-        }
-    });
+    // $(function()	{
+    //     $('.text-center').click(function(e)	{
+    //         var t = e.target || e.srcElement;
+    //         var elm_name = t.tagName.toLowerCase();
+    //         if(elm_name == 'input')	{return false;}
+    //         var val = $(this).html();
+    //         var code = '<input type="text" id="edit" value="'+val+'" />';
+    //         $(this).empty().append(code);
+    //         $('#edit').focus();
+    //         $('#edit').blur(function()	{
+    //             var val = $(this).val();
+    //             $(this).parent().empty().html(val);
+    //         });
+    //     });
+    // });
+    // $(window).keydown(function(event){
+    //     if(event.keyCode == 13) {
+    //         $('#edit').blur();
+    //     }
+    // });
 
-    $('.table-journal td').hover( function() {
+    $('.name-student-table').hover( function() {
         $(this).parent()
             .find('.btn-book')
             .addClass('btn-book-active');
@@ -475,4 +475,5 @@ $(document).ready(function () {
     });
 
     $(".chosen-select").chosen({disable_search_threshold: 10});
+    $("body").addClass("nohover");
 });

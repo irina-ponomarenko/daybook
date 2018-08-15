@@ -70,6 +70,8 @@
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
+  max-height: 190px;
+  overflow-y: auto;
 }
 /*hide the items when the select box is closed:*/
 .select-hide {

@@ -131,13 +131,20 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin-top: 70px;
 }
 .logo{
-    background: #F2F2F2;
+    background: transparent;
     width: 120px;
     padding: 16px 0;
     text-align: center;
     border-radius: 4px;
     background-size: contain;
     font-size: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    max-width: 120px;
 }
 .block-logo{
     display: flex;
@@ -521,11 +528,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .logo-footer{
     width: 160px;
     height: 60px;
-    background: #D9D9D9;
+    background: transparent;
     display: flex;
     font-size: 16px;
     justify-content: center;
     align-items: center;
+}
+.logo-footer img{
+    max-width: 160px;
 }
 .text-info-footer{
     margin-left: 35px;
@@ -3196,6 +3206,7 @@ input.masked{
     right: 0;
     width: 16px;
     height: 100%;
+    display: none;
 }
 
 .jspHorizontalBar
@@ -3962,10 +3973,6 @@ input.masked{
     border-bottom-right-radius: 2px;
     background-color: #D9D9D9;
 }
-.active-row-table{
-    background: #E6E6E6;
-    border-bottom: 2px solid #F2F2F2 !important;
-}
 .text-center{
     position: relative;
     outline: 0;
@@ -4008,8 +4015,18 @@ input.masked{
 .table-journal th{
     position: relative;
 }
-.table-journal td:hover::after,
-.table-journal th:hover::after{
+.width-col:not(:empty):hover::after{
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+    background-color: #EBEBEB;
+}
+.table-journal tbody th:hover::after,
+.name-student-table:hover::after{
     content: '';
     height: 46px;
     top: 2px;
@@ -4021,8 +4038,36 @@ input.masked{
     z-index: -1;
     background-color: #EBEBEB;
 }
-.table-journal th:hover .btn-book{
+.table-width tbody th:hover::after,
+.table-width .name-student-table:hover::after{
+    content: '';
+    height: 46px;
+    top: 2px;
+    bottom: 2px;
+    left: -5000px;
+    right: 0;
+    position: absolute;
+    width: 10000px;
+    z-index: -1;
+    background-color: #EBEBEB;
+}
+.text-center:hover::after{
+    content: '';
+    height: 46px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    position: absolute;
+    z-index: -1;
+    background-color: #EBEBEB;
+}
+.title-journal-table:hover .btn-book{
     display: block;
+}
+.border-top-active .wrapper-table{
+    width: 750px;
+    overflow-x: hidden;
 }
 .add-name-input{
     width: 100% !important;
@@ -4051,9 +4096,9 @@ input.masked{
 .table-width{
     max-width: 750px;
 }
-/*.border-top-active{*/
-    /*border-bottom: 2px solid #E5E5E5;*/
-/*}*/
+.border-top-active{
+    border-bottom: 2px solid #E5E5E5;
+}
 .add-column,
 .padding-top-bottom,
 .delete-column{
@@ -4530,4 +4575,7 @@ input.masked{
 }
 .width-131 .select-selected{
     width: 138px;
+}
+.width-131 .select-selected{
+    background-position: 85% 50%;
 }

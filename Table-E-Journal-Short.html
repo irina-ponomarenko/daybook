@@ -7,6 +7,7 @@
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
     <link rel="stylesheet" href="material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
@@ -17,7 +18,7 @@
     <div class="block-logo">
         <h1></h1>
         <div class="logo">
-            Лого
+            <img src="images/logo_black.png" alt="logo"/>
         </div>
         <form id="search-header" class="search-header">
             <button type="button" class="search-btn"></button>
@@ -121,27 +122,31 @@
                            <h3 class="margin-bottom-20">Оберіть клас</h3>
                            <div class="wrapper-variants">
                                <div class="wrapper-name-class">
-                                   <select class="name-class">
-                                       <option>1</option>
-                                       <option>2</option>
-                                       <option>3</option>
-                                       <option>4</option>
-                                       <option>5</option>
-                                       <option>6</option>
-                                       <option>7</option>
-                                       <option>8</option>
-                                       <option>9</option>
-                                       <option>10</option>
-                                       <option>11</option>
-                                   </select>
+                                   <div class="custom-select" style="width:100px;">
+                                       <select>
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                                           <option>5</option>
+                                           <option>6</option>
+                                           <option>7</option>
+                                           <option>8</option>
+                                           <option>9</option>
+                                           <option>10</option>
+                                           <option>11</option>
+                                       </select>
+                                   </div>
                                </div>
                                <div class="wrapper-name-class margin-right-none">
-                                   <select class="name-class">
-                                       <option>А</option>
-                                       <option>Б</option>
-                                       <option>В</option>
-                                       <option>Г</option>
-                                   </select>
+                                   <div class="custom-select" style="width:100px;">
+                                       <select>
+                                           <option>А</option>
+                                           <option>Б</option>
+                                           <option>В</option>
+                                           <option>Г</option>
+                                       </select>
+                                   </div>
                                </div>
                            </div>
                            <h3 class="margin-top-40">Я класний керівник</h3>
@@ -155,8 +160,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="add-new-subject">
-                    <span>Математика</span>
+                <div class="type-school">
+                    <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                        <option value=""></option>
+                        <optgroup label="А">
+                            <option>Англійська мова</option>
+                            <option>Алгебра</option>>
+                            <option>Астрономія</option>
+                        </optgroup>
+                        <optgroup label="Б">
+                            <option>Біологія</option>
+                            <option>Болгарська мова</option>
+                        </optgroup>
+                        <optgroup label="В">
+                            <option>Всесвітня історія</option>
+                        </optgroup>
+                        <optgroup label="Г">
+                            <option>Геометрія</option>
+                            <option>Географія</option>
+                            <option>Громадська освіта</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </header>
@@ -1221,7 +1245,7 @@
         <div class="container">
             <div class="info-footer">
                 <div class="logo-footer">
-                    Лого
+                    <img src="images/logo_black.png" alt="logo"/>
                 </div>
                 <div class="text-info-footer">
                     <p>Мудрые говорят, что Первая Война началась до того
@@ -1388,6 +1412,8 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/mask.js"></script>

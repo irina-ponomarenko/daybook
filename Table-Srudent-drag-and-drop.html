@@ -7,6 +7,7 @@
     <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
     <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
     <link rel="stylesheet" href="material/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="style/css/styles.css" rel="stylesheet"/>
@@ -17,7 +18,7 @@
     <div class="block-logo">
         <h1></h1>
         <div class="logo">
-            Лого
+            <img src="images/logo_black.png" alt="logo"/>
         </div>
         <form id="search-header" class="search-header">
             <button type="button" class="search-btn"></button>
@@ -153,11 +154,13 @@
                                     <input type="name" id="surname-student" class="surname-student" placeholder="Прізвище" value="" maxlength="20"/>
                                     <input type="name" id="name-student-input" class="name-student-input" placeholder="Імя" value="" maxlength="20"/>
                                     <div class="gender-option">
-                                        <select class="name-class">
-                                            <option>Стать</option>
-                                            <option>Чоловік</option>
-                                            <option>Жінка</option>
-                                        </select>
+                                        <div class="custom-select width-131">
+                                            <select>
+                                                <option>Стать</option>
+                                                <option>Чоловік</option>
+                                                <option>Жінка</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <button type="button" class="add-new-categories"></button>
                                 </div>
@@ -606,7 +609,7 @@
         <div class="container">
             <div class="info-footer">
                 <div class="logo-footer">
-                    Лого
+                    <img src="images/logo_black.png" alt="logo"/>
                 </div>
                 <div class="text-info-footer">
                     <p>Мудрые говорят, что Первая Война началась до того
@@ -773,6 +776,8 @@
 <script src="js/AddTabs.js"></script>
 <script type="text/javascript" src="js/jquery.mockjax.js"></script>
 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.custom-select.min.js"></script>
 <script src="js/jquery.toastmessage.js"></script>
 <script src="js/main.js"></script>
