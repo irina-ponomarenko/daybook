@@ -4051,9 +4051,9 @@ input.masked{
 .table-width{
     max-width: 750px;
 }
-.border-top-active{
-    border-bottom: 2px solid #E5E5E5;
-}
+/*.border-top-active{*/
+    /*border-bottom: 2px solid #E5E5E5;*/
+/*}*/
 .add-column,
 .padding-top-bottom,
 .delete-column{
