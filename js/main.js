@@ -111,6 +111,15 @@ $(document).ready(function () {
             }
         });
     });
+    $('.write_open').on('click', function () {
+        $('#write').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
     $('.schools2_open').on('click', function () {
         $('#schools2').popup({
             transition: 'all 0.3s',
@@ -375,6 +384,25 @@ $(document).ready(function () {
         }
     });
     $('.drop-down-redactor').click(function (e) {
+        e.stopPropagation();
+    });
+
+    $('.wrapper-question').click(function () {
+        $(this)
+            .parent()
+            .find('.wrapper-modal')
+            .toggleClass('active-question-modal');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-question-modal").length > 0) {
+            return false;
+        }
+        else {
+            $('.wrapper-modal').removeClass('active-question-modal');
+        }
+    });
+    $('.wrapper-modal').click(function (e) {
         e.stopPropagation();
     });
 

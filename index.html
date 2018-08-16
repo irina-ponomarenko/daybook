@@ -115,13 +115,15 @@
     </div>
     <div class="wrapper-question">
         <div class="questions">
-            <div class="modal-questions">
-                <ul class="modal-questions-list">
-                    <li>Написати в службу підтримки</li>
-                    <li>Повідомити про помилку</li>
-                    <li>Поширені запитання</li>
-                    <li>Запустити знайомство з сервісом</li>
-                </ul>
+            <div class="wrapper-modal">
+                <div class="modal-questions">
+                    <ul class="modal-questions-list">
+                        <li class="write_open">Написати в службу підтримки</li>
+                        <li>Повідомити про помилку</li>
+                        <li>Поширені запитання</li>
+                        <li>Запустити знайомство з сервісом</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -270,6 +272,27 @@
         </div>
     </div>
 </footer>
+
+<div class="modal-write-support" id="write">
+    <button type="button" class="close-modal write_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Написати в службу підтримки</h2>
+            <div class="modal-info">
+                <p>Якщо у вас виникли запитання чи побажання, ви можете написати
+                    в нашу службу підтримки, і ми з радістю вам відповімо</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support" placeholder="Email"/>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
 
 <div class="modal-teacher" id="teacher">
     <button type="button" class="close-modal teacher_close"></button>

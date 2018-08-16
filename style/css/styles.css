@@ -498,6 +498,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     position: fixed;
     right: 40px;
     bottom: 66px;
+    z-index: 100000;
 }
 .questions{
     border: none;
@@ -513,11 +514,30 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     position: relative;
 }
+.wrapper-modal{
+    left: -230px;
+    top: -185px;
+    position: absolute;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+.active-question-modal{
+    display: block;
+}
 .modal-questions{
     background: #FFFFFF;
     border-radius: 2px;
-    position: absolute;
     width: 320px;
+    position: relative;
+}
+.modal-questions:before{
+    content: '';
+    position: absolute;
+    background: url(../../images/white-hint.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    left: 81%;
+    bottom: -8px;
 }
 .modal-questions-list li{
     font-family: 'Roboto';
@@ -527,6 +547,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #262626;
+    white-space: nowrap;
+    padding: 12px 20px 10.5px;
+}
+.modal-questions-list li:hover{
+    color: #1A3EFF;
+    transition: .3s;
 }
 /*------------------footer-----------------*/
 .top-footer{
@@ -688,7 +714,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .modal-teacher,
 .modal-parents,
 .modal-student,
-.modal-user{
+.modal-user,
+.modal-write-support{
     display: none;
     max-width: 1140px;
     width: 100%;
@@ -703,6 +730,17 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .header-modal p{
     text-align: center;
     max-width: 348px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.modal-info p{
+    text-align: center;
+    max-width: 553px;
     margin: 0 auto;
     font-style: normal;
     font-weight: normal;
@@ -797,7 +835,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #B3B3B3;
 }
 .register,
-.login-submit{
+.login-submit,
+.send-message{
     width: 180px;
     padding: 15px 0;
     text-align: center;
@@ -845,7 +884,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .register:hover,
 .login-submit:hover,
-.more-open:hover{
+.more-open:hover,
+.send-message:hover{
     color: #FFFFFF;
     background: #1A3EFF;
     transition: .3s;
@@ -929,6 +969,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .modal-user .header-modal p{
     max-width: 440px;
 }
+.support{
+    max-width: 360px;
+    margin: 0 auto;
+}
 .addui-Tabs{
     max-width: 440px;
     margin: 0 auto;
@@ -1008,11 +1052,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .name-student-input,
 .surname-student{
     padding: 14px 20px 15px;
-    width: 200px;
     background: #F2F2F2;
     border: none;
     border-radius: 4px;
     outline: #1A3EFF;
+}
+.surname-student{
+    width: 200px;
 }
 .question-form{
     width: 20px;
@@ -2911,7 +2957,8 @@ input.masked{
     color: #B3B3B3;
 }
 .wrapper-input-field input,
-.wrapper-input-field textarea{
+.wrapper-input-field textarea,
+.support-text{
     padding: 14px 20px;
     font-style: normal;
     font-weight: normal;
@@ -2926,12 +2973,19 @@ input.masked{
     margin-bottom: 10px;
     width: 100%;
 }
+.support-text:focus{
+    border: 1px solid #1A3EFF;
+}
 .wrapper-input-field input::placeholder{
     color: #262626;
 }
-.wrapper-input-field textarea{
+.wrapper-input-field textarea,
+.support-text{
     min-height: 142px;
     resize: none;
+}
+.support-text{
+    min-height: 100px;
 }
 .wrapper-title{
     max-width: 38%;
@@ -4682,3 +4736,4 @@ input.masked{
     color: #1A3EFF;
 
 }
+
