@@ -458,6 +458,9 @@ $(document).ready(function () {
         }
     });
 
+    $('.drop-down-content').on('click', function () {
+        $(this).toggleClass('scale-content');
+    });
     let data = [
         'Історія україни',
         'Історія мистецтва',
@@ -499,5 +502,10 @@ $(document).ready(function () {
     });
 
     $(".chosen-select").chosen({disable_search_threshold: 10});
+
     $("body").addClass("nohover");
+
+    $('.close-block').click(function () {
+       $('.got-it-info').css('display', 'none');
+    });
 });

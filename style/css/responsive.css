@@ -88,3 +88,8 @@
         left: 0;
     }
 }
+@media (max-width: 300px) {
+    .tabs, .tabs li {
+        float: none;
+    }
+}
