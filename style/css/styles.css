@@ -4749,3 +4749,87 @@ input.masked{
 .true_open{
     display: none;
 }
+
+/*--------------------information-error---------------*/
+
+.inform{
+    width: 240px;
+    padding: 15px 0 14px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    border: none;
+    cursor: pointer;
+}
+.inform:hover{
+    -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
+.day{
+    background: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+.wrapper-renewal h4{
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.wrapper-renewal p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    text-align: left;
+    max-width: 940px;
+}
+.list-renewal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.list-renewal li{
+    list-style-type: disc;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+.sublist{
+    padding-top: 10px;
+}
+.sublist li{
+    list-style-type: circle;
+}
+.list-renewal li span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.list-renewal li:last-child{
+    margin-bottom: 0;
+}
+.color-marker-grey{
+    color: #B2B2B2;
+    text-align: left;
+}
