@@ -111,13 +111,29 @@ $(document).ready(function () {
             }
         });
     });
-    $('.write_open').on('click', function () {
-        $('#write').popup({
+
+    $('.true_open').on('click', function () {
+        $('#true').popup({
             transition: 'all 0.3s',
             scrolllock: true,
             onclose: function () {
             }
         });
+    });
+    $('.true1_open').on('click', function () {
+        $('#true1').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
+    $('.true_open-trigger').on('click', function() {
+        $('.true_open').trigger('click');
+    });
+    $('.true1_open-trigger').on('click', function() {
+        $('.true1_open').trigger('click');
     });
 
     $('.schools2_open').on('click', function () {
@@ -465,9 +481,10 @@ $(document).ready(function () {
 
 
 
-    $(function(){
-        $('#wrapper').jScrollPane();
-        verticalGutter: 0
+    $(function() {
+        $('#wrapper').jScrollPane({
+            verticalGutter: 0
+        });
     });
 
 

@@ -4641,6 +4641,16 @@ input.masked{
 .width-113 .custom-select{
     width: 113px;
 }
+.width-360{
+    width: auto;
+    margin-right: 0;
+}
+.width-360 .select-selected{
+    width: 360px;
+    margin-right: 0;
+    background-position: 94% 50%;
+    padding: 14px 20px 15px;
+}
 .width-131 .select-selected{
     width: 138px;
 }
@@ -4734,6 +4744,8 @@ input.masked{
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #1A3EFF;
-
 }
-
+.true_open,
+.true_open{
+    display: none;
+}
