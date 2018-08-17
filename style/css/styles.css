@@ -4909,6 +4909,31 @@ color: #262626;
     display: block;
     top: 0;
 }
+.toast-message{
+    width: 98px;
+    height: 48px;
+    padding: 10px;
+    background: #262626;
+    transform: rotate(180deg) scale(-1, 1);
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+    transition: .3s;
+}
+.toast-message p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+}
 .drop-down-content{
     padding: 30px 10px 31px;
     border-bottom: 2px solid #E5E5E5;

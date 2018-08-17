@@ -513,4 +513,9 @@ $(document).ready(function () {
     $('.close-block').click(function () {
         $('.got-it-info').css('display', 'none');
     });
+
+    $('.active-row-label').click(function () {
+        $(".toast-message").fadeIn(300);
+        $('.toast-message').fadeOut(2000);
+    });
 });
