@@ -187,7 +187,22 @@
             </div>
         </div>
     </div>
-    <button type="button" class="questions"></button>
+    <div class="wrapper-question">
+        <div class="questions">
+            <div class="wrapper-modal">
+                <div class="modal-questions">
+                    <ul class="modal-questions-list">
+                        <li class="true_open-trigger">Написати в службу підтримки</li>
+                        <li class="true1_open-trigger">Повідомити про помилку</li>
+                        <li>Поширені запитання</li>
+                        <li>Запустити знайомство з сервісом</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="true_open">1</button>
+    <button type="button" class="true1_open">1</button>
 </section>
 <footer class="footer">
     <div class="top-footer">
@@ -333,6 +348,60 @@
         </div>
     </div>
 </footer>
+
+<div class="modal-write-support" id="true">
+    <button type="button" class="close-modal true_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Написати в службу підтримки</h2>
+            <div class="modal-info">
+                <p>Якщо у вас виникли запитання чи побажання, ви можете написати
+                    в нашу службу підтримки, і ми з радістю вам відповімо</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support" placeholder="Email"/>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-write-support" id="true1">
+    <button type="button" class="close-modal true1_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Повідомити про помилку</h2>
+            <div class="modal-info">
+                <p>Якщо ви зауважили помилку, або маєте побажання та пропозиції
+                    для покращення роботи сервісу, будь ласка напишіть нам :Р</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support1" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support1" placeholder="Email"/>
+                <div class="wrapper-name-class width-360 margin-bottom-10">
+                    <div class="custom-select">
+                        <select>
+                            <option>Характер помилки</option>
+                            <option>Пункт один</option>
+                            <option>Пункт два</option>
+                            <option>Пункт три</option>
+                            <option>Пункт чотири</option>
+                            <option>Пункт п’ять</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
 
 <div class="modal-login" id="login">
     <button type="button" class="close-modal login_close"></button>

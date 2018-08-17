@@ -3974,17 +3974,18 @@ color: #262626;
     display: none;
     transform: translateX(-50%);
 }
-.drop-down-add-column{
+.wrapper-drop-down{
     position: absolute;
     width: 440px;
-    left: -215px;
-    top: 36px;
+    left: 0;
+    top: 88px;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     border-radius: 2px;
     z-index: 100;
     display: none;
+    transform: translateX(-50%);
 }
 
 .active-note,
@@ -4197,6 +4198,7 @@ color: #262626;
     right: -11px;
     bottom: 20px;
     cursor: pointer;
+    z-index: 10000;
 }
 .delete-column:before{
     content: '';
@@ -4914,11 +4916,10 @@ color: #262626;
     height: 48px;
     padding: 10px;
     background: #262626;
-    transform: rotate(180deg) scale(-1, 1);
     border-radius: 2px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 23.5%;
+    bottom: 0;
     z-index: 1;
     display: none;
     transition: .3s;
