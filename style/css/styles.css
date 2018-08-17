@@ -3464,10 +3464,9 @@ input.masked{
     position: relative;
 }
 .active-row-label{
-    position: absolute;
     left: 2px;
     right: 2px;
-    bottom: -49px;
+    top: 0;
     background: #D9D9D9;
     height: 48px;
     border-bottom-left-radius: 4px;
@@ -3483,10 +3482,8 @@ input.masked{
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
+    cursor: pointer;
 
-}
-.wrapper-table{
-    padding-top: 50px;
 }
 
 /*-----------------pagination-------------------*/
@@ -3779,9 +3776,27 @@ input.masked{
     cursor: pointer;
     background: #F2F2F2;
 }
-.width-col{
+.width-col,
+.footer-style{
     width: 50px;
     height: 50px;
+}
+.table-journal tfoot{
+    background: #F2F2F2;;
+}
+.table-journal tfoot th{
+    position: relative;
+    overflow-x: hidden;
+}
+.table-journal tfoot th:hover .add-note-active{
+    top: -44px;
+}
+.add-note-active:hover{
+    top: 0 !important;
+    transition: .3s;
+}
+.footer-style{
+    background: transparent;
 }
 .width-col-num-40{
     width: 40px;
@@ -3924,12 +3939,11 @@ input.masked{
 .add-note-active{
     position: relative;
 }
-.add-note-active:before{
-    content: '';
+.add-note-active{
     position: absolute;
     left: 2px;
     right: 2px;
-    bottom: -64px;
+    top: -48px;
     background: #D9D9D9;
     height: 48px;
     border-bottom-left-radius: 4px;
@@ -3941,14 +3955,9 @@ input.masked{
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    overflow: inherit;
 }
-.add-note-active:hover:before{
-    background: #1A3EFF;
-    background-image: url("../../images/plus-hover.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: .3s;
-}
+
 .wrapper-drop-down{
     position: relative;
 }
