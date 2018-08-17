@@ -345,10 +345,12 @@ $(document).ready(function () {
     });
 
     $('.add-note-active').click(function () {
-        $(this)
-            .parent()
-            .find('.drop-down-note')
-            .toggleClass('active-note');
+        $(this).addClass('visible');
+        $('#drop-down-note').toggleClass('active-note');
+        // $(this)
+        //     .parent()
+        //     .find('.drop-down-note')
+        //     .toggleClass('active-note');
     });
 
     $(document).mouseup(function (e) {
@@ -506,6 +508,6 @@ $(document).ready(function () {
     $("body").addClass("nohover");
 
     $('.close-block').click(function () {
-       $('.got-it-info').css('display', 'none');
+        $('.got-it-info').css('display', 'none');
     });
 });
