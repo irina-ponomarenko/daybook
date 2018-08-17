@@ -344,13 +344,15 @@ $(document).ready(function () {
         e.stopPropagation();
     });
 
-    $('.add-note-active').click(function () {
+    $('.add-note-active').click(function (event) {
+        const currentOffset = $(this).offset().left;
+        const parentOffset = $('#wrapper').offset().left;
+
         $(this).addClass('visible');
-        $('#drop-down-note').toggleClass('active-note');
-        // $(this)
-        //     .parent()
-        //     .find('.drop-down-note')
-        //     .toggleClass('active-note');
+
+        $('#drop-down-note')
+            .css({ left: currentOffset - parentOffset + $(this).width() / 2 - 5  })
+            .toggleClass('active-note');
     });
 
     $(document).mouseup(function (e) {
@@ -359,6 +361,7 @@ $(document).ready(function () {
         }
         else {
             $('.drop-down-note').removeClass('active-note');
+            $('.add-note-active').removeClass('visible');
         }
     });
     $('.drop-down-note').click(function (e) {

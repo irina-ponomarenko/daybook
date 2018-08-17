@@ -153,7 +153,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
 }
 .search-header{
-   display: flex;
+    display: flex;
     position: relative;
 }
 .search {
@@ -399,9 +399,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     transition: .3s;
 }
 .active-hover-menu .nav-list{
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /*--------------------content-registration-----------------*/
@@ -1122,8 +1122,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .popup_wrapper_visible,
 .popup_background{
     transition: all .25s !important;
-}
 
+}
 /*-----------------------login------------------------*/
 
 .wrapper-form-login{
@@ -1318,7 +1318,7 @@ input.masked{
 }
 .journal{
     background: url("../../images/journal.svg") no-repeat;
-     transition: .3s;
+    transition: .3s;
 }
 .journal:hover{
     background: url("../../images/journal-hover.svg") no-repeat;
@@ -1326,7 +1326,7 @@ input.masked{
 }
 .class{
     background: url("../../images/class.svg") no-repeat;
-     transition: .3s;
+    transition: .3s;
 }
 .class:hover{
     background: url("../../images/class-hover.svg") no-repeat;
@@ -1334,7 +1334,7 @@ input.masked{
 }
 .timetable{
     background: url("../../images/timetable.svg") no-repeat;
-     transition: .3s;
+    transition: .3s;
 }
 .timetable:hover{
     background: url("../../images/timetable-hover.svg") no-repeat;
@@ -1342,7 +1342,7 @@ input.masked{
 }
 .diary{
     background: url("../../images/diary.svg") no-repeat;
-     transition: .3s;
+    transition: .3s;
 }
 .diary:hover{
     background: url("../../images/diary-hover.svg") no-repeat;
@@ -1350,7 +1350,7 @@ input.masked{
 }
 .profile{
     background: url("../../images/profile.svg") no-repeat;
-     transition: .3s;
+    transition: .3s;
 }
 .profile:hover{
     background: url("../../images/profile-hover.svg") no-repeat;
@@ -1358,7 +1358,7 @@ input.masked{
 }
 .profile-active{
     background: #E5E5E5;
-     transition: .3s;
+    transition: .3s;
 }
 .profile-active .profile{
     background-image: url("../../images/profile-hover.svg");
@@ -2025,7 +2025,7 @@ input.masked{
     font-family: 'Roboto', Arial;
 }
 .no-active-title:before{
-   content: '';
+    content: '';
     background: url("../../images/chevron-left.svg") no-repeat center;
     position: absolute;
     left: 0;
@@ -2358,7 +2358,7 @@ input.masked{
 }
 
 .toast-item-close {
-   color: #FFFFFF;
+    color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
     border: none;
@@ -2785,15 +2785,15 @@ input.masked{
     padding-left: 30px;
 }
 .personal-info-title:before{
-     content: '';
-     position: absolute;
-     width: 17px;
-     height: 16px;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     background: url("../../images/profile.svg") no-repeat;
- }
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/profile.svg") no-repeat;
+}
 .school:before{
     content: '';
     position: absolute;
@@ -2829,7 +2829,7 @@ input.masked{
     line-height: normal;
     font-size: 16px;
     letter-spacing: 0.05em;/
-    color: #262626;
+color: #262626;
     margin-top: 10px;
 }
 .wrapper-contact p{
@@ -3499,7 +3499,7 @@ input.masked{
     background-color: #E5E5E5;
     border-radius: 2px;
     margin-right: 2px;
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -3547,7 +3547,7 @@ input.masked{
 }
 .page-bull{
     font-size: 14px;
-   color: #C4C4C4;
+    color: #C4C4C4;
     margin: 0 8px;
 }
 .header-pagination{
@@ -3964,14 +3964,15 @@ input.masked{
 .drop-down-note{
     position: absolute;
     width: 440px;
-    bottom: 0;
-    left: -201px;
+    bottom: 60px;
+    right: 0;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.21);
     border-radius: 2px;
     z-index: 100;
     display: none;
+    transform: translateX(-50%);
 }
 .drop-down-add-column{
     position: absolute;
@@ -4055,7 +4056,7 @@ input.masked{
     outline: 0;
 }
 #edit:focus{
-   border: none;
+    border: none;
     background: #E6E6E6;
     outline: none;
 }
@@ -4906,6 +4907,7 @@ input.masked{
 }
 .visible, .open_tab {
     display: block;
+    top: 0;
 }
 .drop-down-content{
     padding: 30px 10px 31px;
