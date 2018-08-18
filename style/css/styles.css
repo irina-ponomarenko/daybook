@@ -172,7 +172,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     outline: none;
 }
 
-.search-btn{
+.search-btn,
+.search-btn-responsive{
     width: 48px;
     height: 48px;
     border-radius: 4px;
@@ -185,6 +186,16 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background-size: 18px;
     border: none;
     margin-left: 10px;
+    background-position: 16px 50%;
+}
+.search-btn-responsive{
+    display: none;
+}
+.search-btn-responsive:focus{
+    background-color: #1A3EFF;
+    background-image: url("../../images/search-solid-hover.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
     background-position: 16px 50%;
 }
 .close-search{
@@ -264,6 +275,15 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.background-search{
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: none;
 }
 .nav-menu-btn{
     width: 48px;
@@ -4488,7 +4508,7 @@ color: #262626;
     align-items: center;
     justify-content: center;
 }
-.icon-school imd{
+.icon-school img{
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -4758,7 +4778,7 @@ color: #262626;
     color: #1A3EFF;
 }
 .true_open,
-.true_open{
+.true1_open{
     display: none;
 }
 

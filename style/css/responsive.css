@@ -56,15 +56,45 @@
     .nav-menu-btn{
         display: block;
     }
-    .nav-menu{
+    .nav-none{
         display: none;
+    }
+    .wrapper-nav{
+        position: relative;
+    }
+    .container-nav{
+        position: absolute;
+        left: -73px;
+        top: 61px;
+    }
+    .response-nav{
+        flex-direction: column;
+        position: relative;
+        background: #ffffff;
+        width: 200px;
+        height: 204px;
+        -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+    }
+    .response-nav:before{
+        content: '';
+        position: absolute;
+        background: url(../../images/white-hint.svg) no-repeat;
+        width: 15px;
+        height: 15px;
+        top: -7px;
+        left: 50%;
+    }
+    .response-nav li{
+        margin-right: 0;
+    }
+    .class-wrapper{
+        z-index: 1;
     }
     .wrapper-registered{
         margin-left: 10px;
-    }
-    .open-search {
-        max-width: 400px;
-        width: 100%;
     }
     .wrapper-nav-authorization{
         width: 50%;
@@ -86,6 +116,53 @@
         height: auto;
         right: 0;
         left: 0;
+    }
+    .questions{
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+    }
+    .wrapper-question{
+        right: 0;
+        bottom: 50%;
+    }
+    .search-header{
+        position: absolute;
+        bottom: -50px;
+        background: #ffffff;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .search-btn{
+        background: #FFFFFF;
+        background-image: url(../../images/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: 16px 50%;
+    }
+    .search-btn-responsive{
+        display: block;
+    }
+    .search-open-responsive{
+        display: flex;
+    }
+    .search-open-responsive .search{
+        display: block;
+        max-width: 100%;
+        background: transparent;
+    }
+    .search-open-responsive .close-search{
+        display: block;
+        background: transparent;
+        background-image: url(../../images/close-search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .autocomplete-suggestions{
+        left: 0;
+        box-shadow: none;
+        border-top: 2px solid #F2F2F2;
+        top: 48px;
     }
 }
 @media (max-width: 300px) {
