@@ -284,6 +284,7 @@ position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 1000;
 }
 .nav-menu-btn{
     width: 48px;
@@ -5138,6 +5139,9 @@ color: #262626;
 .neutral-click{
     background: url("../../images/neutral-smile-click.svg") no-repeat center;
 }
-.footer-768{
+.footer-922{
+    display: none;
+}
+.small-logo-img{
     display: none;
 }

@@ -18,17 +18,45 @@
     <div class="block-logo">
         <h1></h1>
         <div class="logo">
-            <img src="images/logo_black.png" alt="logo"/>
+            <img src="images/logo_black.png" class="big-logo" alt="logo"/>
+            <img src="images/small-logo.svg" class="small-logo-img" alt="small logo"/>
         </div>
+        <button type="button" class="search-btn-responsive"></button>
         <form id="search-header" class="search-header">
             <button type="button" class="search-btn"></button>
             <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
             <button type="button" class="close-search"></button>
         </form>
-        <button type="button" class="nav-menu-btn"></button>
+        <div class="wrapper-nav">
+            <button type="button" class="nav-menu-btn"></button>
+            <div class="container-nav">
+                <ul class="nav-menu response-nav">
+                    <li class="title-menu">Меню</li>
+                    <li class="nav-li">
+                        <a href="">Меню один</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Меню два</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню три</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню чотири</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Контакти</a>
+                    </li>
+                    <li class="response-768">
+                        <a href="">Перейти в маркет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <div class="wrapper-nav-authorization">
-        <ul class="nav-menu">
+        <ul class="nav-menu nav-none">
             <li class="nav-li">
                 <a href="">Меню один</a>
             </li>
@@ -297,7 +325,7 @@
             <button type="button" class="btn-class hover-red">Скасувати</button>
         </div>
     </form>
-
+    <div class="background-search"></div>
     <div class="wrapper-question">
         <div class="questions">
             <div class="wrapper-modal">
@@ -319,28 +347,33 @@
     <div class="top-footer">
         <div class="container">
             <div class="info-footer">
-                <div class="logo-footer">
+                <div class="logo-footer none-922">
                     <img src="images/logo_black.png" alt="logo"/>
                 </div>
-                <div class="text-info-footer">
+                <div class="text-info-footer ">
                     <p>Мудрые говорят, что Первая Война началась до того
                         творение Арды было завершено, и прежде, появилось что-нибудь, что росло бы на почве земли или бродило.</p>
                 </div>
             </div>
-            <ul class="social-icon">
-                <li>
-                    <a href="" target="_blank"></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"></a>
-                </li>
-            </ul>
+            <div class="wrapper-list-footer-icon">
+                <div class="logo-footer footer-922 margin-right-40">
+                    <img src="images/logo_black.png" alt="logo"/>
+                </div>
+                <ul class="social-icon">
+                    <li>
+                        <a href="" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="center-footer">
@@ -424,7 +457,7 @@
             </div>
         </div>
     </div>
-    <div class="bottom-footer padding-bottom-80">
+    <div class="bottom-footer">
         <div class="container">
             <div class="wrapper-list-footer right-list">
                 <h3 class="phone-icon">Телефон</h3>
