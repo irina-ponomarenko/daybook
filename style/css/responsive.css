@@ -44,15 +44,15 @@
         right: 0;
         bottom: -2px;
     }
-    .nav-list:hover:before{
-        content: '';
-        position: absolute;
-        height: 2px;
-        background: #B2B2B2;
-        left: 0;
-        right: 0;
-        bottom: -2px;
-    }
+    /*.nav-list:hover:before{*/
+        /*content: '';*/
+        /*position: absolute;*/
+        /*height: 2px;*/
+        /*background: #B2B2B2;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*bottom: -2px;*/
+    /*}*/
     .nav-list:last-child{
         margin-right: 0;
     }
