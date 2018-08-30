@@ -554,6 +554,13 @@ $(document).ready(function () {
         $(".toast-message").fadeIn(300);
         $('.toast-message').fadeOut(2000);
     });
+
+
+    
+    // -----------------оце знизу цей кусок коду-------------
+
+
+
     $('.nav-menu-btn').click(function () {
        $('.container-nav').toggleClass('open-menu');
     });
