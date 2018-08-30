@@ -528,6 +528,17 @@ $(document).ready(function () {
             $('.background-search').css('display', 'none');
         });
     }
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".search-open-responsive").length > 0 || $(e.target).hasClass('search-header')) {
+            return false;
+        }
+        else {
+            $('.search-header').removeClass('search-open-responsive');
+            $('.background-search').css('display', 'none');
+
+        }
+
+    });
 
     $(function() {
         $('#wrapper').jScrollPane({
@@ -585,4 +596,9 @@ $(document).ready(function () {
             $('.background-search').toggleClass('active-background-search');
         });
     }
+
+    $('.purchase').click(function () {
+        $('.basket-block').toggleClass('active-purchase');
+
+    })
 });
