@@ -231,6 +231,14 @@
     .chevron-down{
         margin: 0 16px;
     }
+    .menu-close-btn{
+        transition: .3s;
+        background: #1A3EFF;
+        background-image: url("../../images/close-menu.svg") !important;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 }
 
 @media only screen and (max-width: 768px) and (min-width: 360px) {
@@ -274,7 +282,8 @@
     .response-nav:before{
         display: none;
     }
-    .active-background-search{
+    .active-background-search,
+    .active-background-search2{
         display: block;
     }
     .purchase{

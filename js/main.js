@@ -468,6 +468,10 @@ $(document).ready(function () {
         }
 
     });
+    if ($(window).width() <= 768) {
+        $('.search-btn').attr('disabled',true);
+    }
+
 
     $('.drop-down-content').on('click', function () {
         $(this).toggleClass('scale-content');
@@ -556,31 +560,29 @@ $(document).ready(function () {
     });
 
 
-    
-    // -----------------оце знизу цей кусок коду-------------
-
-
 
     $('.nav-menu-btn').click(function () {
+        $(this).toggleClass('menu-close-btn');
        $('.container-nav').toggleClass('open-menu');
     });
     $(document).mouseup(function (e) {
-        if ($(e.target).closest(".open-menu").length > 0) {
+        if ($(e.target).closest(".open-menu").length > 0 || $(e.target).hasClass('nav-menu-btn')) {
             return false;
         }
         else {
             $('.container-nav').removeClass('open-menu');
-            $('.background-search').removeClass('active-background-search');
+            $('.background-search').removeClass('active-background-search2');
+            $('.nav-menu-btn').removeClass('menu-close-btn');
+
         }
 
     });
     if ($(window).width() <= 768) {
         $('.nav-menu-btn').click(function () {
-                $('.background-search').toggleClass('active-background-search');
+                $('.background-search').toggleClass('active-background-search2');
         });
         $('.user-registered').click(function () {
             $('.background-search').toggleClass('active-background-search');
         });
     }
-
 });

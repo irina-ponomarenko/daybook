@@ -307,13 +307,6 @@ position: absolute;
     background-repeat: no-repeat;
     background-position: center;
 }
-.nav-menu-btn:focus{
-    transition: .3s;
-    background: #1A3EFF;
-    background-image: url("../../images/close-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .nav-menu{
     display: flex;
     align-items: center;
