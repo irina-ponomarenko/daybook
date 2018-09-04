@@ -208,10 +208,10 @@
             <header class="header-class margin-bottom-30">
                 <ul class="title-class">
                     <li>
-                        <h3 class="no-active-title">Профіль</h3>
+                        <a href="" class="no-active-title">Профіль</a>
                     </li>
                     <li>
-                        <h3>Предмет та клас</h3>
+                        <a href="">Предмет та Клас</a>
                     </li>
                 </ul>
             </header>
@@ -222,12 +222,41 @@
                             <a href="">Навчальний заклад</a>
                         </li>
                         <li>
-                            <a href="">Предмет та клас</a>
+                            <a href="">Клас та предмет</a>
                         </li>
                     </ul>
                 </header>
                 <div class="wrapper-new-info">
-                    <div class="new-info">
+                    <div class="new-info change-width-info">
+                        <h3 class="title-new-info school">Навчальний заклад</h3>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                                <h3 class="label-input">Країна</h3>
+                            </div>
+                            <div class="wrapper-input-field">
+                                <input type="text" value="Україна"/>
+                            </div>
+                        </div>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                                <h3 class="label-input width-change-city">Місто або Населений пункт</h3>
+                            </div>
+                            <div class="wrapper-input-field">
+                                <input type="text" value="Львів"/>
+                            </div>
+                        </div>
+                        <div class="wrapper-input">
+                            <div class="wrapper-title">
+                                <h3 class="label-input">Навчальний заклад</h3>
+                            </div>
+                            <div class="wrapper-input-field">
+                                <input type="text" value="СЗШ №41"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-new-info">
+                    <div class="new-info padding-top-none change-width-info">
                         <h3 class="title-new-info class-and-subject">Клас та предмет</h3>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
@@ -345,31 +374,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="wrapper-new-info">
-                    <div class="new-info padding-top-none">
-                        <h3 class="title-new-info school">Навчальний заклад</h3>
+                <div class="wrapper-new-info padding-bottom-40">
+                    <div class="new-info padding-top-none change-width-info">
+                        <h3 class="title-new-info additionally">Додатково</h3>
                         <div class="wrapper-input">
                             <div class="wrapper-title">
-                                <h3 class="label-input">Країна</h3>
                             </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="Україна"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input width-change-city">Місто або Населений пункт</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="Львів"/>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                                <h3 class="label-input">Навчальний заклад</h3>
-                            </div>
-                            <div class="wrapper-input-field">
-                                <input type="text" value="СЗШ №41"/>
+                            <div class="wrapper-input-field margin-bottom-10">
+                                <div class="form-new-school">
+                                    <h3 class="title-new-info sub-title">Форма Підключення нової школи</h3>
+                                    <p class="new-school-info">Якщо школи, що вас цікавить немає в списку, ви можете подати
+                                        її на розгляд. <a href="" class="redactor-new-schools">Підключити школу</a>
+                                    </p>
+                                </div>
+                                <div class="form-new-school">
+                                    <h3 class="title-new-info sub-title">Форма Відв’язки від школи</h3>
+                                    <p class="new-school-info">Якщо з якихось причин, вам потрібно відв’язатись від
+                                        поточної школи, ви можете подати на це заявку. <a href="" class="redactor-new-schools">Відв’язатись від школи </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -382,6 +405,22 @@
         </div>
     </form>
     <div class="background-search"></div>
+    <div class="wrapper-open-teacher-block margin-bottom-40" id="swing">
+        <div class="bell-img swing">
+            <img src="images/bell.svg" alt="bell"/>
+        </div>
+        <div class="wrapper-open-teacher">
+            <div class="container-open-teacher">
+                <button type="button" class="open-teacher_close"></button>
+                <div class="text-open-teacher">
+                    <h2 class="title-open-teacher-h2">Ви не прив’язані до школи</h2>
+                    <p class="info-open-teacher">Прив’язка до одного з навчальних
+                        закладів є обов’язковим кроком.</p>
+                </div>
+                <a href="" class="choose-place">Обрати навчальний заклад</a>
+            </div>
+        </div>
+    </div>
     <div class="wrapper-question margin-bottom-40">
         <div class="questions">
             <div class="wrapper-modal">

@@ -59,6 +59,12 @@
     .header-class{
         margin-top: 40px;
     }
+    .wrapper-modal{
+        left: -271px;
+    }
+    .modal-questions:before{
+        left: 90%;
+    }
     .container-card-class h4{
         margin-top: 40px;
     }

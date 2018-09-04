@@ -38,6 +38,15 @@ $(document).ready(function () {
         });
     });
 
+    $('.login-reestablish_open').on('click', function () {
+        $('#login-reestablish').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
     $('.login_open').on('click', function () {
         $('#login').popup({
             transition: 'all 0.3s',
@@ -600,5 +609,13 @@ $(document).ready(function () {
     $('.purchase').click(function () {
         $('.basket-block').toggleClass('active-purchase');
 
-    })
+    });
+
+    $('.bell-img').click(function () {
+       $('.wrapper-open-teacher').addClass('open-teacher');
+    });
+
+    $('.open-teacher_close').click(function () {
+       $('.wrapper-open-teacher').removeClass('open-teacher');
+    });
 });
