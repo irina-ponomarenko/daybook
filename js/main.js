@@ -154,6 +154,15 @@ $(document).ready(function () {
         });
     });
 
+    $('.form_school_open').on('click', function () {
+        $('#form_school').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
     $(function () {
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -462,6 +471,27 @@ $(document).ready(function () {
     });
 
 
+    $('.redactor-new-schools').click(function (e) {
+        e.preventDefault();
+        $(this)
+            .parent()
+            .find('.unbind-wrapper')
+            .toggleClass('active-unbind');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".active-unbind").length > 0) {
+            return false;
+        }
+        else {
+            $('.unbind-wrapper').removeClass('active-unbind');
+        }
+    });
+    $('.unbind-wrapper').click(function (e) {
+        e.stopPropagation();
+    });
+
+
     $('.search-btn').on('click', function () {
         $('.search-header').toggleClass('open-search');
     });
@@ -500,6 +530,10 @@ $(document).ready(function () {
 
     $('.class-delete').click(function () {
         $().toastmessage('showSuccessToast', "Клас видалено.");
+    });
+
+    $('.unbind-yes').click(function () {
+        $().toastmessage('showToast', { type: 'success', text: "Заявка надіслана на перегляляд. Орієнтований час перегляду 24 години", closeText: '' });
     });
 
     $('.copy-text').click(function (){
@@ -617,5 +651,16 @@ $(document).ready(function () {
 
     $('.open-teacher_close').click(function () {
        $('.wrapper-open-teacher').removeClass('open-teacher');
+    });
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".open-teacher").length > 0) {
+            return false;
+        }
+        else {
+            $('.wrapper-open-teacher').removeClass('open-teacher');
+        }
+    });
+    $('.wrapper-open-teacher').click(function (e) {
+        e.stopPropagation();
     });
 });

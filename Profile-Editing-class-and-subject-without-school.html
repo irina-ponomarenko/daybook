@@ -234,7 +234,7 @@
                                 <h3 class="label-input">Країна</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="Україна"/>
+                                <input type="text" value=""/>
                             </div>
                         </div>
                         <div class="wrapper-input">
@@ -242,7 +242,7 @@
                                 <h3 class="label-input width-change-city">Місто або Населений пункт</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="Львів"/>
+                                <input type="text" value=""/>
                             </div>
                         </div>
                         <div class="wrapper-input">
@@ -250,7 +250,7 @@
                                 <h3 class="label-input">Навчальний заклад</h3>
                             </div>
                             <div class="wrapper-input-field">
-                                <input type="text" value="СЗШ №41"/>
+                                <input type="text" value=""/>
                             </div>
                         </div>
                     </div>
@@ -263,9 +263,10 @@
                                 <h3 class="label-input width-change">Додайте клас та виберіть для нього урок</h3>
                             </div>
                             <div class="wrapper-input-field">
+                                <p class="unavailable-text"><span>Недоступно.</span>Спочатку оберіть навчальний заклад.</p>
                                 <div class="wrapper-variants">
                                     <div class="wrapper-name-select width-113">
-                                        <div class="custom-select">
+                                        <div class="custom-select disabled">
                                             <select>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -282,8 +283,8 @@
                                         </div>
                                     </div>
                                     <div class="wrapper-name-select width-113">
-                                        <div class="custom-select">
-                                            <select>
+                                        <div class="custom-select disabled">
+                                            <select disabled>
                                                 <option>А</option>
                                                 <option>Б</option>
                                                 <option>В</option>
@@ -292,7 +293,7 @@
                                         </div>
                                     </div>
                                     <div class="wrapper-name-class-subject">
-                                        <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                        <select data-placeholder="Алгебра" class="chosen-select" tabindex="5" disabled>
                                             <option value=""></option>
                                             <optgroup label="А">
                                                 <option>Англійська мова</option>
@@ -313,62 +314,7 @@
                                             </optgroup>
                                         </select>
                                     </div>
-                                    <button type="button" class="add-new-categories"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="title-new-info add-title-class">Додані класи</h3>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                            </div>
-                            <div class="wrapper-input-field margin-bottom-10">
-                                <div class="wrapper-variants">
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="10" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="А" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-class-subject">
-                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Алгебра" disabled/>
-                                    </div>
-                                    <button type="button" class="delete-categories"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                            </div>
-                            <div class="wrapper-input-field margin-bottom-10">
-                                <div class="wrapper-variants">
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="8" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="Б" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-class-subject">
-                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Геометрія" disabled/>
-                                    </div>
-                                    <button type="button" class="delete-categories"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrapper-input">
-                            <div class="wrapper-title">
-                            </div>
-                            <div class="wrapper-input-field margin-bottom-10">
-                                <div class="wrapper-variants">
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="6" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-select">
-                                        <input type="text" class="added-name-class margin-bottom-none" value="Г" disabled/>
-                                    </div>
-                                    <div class="wrapper-name-class-subject">
-                                        <input type="text"  class="added-name-class margin-bottom-none medium-select" value="Математика" disabled/>
-                                    </div>
-                                    <button type="button" class="delete-categories "></button>
+                                    <button type="button" class="add-new-categories disabled" disabled></button>
                                 </div>
                             </div>
                         </div>
@@ -384,28 +330,14 @@
                                 <div class="form-new-school">
                                     <h3 class="title-new-info sub-title">Форма Підключення нової школи</h3>
                                     <p class="new-school-info">Якщо школи, що вас цікавить немає в списку, ви можете подати
-                                        її на розгляд. <a href="" class="redactor-new-schools form_school_open">Підключити школу</a>
+                                        її на розгляд. <a href="" class="redactor-new-schools">Підключити школу</a>
                                     </p>
                                 </div>
                                 <div class="form-new-school">
                                     <h3 class="title-new-info sub-title">Форма Відв’язки від школи</h3>
                                     <p class="new-school-info">Якщо з якихось причин, вам потрібно відв’язатись від
-                                        поточної школи, ви можете подати на це заявку.
+                                        поточної школи, ви можете подати на це заявку. <a href="" class="redactor-new-schools">Відв’язатись від школи </a>
                                     </p>
-                                    <span class="redactor-new-schools">Відв’язатись від школи
-                                        <div class="unbind-wrapper">
-                                            <div class="unbind-container">
-                                                <div class="container-unbind-text">
-                                                    <h3 class="unbind-title">Відв’язатись від школи</h3>
-                                                    <p class="unbind-text">Подати заявку можна не частіше 3 раз на день.</p>
-                                                </div>
-                                                <div class="unbind-btn">
-                                                    <button type="button" class="unbind-cancel">Скасуватим</button>
-                                                    <button type="button" class="unbind-yes">Так, відв’язатись</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -415,6 +347,22 @@
         </div>
     </form>
     <div class="background-search"></div>
+    <div class="wrapper-open-teacher-block" id="swing">
+        <div class="bell-img swing">
+            <img src="images/bell.svg" alt="bell"/>
+        </div>
+        <div class="wrapper-open-teacher">
+            <div class="container-open-teacher">
+                <button type="button" class="open-teacher_close"></button>
+                <div class="text-open-teacher">
+                    <h2 class="title-open-teacher-h2">Ви не прив’язані до школи</h2>
+                    <p class="info-open-teacher">Прив’язка до одного з навчальних
+                        закладів є обов’язковим кроком.</p>
+                </div>
+                <a href="" class="choose-place">Обрати навчальний заклад</a>
+            </div>
+        </div>
+    </div>
     <div class="wrapper-question">
         <div class="questions">
             <div class="wrapper-modal">
@@ -657,31 +605,6 @@
     </div>
 </div>
 
-<div class="modal-new-school" id="form_school">
-    <button type="button" class="close-modal form_school_close"></button>
-    <div class="container margin-top-none">
-        <header class="header-modal">
-            <h2>Форма Підключення нової школи</h2>
-        </header>
-        <form class="parents-form school-data" id="normal-registered-user">
-            <div class="user-data">
-                <h3 class="contact-data">Ваші контактні дані для зворотнього зв’язку</h3>
-                <input type="text" id="name-user" placeholder="Ім'я"/>
-                <input type="text" id="surname-user" placeholder="Прізвище"/>
-                <input type="email" id="email-user" placeholder="Email"/>
-            </div>
-            <div class="user-data">
-                <h3>Дані про школу</h3>
-                <input type="text" id="country-school" placeholder="Країна"/>
-                <input type="text" id="town" placeholder="Місто або населений пункт"/>
-                <input type="text" id="name-school" placeholder="Назва школи"/>
-                <input type="text" id="address-school" placeholder="Адреса"/>
-                <input type="text" id="info" placeholder="Додаткова інформація"/>
-            </div>
-            <button type="submit" class="send-form">Надіслати</button>
-        </form>
-    </div>
-</div>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap_4.1.1/js/bootstrap.js"></script>
 <script src="js/jquery.popupoverlay.js"></script>

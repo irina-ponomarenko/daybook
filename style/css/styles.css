@@ -892,7 +892,8 @@ position: absolute;
 .modal-parents,
 .modal-student,
 .modal-user,
-.modal-write-support{
+.modal-write-support,
+.modal-new-school{
     display: none;
     max-width: 1140px;
     width: 100%;
@@ -1014,7 +1015,8 @@ position: absolute;
 .register,
 .login-submit,
 .send-message,
-.login-reestablish{
+.login-reestablish,
+.send-form{
     width: 180px;
     padding: 15px 0;
     text-align: center;
@@ -1055,7 +1057,8 @@ position: absolute;
 }
 .register:focus,
 .login-submit:focus,
-.login-reestablish:focus{
+.login-reestablish:focus,
+.send-form:focus{
     outline: none;
 }
 .login-submit{
@@ -1065,7 +1068,8 @@ position: absolute;
 .login-submit:hover,
 .more-open:hover,
 .send-message:hover,
-.login-reestablish:hover{
+.login-reestablish:hover,
+.send-form:hover{
     color: #FFFFFF;
     background: #1A3EFF;
     transition: .3s;
@@ -1202,7 +1206,8 @@ position: absolute;
 }
 .parents-form,
 .student-form,
-.user-form{
+.user-form,
+.school-form{
     margin: 0 auto;
     margin-top: 60px;
     max-width: 360px;
@@ -1210,7 +1215,8 @@ position: absolute;
 }
 .parents-form h3,
 .student-form h3,
-.user-form h3{
+.user-form h3,
+.school-form h3{
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -1239,7 +1245,8 @@ position: absolute;
 .student-form input,
 .usert-form input,
 .name-student-input,
-.surname-student{
+.surname-student,
+.school-form input{
     padding: 14px 20px 15px;
     background: #F2F2F2;
     border: none;
@@ -1273,7 +1280,8 @@ position: absolute;
 }
 .parents-date,
 .student-date,
-.user-date{
+.user-date,
+.school-data{
     position: relative;
 }
 .hint{
@@ -2521,15 +2529,13 @@ input.masked{
 /*-----------------alerts------------------*/
 
 .toast-container {
-    width: 440px;
+    width: 661px;
     z-index: 9999;
 }
-
 
 * html .toast-container {
     position: absolute;
 }
-
 .toast-item {
     height: auto;
     -moz-border-radius: 5px;
@@ -2545,13 +2551,13 @@ input.masked{
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
-    max-width: 440px;
+    max-width: 661px;
     width: 100%;
     z-index: 999;
 }
 
 .toast-item p {
-    max-width: 440px;
+    max-width: 661px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Roboto';
@@ -3307,12 +3313,93 @@ color: #262626;
     font-size: 16px;
     letter-spacing: 0.05em;
     color: #262626;
+    cursor: pointer;
 }
 .new-school-info{
     max-width: 555px;
+    cursor: default;
 }
 .redactor-new-schools{
+    display: inline-block;
     color: #1A3EFF;
+    position: relative;
+}
+.unbind-wrapper{
+    position: absolute;
+    top: -189px;
+    left: -65%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    width: 440px;
+    border-radius: 2px;
+    display: none;
+}
+.unbind-container{
+    position: relative;
+}
+.unbind-container:before{
+    content: '';
+    position: absolute;
+    background: url(../../images/white-hint.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    bottom: -8px;
+}
+.active-unbind{
+    display: block;
+}
+.container-unbind-text,
+.unbind-btn{
+    padding: 20px;
+}
+.unbind-btn button{
+    width: 195px;
+    padding: 15px 0 14px;
+    border: none;
+    background-color: #D9D9D9;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #262626;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.unbind-cancel:hover{
+    transition: .3s;
+    background-color: #E52222;
+    color: #ffffff;
+}
+.unbind-yes:hover{
+    transition: .3s;
+    background-color: #1A3EFF;
+    color: #ffffff;
+}
+.container-unbind-text{
+    border-bottom: 2px solid #F2F2F2;
+}
+.unbind-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.unbind-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #B3B3B3;
+    margin-top: 10px;
 }
 .form-new-school{
     margin-bottom: 60px;
@@ -3777,7 +3864,6 @@ color: #262626;
     margin-right: 0;
 }
 .pagination-page{
-    padding: 6px 0;
     width: 100px;
     background: #E5E5E5;
     text-align: center;
@@ -3797,6 +3883,9 @@ color: #262626;
     text-align: center;
     letter-spacing: 0.05em;
     color: #262626;
+    padding: 6px 0;
+    width: 100%;
+    display: inline-block;
 }
 .active-page{
     background: #ffffff;
@@ -4495,7 +4584,8 @@ color: #262626;
     align-items: center;
     justify-content: center;
 }
-.grey-title{
+.grey-title,
+.body-text-black{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -4505,6 +4595,9 @@ color: #262626;
     color: #B3B3B3;
     text-align: left;
     white-space: nowrap;
+}
+.body-text-black{
+    color:#262626;
 }
 .number-day{
     font-family: 'Roboto';
@@ -4908,6 +5001,13 @@ color: #262626;
 .width-113 .select-selected,
 .width-113 .custom-select{
     width: 113px;
+}
+.custom-select.disabled .select-items{
+    display: none;
+}
+.custom-select.disabled .select-selected{
+    opacity: 0.5 !important;
+    cursor: default;
 }
 .width-360{
     width: auto;
@@ -5494,4 +5594,70 @@ color: #262626;
 .wrapper-btn-basket{
     padding: 20px 20px 0 20px;
     display: flex;
+}
+.choose-schools,
+.add-class-new,
+.class-number span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+}
+.choose-schools a,
+.more-teacher-new,
+.add-class-new{
+    color: #1A3EFF;
+}
+.class-number{
+    max-width: 359px;
+}
+.class-number span{
+    color: #B2B2B2;
+}
+.unavailable-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.unavailable-text span{
+    color: #E52222;
+}
+.add-new-categories.disabled{
+    opacity: 0.5 !important;
+    cursor: default;
+}
+.add-new-categories.disabled:hover {
+    background: #F2F2F2;;
+}
+.add-new-categories.disabled:hover:before{
+    background: url(../../images/plus.svg) no-repeat center;
+}
+
+/*---------------form-new-school-----------*/
+
+.contact-data{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #262626;
+    max-width: 375px;
+    white-space: nowrap;
+}
+.school-data{
+    max-width: 375px;
+    width: 100%;
+}
+.modal-new-school{
+    display: none;
 }
