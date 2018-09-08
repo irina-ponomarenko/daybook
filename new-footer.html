@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style/css/styles.css" rel="stylesheet"/>
+    <link href="style/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <div class="block-logo">
+        <h1></h1>
+        <div class="logo">
+            <img src="images/logo_black.png" class="big-logo" alt="logo"/>
+            <img src="images/small-logo.svg" class="small-logo-img" alt="small logo"/>
+        </div>
+        <button type="button" class="search-btn-responsive"></button>
+        <form id="search-header" class="search-header">
+            <button type="button" class="search-btn"></button>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
+            <button type="button" class="close-search"></button>
+        </form>
+        <div class="wrapper-nav">
+            <button type="button" class="nav-menu-btn"></button>
+            <div class="container-nav">
+                <ul class="nav-menu response-nav">
+                    <li class="title-menu">Меню</li>
+                    <li class="nav-li">
+                        <a href="">Меню один</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Меню два</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню три</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню чотири</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Контакти</a>
+                    </li>
+                    <li class="response-768">
+                        <a href="">Перейти в маркет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-nav-authorization">
+        <ul class="nav-menu nav-none">
+            <li class="nav-li">
+                <a href="">Меню один</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Меню два</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Маню три</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        <div class="wrapper-registered">
+            <a href="" class="registered">
+                Реєстрація
+            </a>
+            <a href="" class="entrance login_open">
+                Вхід
+            </a>
+            <div class="purchase">
+                <div class="basket-block">
+                    <div class="title-basket">
+                        <p class="number-product">4 товари</p>
+                        <p class="price-product">500 грн</p>
+                        <p class="empty none-display">Ваша корзина пуста</p>
+                    </div>
+                    <ul class="basket">
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Географія.Комплексне видання</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Економіка праці тa соціально-трудові відносини</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Підручник Природознавство</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Медсестринство в сімейній медицині</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Букварик</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="close-product"></button>
+                        </li>
+                    </ul>
+                    <div class="wrapper-btn-basket">
+                        <button type="button" class="market margin-right-10">
+                            <span>Перейти в маркет</span>
+                        </button>
+                        <button type="button" class="order">
+                            <span>Оформити замовлення</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="content-wrapper-section">
+    <div class="container">
+        <div class="header-section">
+            <h2>Реєстрація</h2>
+            <p>Оберіть роль, яку ви граєте в навчальному процесі.</p>
+        </div>
+        <div class="card-deck deck-width">
+            <div class="card card-width teacher_open border-none">
+                <img class="img-card" src="images/image-card.svg"/>
+                <div class="card-body">
+                    <h3 class="action-title">
+                        <a href="">Вчитель</a>
+                    </h3>
+                    <p class="card-text">Доступ до електроного
+                        онлайн журналу
+                        та можливості управління данними учнів.</p>
+                </div>
+            </div>
+            <div class="card card-width parents_open border-none">
+                <img class="img-card" src="images/image-card-2.svg"/>
+                <div class="card-body">
+                    <h3>
+                        <a href="">Батьки</a>
+                    </h3>
+                    <p class="card-text">Перегляд онлайн щоденика
+                        та можливість приймати
+                        пряму участь в житті класу своєї дитини.</p>
+                </div>
+            </div>
+            <div class="card card-width student_open border-none">
+                <img class="img-card" src="images/image-card-3.svg"/>
+                <div class="card-body">
+                    <h3>
+                        <a href="">Учень</a>
+                    </h3>
+                    <p class="card-text">Твій особистий онлайн щоденик.</p>
+                </div>
+            </div>
+            <div class="card card-width user_open border-none">
+                <img class="img-card" src="images/image-card-4.svg"/>
+                <div class="card-body">
+                    <h3>
+                        <a href="">Вільний користувач</a>
+                    </h3>
+                    <p class="card-text">Можливість написання статтей, і репетиторська практика.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-block">
+            <h3>Тайтл СЕО текст</h3>
+            <p>Потому-то народ Эльвэ, искавший своего вождя, не нашел его, и Ольвэ принял
+            себя правление тэлери, и, как рассказывали потом, увел их. Эльвэ Синголло
+            никогда более не приходил через Море в Валинор, и Мелиан не возвращалась
+            туда, пока они правили вместе; но через нее влилась в эльфов и людей струя.
+            Духа айнуров — тех, кто прежде Эа был с Илуватаром. В последующие дни</p>
+            <br>
+            <p>Эльвэ стал прославленным вождем; народом его были эльфы Белерианда —
+                синдары, Сумеречные Эльфы, а сам он звался Владыка Серебристый Плащ,
+                Элу Тингол на языке той земли.</p>
+        </div>
+    </div>
+    <div class="background-search"></div>
+    <div class="wrapper-question">
+        <div class="questions">
+            <div class="wrapper-modal">
+                <div class="modal-questions">
+                    <ul class="modal-questions-list">
+                        <li class="true_open-trigger">Написати в службу підтримки</li>
+                        <li class="true1_open-trigger">Повідомити про помилку</li>
+                        <li>Поширені запитання</li>
+                        <li>Запустити знайомство з сервісом</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="true_open">1</button>
+    <button type="button" class="true1_open">1</button>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="wrapper-contact-footer">
+            <h3>Телефон</h3>
+            <ul class="footer-list">
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+                <li>
+                    <span> +38 060 234 6789</span>
+                </li>
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Email</h3>
+            <ul class="footer-list-mail">
+                <li>
+                    <span>Online Daybook@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Ми в соціальних мережах</h3>
+            <ul class="social-icon-list">
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-write-support" id="true">
+    <button type="button" class="close-modal true_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Написати в службу підтримки</h2>
+            <div class="modal-info">
+                <p>Якщо у вас виникли запитання чи побажання, ви можете написати
+                    в нашу службу підтримки, і ми з радістю вам відповімо</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support" placeholder="Email"/>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-write-support" id="true1">
+    <button type="button" class="close-modal true1_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Повідомити про помилку</h2>
+            <div class="modal-info">
+                <p>Якщо ви зауважили помилку, або маєте побажання та пропозиції
+                    для покращення роботи сервісу, будь ласка напишіть нам :Р</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support1" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support1" placeholder="Email"/>
+                <div class="wrapper-name-class width-360 margin-bottom-10">
+                    <div class="custom-select">
+                        <select>
+                            <option>Характер помилки</option>
+                            <option>Пункт один</option>
+                            <option>Пункт два</option>
+                            <option>Пункт три</option>
+                            <option>Пункт чотири</option>
+                            <option>Пункт п’ять</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-teacher" id="teacher">
+    <button type="button" class="close-modal teacher_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Вчитель</h2>
+            <div class="modal-title" id="modal-teacher">
+                <p>Доступ до електроного онлайн журналу
+                    та можливості управління данними учнів.</p>
+            </div>
+        </header>
+        <form class="teacher">
+            <div class="user-data">
+                <h3>Особисті дані</h3>
+                <input type="text" id="name-teacher" placeholder="Ім'я"/>
+                <input type="text" id="surname-teacher" placeholder="Прізвище"/>
+                <input type="email" id="email-teacher" class="error-type" placeholder="Email"/>
+                <span class="wrong">Something is wrong</span>
+            </div>
+            <div class="user-data">
+                <h3>Безпека</h3>
+                <input type="password" id="password-teacher" placeholder="Пароль"/>
+                <input type="password" id="repeat-password-teacher" placeholder="Повторіть пароль"/>
+            </div>
+            <button type="submit" class="register">Зареєструватись</button>
+            <div class="info-submit">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
+                    <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input" checked disabled/>
+                    <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання
+                    </span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal-parents" id="parents">
+    <button type="button" class="close-modal parents_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Батьки</h2>
+            <div class="modal-title" id="modal-title">
+                <p>Перегляд онлайн щоденика та можливість приймати
+                    пряму участь в житті класу своєї дитини.</p>
+            </div>
+        </header>
+        <div data-addui='tabs'>
+            <div role='tabs'>
+                <div>Реєстрація по коду</div>
+                <div>Звичайна реєстрація</div>
+            </div>
+            <div role='contents'>
+                <div>
+                    <form class="parents-form" id="code-registered">
+                        <div class="user-data parents-date">
+                            <h3>Код запрошення</h3>
+                            <input   type="tel"   name="zipcodeca"  class="parents-input masked" id="parents-input" data-charset="X_X_X_"  placeholder="XXXXXX" pattern="\w\d\w \d\w\d"   title="6-character alphanumeric zip code in the format of A1A 1A1"/>
+                            <button type="button" class="question-form hint-js"></button>
+                            <div class="hint">
+                                <p>Код запрошення — особливий 6-ти
+                                    значний код запрошення, що видаєтсья
+                                    вчителем, або класним керівником, для швидкої реєстрації.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="register">Зареєструватись</button>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+                                <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="parents-form" id="normal-registered">
+                        <div class="user-data">
+                            <h3>Особисті дані</h3>
+                            <input type="text" id="name-parents" placeholder="Ім'я"/>
+                            <input type="text" id="surname-parents" placeholder="Прізвище"/>
+                            <input type="email" id="email-parents" placeholder="Email"/>
+                        </div>
+                        <div class="user-data">
+                            <h3>Безпека</h3>
+                            <input type="password" id="password-parents" placeholder="Пароль"/>
+                            <input type="password" id="repeat-password-parents" placeholder="Повторіть пароль"/>
+                        </div>
+                        <button type="submit" class="register">Зареєструватись</button>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-student" id="student">
+    <button type="button" class="close-modal student_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Учень</h2>
+            <div class="modal-title" id="modal-title-student">
+                <p>Твій особистий онлайн щоденик.</p>
+            </div>
+        </header>
+        <div data-addui='tabs'>
+            <div role='tabs'>
+                <div>Реєстрація по коду</div>
+                <div>Звичайна реєстрація</div>
+            </div>
+            <div role='contents'>
+                <div>
+                    <form class="student-form" id="code-registered-student">
+                        <div class="user-data student-date">
+                            <h3>Код запрошення</h3>
+                            <input   type="tel"   name="zipcodeca"  class="parents-input masked" id="student-input" data-charset="X_X_X_"  placeholder="XXXXXX" pattern="\w\d\w \d\w\d"   title="6-character alphanumeric zip code in the format of A1A 1A1"/>
+                            <button type="button" class="question-form hint-js"></button>
+                            <div class="hint">
+                                <p>Код запрошення — особливий 6-ти
+                                    значний код запрошення, що видаєтсья
+                                    вчителем, або класним керівником, для швидкої реєстрації.</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="register">Зареєструватись</button>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="parents-form" id="normal-registered-student">
+                        <div class="user-data">
+                            <h3>Особисті дані</h3>
+                            <input type="text" id="name-student" placeholder="Ім'я"/>
+                            <input type="text" id="surname-student" placeholder="Прізвище"/>
+                            <input type="email" id="email-student" placeholder="Email"/>
+                        </div>
+                        <div class="user-data">
+                            <h3>Безпека</h3>
+                            <input type="password" id="password-student" placeholder="Пароль"/>
+                            <input type="password" id="repeat-password-student" placeholder="Повторіть пароль"/>
+                        </div>
+                        <button type="submit" class="register">Зареєструватись</button>
+                        <div class="info-submit">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked disabled/>
+                                <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-user" id="user">
+    <button type="button" class="close-modal user_close"></button>
+    <div class="container">
+        <header class="header-modal">
+            <h2>Рестрація нового користувача — Вільний користувач</h2>
+            <div class="modal-title" id="modal-title-user">
+                <p>Можливість написання статтей і репетиторська діяльність</p>
+            </div>
+        </header>
+        <form class="parents-form" id="normal-registered-user">
+            <div class="user-data">
+                <h3>Особисті дані</h3>
+                <input type="text" id="name-user" placeholder="Ім'я"/>
+                <input type="text" id="surname-user" placeholder="Прізвище"/>
+                <input type="email" id="email-user" placeholder="Email"/>
+            </div>
+            <div class="user-data">
+                <h3>Безпека</h3>
+                <input type="password" id="password-user" placeholder="Пароль"/>
+                <input type="password" id="repeat-password-user" placeholder="Повторіть пароль"/>
+            </div>
+            <button type="submit" class="register">Зареєструватись</button>
+            <div class="info-submit">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked disabled/>
+                    <span class="mdl-checkbox__label">Реєструючись я автоматично
+                                погоджуюсь з правилами
+                                та умовами використання</span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal-login" id="login">
+    <button type="button" class="close-modal login_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Вхід в систему</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-email" placeholder="Email"/>
+                <input type="password" id="login-password" placeholder="Пароль">
+                <a href="" class="info-alert login-reestablish_open">Забули пароль?</a>
+            </div>
+            <button type="submit" class="login-submit">Вхід</button>
+        </form>
+    </div>
+    <div class="options-login">
+        <div class="wrapper-option">
+            <a href="" class="not-registered">Не зареєстровані?</a>
+            <a href="" class="create-account">Створити акаунт</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal-login-reestablish" id="login-reestablish">
+    <button type="button" class="close-modal login-reestablish_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Відновлення паролю</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-reestablish-email" placeholder="Email"/>
+            </div>
+            <div class="wrapper-option-reestablish">
+                <a href="" class="return">Назад</a>
+                <button type="submit" class="login-reestablish">Відновити пароль</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

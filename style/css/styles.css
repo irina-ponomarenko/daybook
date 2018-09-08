@@ -886,6 +886,67 @@ position: absolute;
     margin-right: 148px;
 }
 
+
+/*-----------new-footer-----------*/
+
+.footer{
+    background-color: #333333;
+    padding: 60px 0;
+}
+.footer .container{
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.wrapper-contact-footer h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+}
+.wrapper-contact-footer h3:last-child{
+    margin-bottom: 18px;
+}
+.social-icon-list{
+    display: flex;
+    align-items: center;
+}
+.social-icon-list li{
+    margin-right: 40px;
+}
+.social-icon-list li:last-child{
+    margin-right: 0;
+}
+.social-icon-link i{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 46px;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+}
+.footer-list li span,
+.footer-list-mail li span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 46px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.footer-list li{
+    margin-right: 40px;
+}
+.footer-list li:last-child{
+    margin-right: 0;
+}
 /*-------------------modal-----------------*/
 
 .modal-teacher,
