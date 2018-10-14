@@ -249,6 +249,30 @@ $(document).ready(function () {
     });
 
 
+    $('.container-hours-day').click(function () {
+        $(this)
+            .addClass('active-hover-time')
+            .parent()
+            .find('.container-time-picker-modal')
+            .addClass('add-active-picker');
+    });
+
+    $('.save-time').on('click', function () {
+        $('.container-hours-day').removeClass('active-hover-time');
+        $('.container-time-picker-modal').removeClass('add-active-picker');
+    });
+
+    $(document).mouseup(function (e) {
+        if (jQuery(e.target).closest(".add-active-picker").length > 0) {
+            return false;
+        }
+
+        else $(".container-time-picker-modal").removeClass('add-active-picker');
+        $('.container-hours-day').removeClass('active-hover-time');
+        clickCount = 1;
+    });
+
+
     $('.new-student').click(function () {
         $(this)
             .parent()

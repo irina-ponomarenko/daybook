@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Release action</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style/css/styles.css" rel="stylesheet"/>
+    <link href="style/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <div class="block-logo">
+        <h1></h1>
+        <div class="logo">
+            <img src="images/logo_black.png" class="big-logo" alt="logo"/>
+            <img src="images/small-logo.svg" class="small-logo-img" alt="small logo"/>
+        </div>
+        <button type="button" class="search-btn-responsive"></button>
+        <form id="search-header" class="search-header">
+            <button type="button" class="search-btn"></button>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
+            <button type="button" class="close-search"></button>
+        </form>
+        <div class="wrapper-nav">
+            <button type="button" class="nav-menu-btn"></button>
+            <div class="container-nav">
+                <ul class="nav-menu response-nav">
+                    <li class="title-menu">Меню</li>
+                    <li class="nav-li">
+                        <a href="">Меню один</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Меню два</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню три</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню чотири</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Контакти</a>
+                    </li>
+                    <li class="response-768">
+                        <a href="">Перейти в маркет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper-nav-authorization">
+        <ul class="nav-menu nav-none">
+            <li class="nav-li">
+                <a href="">Меню один</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Меню два</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Маню три</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        <div class="wrapper-registered">
+            <div class="user-registered">
+                <div class="icon-user">
+                    <span>ІП</span>
+                </div>
+                <p class="name-surname">Ім’я Прізвище</p>
+                <button type="button" class="chevron-down"></button>
+                <div class="drop-down-user">
+                    <ul class="user-cabinet">
+                        <li>
+                            <a href="">Пункт один</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт два</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт три</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт чотири</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт п’ять</a>
+                        </li>
+                    </ul>
+                    <div class="sign-out">
+                        <span class="logout">Вийти з системи</span>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase">
+                <div class="basket-block">
+                    <div class="title-basket">
+                        <p class="number-product">4 товари</p>
+                        <p class="price-product">500 грн</p>
+                        <p class="empty none-display">Ваша корзина пуста</p>
+                    </div>
+                    <ul class="basket">
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Географія.Комплексне видання</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Економіка праці тa соціально-трудові відносини</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Підручник Природознавство</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Медсестринство в сімейній медицині</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Букварик</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="close-product"></button>
+                        </li>
+                    </ul>
+                    <div class="wrapper-btn-basket">
+                        <button type="button" class="market margin-right-10">
+                            <span>Перейти в маркет</span>
+                        </button>
+                        <button type="button" class="order">
+                            <span>Оформити замовлення</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="content-wrapper-section class-wrapper">
+    <nav class="nav-bar">
+        <ul class="navigation">
+            <li class="nav-list active-nav-li">
+                <a href="" class="journal">
+                    <span class="nav-span">Онлайн журнал</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="class">
+                    <span class="nav-span">Клас</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="timetable">
+                    <span class="nav-span">Розклад</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="diary">
+                    <span class="nav-span">Щоденик</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="profile">
+                    <span class="nav-span">Профіль</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header-journal">
+            <div class="title-journal">
+                <h2 class="title-release-back">Статті</h2>
+            </div>
+
+            <div class="header-pagination">
+                <div class="pagination-number">
+                    <ul class="list-pagination">
+                        <li class="active-number">
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li class="circle-list" disabled>
+                            <a><span class="page-bull">&#8226;</span></a>
+                        </li>
+                        <li>
+                            <a href="">5</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+      <div class="wrapper-day-release-action">
+          <ul class="release-action-list">
+              <li class="release-block-action">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-1.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Що робити, щоб діти не постраждали морально
+                                  або фізично? (Частина 1)
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action release-block-action-right-none">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-2.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action release-block-action-right-30">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-3.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action release-block-action-right-none">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-1.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Що робити, щоб діти не постраждали морально
+                                  або фізично? (Частина 1)
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-2.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action release-block-action-right-none">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-3.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-1.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Що робити, щоб діти не постраждали морально
+                                  або фізично? (Частина 1)
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action release-block-action-right-none">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-2.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li class="release-block-action">
+                  <a href="" class="release-title-action">
+                      <div class="action-img-container">
+                          <img src="images/img-3.jpg" alt="action img"/>
+                      </div>
+                      <div class="container-action-info">
+                          <div class="body-action-info">
+                              <div class="top-header-action-info">
+                                  <span class="date-action">18.09.2018</span>
+                                  <span class="action-role">Батькам</span>
+                              </div>
+                              <h2 class="title-action">
+                                  Як робити уроки
+                                  з дитиною?!
+                              </h2>
+                          </div>
+                          <div class="footer-action-info">
+                              <ul class="list-release-footer">
+                                  <li class="option-release">
+                                      <span class="watch-release">257</span>
+                                  </li>
+                                  <li class="option-release">
+                                      <span class="like-release">25</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+        <button type="button" class="next-page">Наступна сторінка</button>
+    </div>
+    <div class="background-search"></div>
+    <div class="wrapper-question">
+        <div class="questions">
+            <div class="wrapper-modal">
+                <div class="modal-questions">
+                    <ul class="modal-questions-list">
+                        <li class="true_open-trigger">Написати в службу підтримки</li>
+                        <li class="true1_open-trigger">Повідомити про помилку</li>
+                        <li>Поширені запитання</li>
+                        <li>Запустити знайомство з сервісом</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="true_open">1</button>
+    <button type="button" class="true1_open">1</button>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="wrapper-contact-footer">
+            <h3>Телефон</h3>
+            <ul class="footer-list">
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+                <li>
+                    <span> +38 060 234 6789</span>
+                </li>
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Email</h3>
+            <ul class="footer-list-mail">
+                <li>
+                    <span>nmax@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Ми в соціальних мережах</h3>
+            <ul class="social-icon-list">
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-write-support" id="true">
+    <button type="button" class="close-modal true_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Написати в службу підтримки</h2>
+            <div class="modal-info">
+                <p>Якщо у вас виникли запитання чи побажання, ви можете написати
+                    в нашу службу підтримки, і ми з радістю вам відповімо</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support" placeholder="Email"/>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+<div class="modal-write-support" id="true1">
+    <button type="button" class="close-modal true1_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Повідомити про помилку</h2>
+            <div class="modal-info">
+                <p>Якщо ви зауважили помилку, або маєте побажання та пропозиції
+                    для покращення роботи сервісу, будь ласка напишіть нам :Р</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support1" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support1" placeholder="Email"/>
+                <div class="wrapper-name-class width-360 margin-bottom-10">
+                    <div class="custom-select">
+                        <select>
+                            <option>Характер помилки</option>
+                            <option>Пункт один</option>
+                            <option>Пункт два</option>
+                            <option>Пункт три</option>
+                            <option>Пункт чотири</option>
+                            <option>Пункт п’ять</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-login" id="login">
+    <button type="button" class="close-modal login_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Вхід в систему</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-email" placeholder="Email"/>
+                <input type="password" id="login-password" placeholder="Пароль">
+                <a href="" class="info-alert">Забули пароль?</a>
+            </div>
+            <button type="submit" class="login-submit">Вхід</button>
+        </form>
+    </div>
+    <div class="options-login">
+        <div class="wrapper-option">
+            <a href="" class="not-registered">Не зареєстровані?</a>
+            <a href="" class="create-account">Створити акаунт</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

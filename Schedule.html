@@ -1,0 +1,2572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
+    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="style/css/jquery.custom-select.css" rel="stylesheet"/>
+    <link href="style/css/chosen.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style/css/styles.css" rel="stylesheet"/>
+    <link href="style/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+    <div class="block-logo">
+        <h1></h1>
+        <div class="logo">
+            <img src="images/logo_black.png" class="big-logo" alt="logo"/>
+            <img src="images/small-logo.svg" class="small-logo-img" alt="small logo"/>
+        </div>
+        <button type="button" class="search-btn-responsive"></button>
+        <form id="search-header" class="search-header">
+            <button type="button" class="search-btn"></button>
+            <input type="search" class="search" placeholder="Искать" id="autocomplete"/>
+            <button type="button" class="close-search"></button>
+        </form>
+        <div class="wrapper-nav">
+            <button type="button" class="nav-menu-btn"></button>
+            <div class="container-nav">
+                <ul class="nav-menu response-nav">
+                    <li class="title-menu">Меню</li>
+                    <li class="nav-li">
+                        <a href="">Меню один</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Меню два</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню три</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Маню чотири</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Контакти</a>
+                    </li>
+                    <li class="response-768">
+                        <a href="">Перейти в маркет</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper-nav-authorization">
+        <ul class="nav-menu nav-none">
+            <li class="nav-li">
+                <a href="">Меню один</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Меню два</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Маню три</a>
+            </li>
+            <li class="nav-li">
+                <a href="">Контакти</a>
+            </li>
+        </ul>
+        <div class="wrapper-registered">
+            <div class="user-registered">
+                <div class="icon-user">
+                    <span>ІП</span>
+                </div>
+                <p class="name-surname">Ім’я Прізвище</p>
+                <button type="button" class="chevron-down"></button>
+                <div class="drop-down-user">
+                    <ul class="user-cabinet">
+                        <li>
+                            <a href="">Пункт один</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт два</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт три</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт чотири</a>
+                        </li>
+                        <li>
+                            <a href="">Пункт п’ять</a>
+                        </li>
+                    </ul>
+                    <div class="sign-out">
+                        <span class="logout">Вийти з системи</span>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase">
+                <div class="basket-block">
+                    <div class="title-basket">
+                        <p class="number-product">4 товари</p>
+                        <p class="price-product">500 грн</p>
+                        <p class="empty none-display">Ваша корзина пуста</p>
+                    </div>
+                    <ul class="basket">
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Географія.Комплексне видання</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Економіка праці тa соціально-трудові відносини</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Підручник Природознавство</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Медсестринство в сімейній медицині</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+                            <button type="button" class="close-product"></button>
+                        </li>
+                        <li class="product">
+                            <div class="img-product">
+                                <img src="images/product.svg" alt="product"/>
+                                <div class="container-info-product">
+                                    <h4>Букварик</h4>
+                                    <span>100 грн</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="close-product"></button>
+                        </li>
+                    </ul>
+                    <div class="wrapper-btn-basket">
+                        <button type="button" class="market margin-right-10">
+                            <span>Перейти в маркет</span>
+                        </button>
+                        <button type="button" class="order">
+                            <span>Оформити замовлення</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="content-wrapper-section class-wrapper">
+    <nav class="nav-bar">
+        <ul class="navigation">
+            <li class="nav-list">
+                <a href="" class="journal">
+                    <span class="nav-span">Онлайн журнал</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="class">
+                    <span class="nav-span">Клас</span>
+                </a>
+            </li>
+            <li class="nav-list active-nav-li timetable-active">
+                <a href="" class="timetable">
+                    <span class="nav-span">Розклад</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="diary">
+                    <span class="nav-span">Щоденик</span>
+                </a>
+            </li>
+            <li class="nav-list">
+                <a href="" class="profile">
+                    <span class="nav-span">Профіль</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header-journal">
+            <div class="title-journal">
+                <h2>Розклад</h2>
+            </div>
+        </header>
+        <div class="wrapper-table-daybook-shedule">
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">Понеділок</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">1</span>
+                            <div class="hours-interval chosen-time">
+                                <p>8:30 - 9:15</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Астрофізика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">5-В</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="26"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">2</span>
+                            <div class="hours-interval">
+                                <p>9:25 - 10:10</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">3</span>
+                            <div class="hours-interval">
+                                <p>10:20 - 11:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">4</span>
+                            <div class="hours-interval chosen-time">
+                                <p>11:20 - 12:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">6-В</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="402 (УНС)"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">5</span>
+                            <div class="hours-interval chosen-time">
+                                <p>12:20 — 13:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">10-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="325"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">6</span>
+                            <div class="hours-interval">
+                                <p>13:15 — 14:00</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">7</span>
+                            <div class="hours-interval">
+                                <p>14:10 — 14:55</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                       <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">Вівторок</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">1</span>
+                            <div class="hours-interval">
+                                <p>8:30 - 9:15</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">2</span>
+                            <div class="hours-interval chosen-time">
+                                <p>9:25 - 10:10</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Геометрія" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">9-Б</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="2"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">3</span>
+                            <div class="hours-interval chosen-time">
+                                <p>10:20 - 11:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">5-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="43"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">4</span>
+                            <div class="hours-interval">
+                                <p>11:20 - 12:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">5</span>
+                            <div class="hours-interval chosen-time">
+                                <p>12:20 — 13:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">10-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="325"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">6</span>
+                            <div class="hours-interval">
+                                <p>13:15 — 14:00</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">7</span>
+                            <div class="hours-interval">
+                                <p>14:10 — 14:55</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">Середа</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">1</span>
+                            <div class="hours-interval">
+                                <p>8:30 - 9:15</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">2</span>
+                            <div class="hours-interval chosen-time">
+                                <p>9:25 - 10:10</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Геометрія" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">9-Б</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="2"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">3</span>
+                            <div class="hours-interval chosen-time">
+                                <p>10:20 - 11:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">5-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="43"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">4</span>
+                            <div class="hours-interval">
+                                <p>11:20 - 12:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">5</span>
+                            <div class="hours-interval chosen-time">
+                                <p>12:20 — 13:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">10-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="325"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">6</span>
+                            <div class="hours-interval">
+                                <p>13:15 — 14:00</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">7</span>
+                            <div class="hours-interval">
+                                <p>14:10 — 14:55</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">Четвер</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">1</span>
+                            <div class="hours-interval">
+                                <p>8:30 - 9:15</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">2</span>
+                            <div class="hours-interval chosen-time">
+                                <p>9:25 - 10:10</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Геометрія" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">9-Б</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="2"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">3</span>
+                            <div class="hours-interval chosen-time">
+                                <p>10:20 - 11:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">5-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="43"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">4</span>
+                            <div class="hours-interval">
+                                <p>11:20 - 12:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">5</span>
+                            <div class="hours-interval chosen-time">
+                                <p>12:20 — 13:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">10-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="325"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">6</span>
+                            <div class="hours-interval">
+                                <p>13:15 — 14:00</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">7</span>
+                            <div class="hours-interval">
+                                <p>14:10 — 14:55</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">П’ятниця</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">1</span>
+                            <div class="hours-interval">
+                                <p>8:30 - 9:15</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">2</span>
+                            <div class="hours-interval chosen-time">
+                                <p>9:25 - 10:10</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Геометрія" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">9-Б</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="2"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">3</span>
+                            <div class="hours-interval chosen-time">
+                                <p>10:20 - 11:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Алгебра" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">5-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="43"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">4</span>
+                            <div class="hours-interval">
+                                <p>11:20 - 12:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours active-number-hours">5</span>
+                            <div class="hours-interval chosen-time">
+                                <p>12:20 — 13:05</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder="Математика" class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span">10-А</span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value="325"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">6</span>
+                            <div class="hours-interval">
+                                <p>13:15 — 14:00</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <span class="number-hours">7</span>
+                            <div class="hours-interval">
+                                <p>14:10 — 14:55</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="12:20"/>
+                                            <input type="text" class="time-picker-hours-input" value="13:05"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <div class="subject-schedule-container">
+                            <select data-placeholder=" " class="chosen-select" tabindex="5">
+                                <option value=""></option>
+                                <optgroup label="А">
+                                    <option>Астрофізика</option>
+                                    <option>Англійська мова</option>
+                                    <option>Алгебра</option>>
+                                    <option>Астрономія</option>
+                                </optgroup>
+                                <optgroup label="Б">
+                                    <option>Біологія</option>
+                                    <option>Болгарська мова</option>
+                                </optgroup>
+                                <optgroup label="В">
+                                    <option>Всесвітня історія</option>
+                                </optgroup>
+                                <optgroup label="Г">
+                                    <option>Геометрія</option>
+                                    <option>Географія</option>
+                                    <option>Громадська освіта</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <span class="number-class-daybook-span"></span>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <input class="number-cabinet-daybook-span" value=""/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="hours-daybook border-top-0" style="width: 208px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 169px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <table class="table-daybook-schedule margin-bottom-10">
+                <tbody>
+                <tr>
+                    <th rowspan="8" class="rotate-90 border-left-0 border-top-0 border-bottom-0">
+                        <p class="body-text-black">СБ</p>
+                    </th>
+                    <td class="hours-daybook border-top-0" style="width: 234px;">
+                        <div class="container-hours-day">
+                            <div class="hours-interval">
+                                <p>Час уроку</p>
+                                <div class="container-time-picker-modal">
+                                    <div class="time-picker-container">
+                                        <div class="title-time-picker">
+                                            <h3>Встановіть час уроку</h3>
+                                        </div>
+                                        <div class="body-time-picker">
+                                            <input type="text" class="time-picker-hours-input" value="Початок"/>
+                                            <input type="text" class="time-picker-hours-input" value="Кінець"/>
+                                        </div>
+                                        <div class="footer-time-picker">
+                                            <button type="button" class="save-time">Зберегти</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="subject-schedule border-top-0 ">
+                        <p class="name-row-table">Назва предмету</p>
+                    </td>
+                    <td class="number-class-daybook border-top-0" style="width: 116px;">
+                        <p class="name-row-table">Клас</p>
+                    </td>
+                    <td class="number-cabinet-daybook border-top-0" style="width: 217px;">
+                        <p class="name-row-table add-in-block-class">Кабінет<button class="add-new-class-block"></button></p>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="background-search"></div>
+    <div class="wrapper-question">
+        <div class="questions">
+            <div class="wrapper-modal">
+                <div class="modal-questions">
+                    <ul class="modal-questions-list">
+                        <li class="true_open-trigger">Написати в службу підтримки</li>
+                        <li class="true1_open-trigger">Повідомити про помилку</li>
+                        <li>Поширені запитання</li>
+                        <li>Запустити знайомство з сервісом</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="true_open">1</button>
+    <button type="button" class="true1_open">1</button>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="wrapper-contact-footer">
+            <h3>Телефон</h3>
+            <ul class="footer-list">
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+                <li>
+                    <span> +38 060 234 6789</span>
+                </li>
+                <li>
+                    <span>+38 060 234 6789</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Email</h3>
+            <ul class="footer-list-mail">
+                <li>
+                    <span>nmax@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-contact-footer">
+            <h3>Ми в соціальних мережах</h3>
+            <ul class="social-icon-list">
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="social-icon-link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-write-support" id="true">
+    <button type="button" class="close-modal true_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Написати в службу підтримки</h2>
+            <div class="modal-info">
+                <p>Якщо у вас виникли запитання чи побажання, ви можете написати
+                    в нашу службу підтримки, і ми з радістю вам відповімо</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support" placeholder="Email"/>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal-write-support" id="true1">
+    <button type="button" class="close-modal true1_close"></button>
+    <div class="container margin-top-none">
+        <header class="header-modal">
+            <h2>Повідомити про помилку</h2>
+            <div class="modal-info">
+                <p>Якщо ви зауважили помилку, або маєте побажання та пропозиції
+                    для покращення роботи сервісу, будь ласка напишіть нам :Р</p>
+            </div>
+        </header>
+        <form class="support">
+            <div class="user-data">
+                <input type="text" id="surname-user-support1" placeholder="Прізвище та Ім'я"/>
+                <input type="email" id="email-support1" placeholder="Email"/>
+                <div class="wrapper-name-class width-360 margin-bottom-10">
+                    <div class="custom-select">
+                        <select>
+                            <option>Характер помилки</option>
+                            <option>Пункт один</option>
+                            <option>Пункт два</option>
+                            <option>Пункт три</option>
+                            <option>Пункт чотири</option>
+                            <option>Пункт п’ять</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea class="support-text"></textarea>
+            </div>
+            <button type="submit" class="send-message margin-top-40">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-login" id="login">
+    <button type="button" class="close-modal login_close"></button>
+    <div class="wrapper-form-login">
+        <form class="login">
+            <h2>Вхід в систему</h2>
+            <div class="user-data login-date">
+                <input type="email" id="login-email" placeholder="Email"/>
+                <input type="password" id="login-password" placeholder="Пароль">
+                <a href="" class="info-alert">Забули пароль?</a>
+            </div>
+            <button type="submit" class="login-submit">Вхід</button>
+        </form>
+    </div>
+    <div class="options-login">
+        <div class="wrapper-option">
+            <a href="" class="not-registered">Не зареєстровані?</a>
+            <a href="" class="create-account">Створити акаунт</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.1/js/bootstrap.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/AddTabs.js"></script>
+<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.custom-select.min.js"></script>
+<script src="js/jquery.toastmessage.js"></script>
+<script src="js/mask.js"></script>
+<script src="material/material.min.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
