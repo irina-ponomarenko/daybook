@@ -565,7 +565,7 @@ $(document).ready(function () {
     });
 
 
-    $('.leader-title').hover(function () {
+    $('.leader').hover(function () {
             $(this)
                 .parent()
                 .find('.hint-male')
@@ -583,7 +583,6 @@ $(document).ready(function () {
                     $(this).removeClass('active-hover-menu');
                 });
     }
-
 
      if ($(window).width() <= 922) {
         $('.search-btn-responsive').on('click', function () {
