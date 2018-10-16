@@ -144,7 +144,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     justify-content: center;
 }
 .logo img{
-    max-width: 120px;
+    max-width: 90px;
 }
 .block-logo{
     display: flex;
@@ -1544,6 +1544,7 @@ input.masked{
     background: #FFFFFF;
     max-width: 64px;
     width: 100%;
+    height: 100vh;
 }
 .nav-list{
     padding: 16px 21px;
@@ -2043,6 +2044,7 @@ input.masked{
     background: transparent;
     border: 2px dashed #D9D9D9;
     padding: 18px 20px;
+    cursor: auto;
 }
 .none-card:hover{
     box-shadow: none;
@@ -3923,6 +3925,10 @@ color: #262626;
     justify-content: center;
     cursor: pointer;
 }
+.list-pagination li:hover{
+    background-color: #ffffff;
+    transition: .3s;
+}
 .circle-list{
     background-color: transparent !important;
     width: 4px !important;
@@ -3951,6 +3957,10 @@ color: #262626;
     border-radius: 2px;
     cursor: pointer;
 }
+.pagination-page:hover{
+    transition: .3s;
+    background: #ffffff;
+}
 .pagination-page:last-child{
     margin-right: 0;
 }
@@ -3974,6 +3984,9 @@ color: #262626;
     font-size: 14px;
     color: #C4C4C4;
     margin: 0 8px;
+}
+a .page-bull{
+    cursor: auto;
 }
 .header-pagination{
     display: flex;
@@ -5141,8 +5154,8 @@ color: #262626;
 .message-text:before{
     content: '';
     position: absolute;
-    width: 114px;
-    height: 93px;
+    width: 117px;
+    height: 97px;
     right: 0;
     top: 0;
     bottom: 0;
@@ -5422,6 +5435,14 @@ color: #262626;
     cursor: pointer;
     margin-right: 6px;
 }
+.chevron-right:hover{
+    width: 24px;
+    height: 24px;
+    background: url("../../images/chevron-right-hover.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+}
 .content-down{
     margin: 43px 30px 9px;
     display: none;
@@ -5442,11 +5463,11 @@ color: #262626;
 }
 .scale-content .wrapper-title-content .left-content button{
     background: url("../../images/chevron-blue.svg") no-repeat center;
-    transition: .3s;
 }
 .scale-content .content-down{
     display: block;
     transition: .3s;
+    margin-bottom: 70px;
 }
 .title-info{
     font-family: 'Roboto';
@@ -5479,7 +5500,7 @@ color: #262626;
 .got-it-info{
     padding: 32px 38px 26px;
     background: #F2F2F2;
-    position: sticky;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 2px;
@@ -5526,13 +5547,16 @@ color: #262626;
 .smile-3{
     background: url("../../images/sad-smile.svg") no-repeat center;
 }
-.sad-click{
+.sad-click,
+.smile-3:hover{
     background: url("../../images/sad-smile-click.svg") no-repeat center;
 }
-.happy-click{
+.happy-click,
+.smile-1:hover{
     background: url("../../images/happy-smile-click.svg") no-repeat center;
 }
-.neutral-click{
+.neutral-click,
+.smile-2:hover{
     background: url("../../images/neutral-smile-click.svg") no-repeat center;
 }
 .footer-922{
@@ -6294,4 +6318,61 @@ color: #262626;
     left: 0;
     right: 0;
     height: 60px;
+}
+.wrapper-slider-container{
+    max-width: 1270px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container-slider-img img{
+    max-width: 1040px;
+    width: 100%;
+}
+.modal-slider{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+.carousel-modal-slider .carousel-control-prev {
+    left: -18%;
+}
+.carousel-modal-slider .carousel-control-next {
+    right: -18%;
+}
+.carousel-modal-slider .carousel-indicators{
+    bottom: -40px;
+}
+.carousel-modal-slider .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.carousel-modal-slider .carousel-control-next-icon{
+    background-image: url("../../images/chevron-right.svg");
+    background-repeat: no-repeat;
+}
+.carousel-modal-slider .carousel-control-prev .carousel-control-next-icon:hover {
+    background-image: url("../../images/chevron-right-white.svg");
+    background-repeat: no-repeat;
+}
+.carousel-modal-slider .carousel-control-prev-icon{
+    background-image: url("../../images/chevron-left.svg");
+    background-repeat: no-repeat;
+}
+.carousel-modal-slider .carousel-control-next .carousel-control-prev-icon:hover{
+    background-image: url("../../images/chevron-left-white.svg");
+    background-repeat: no-repeat;
+}
+.carousel-modal-slider .carousel-control-prev:hover,
+.carousel-modal-slider .carousel-control-prev:focus,
+.carousel-modal-slider .carousel-control-next:hover,
+.carousel-modal-slider .carousel-control-next:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
 }

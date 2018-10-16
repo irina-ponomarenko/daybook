@@ -56,6 +56,15 @@ $(document).ready(function () {
         });
     });
 
+    $('.slider_open').on('click', function () {
+        $('#slider').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
+            onclose: function () {
+            }
+        });
+    });
+
     $('.schools_open').on('click', function () {
         $('#schools').popup({
             transition: 'all 0.3s',
@@ -629,6 +638,7 @@ $(document).ready(function () {
 
     $('.close-block').click(function () {
         $('.got-it-info').css('display', 'none');
+
     });
 
     $('.active-row-label').click(function () {
@@ -685,5 +695,13 @@ $(document).ready(function () {
     });
     $('.wrapper-open-teacher').click(function (e) {
         e.stopPropagation();
+    });
+
+    $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
 });
