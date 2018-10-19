@@ -535,7 +535,7 @@ $(document).ready(function () {
         if ($(e.target).closest(".open-search").length > 0) {
             return false;
         }
-        else {
+        else {scale-content
             $('.search-header').removeClass('open-search');
         }
 
@@ -545,9 +545,13 @@ $(document).ready(function () {
     }
 
 
-    $('.drop-down-content').on('click', function () {
-        $(this).toggleClass('scale-content');
+    $('.wrapper-title-content').on('click', function () {
+        $(this)
+            .parent()
+            .find('.content-down')
+            .toggleClass('scale-content');
     });
+
     let data = [
         'Історія україни',
         'Історія мистецтва',
@@ -638,6 +642,7 @@ $(document).ready(function () {
 
     $('.close-block').click(function () {
         $('.got-it-info').css('display', 'none');
+        $('.scale-content').css('margin-bottom', '30px');
 
     });
 

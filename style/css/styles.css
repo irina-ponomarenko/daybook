@@ -5441,9 +5441,7 @@ a .page-bull{
 
 }
 .drop-down-content{
-    padding: 30px 10px 31px;
     border-bottom: 2px solid #E5E5E5;
-    cursor: pointer;
     position: relative;
 }
 .drop-down-content:last-child{
@@ -5472,6 +5470,8 @@ a .page-bull{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 10px 31px;
+    cursor: pointer;
 }
 .chevron-right{
     width: 24px;
@@ -5510,10 +5510,10 @@ a .page-bull{
 .scale-content .wrapper-title-content .left-content button{
     background: url("../../images/chevron-blue.svg") no-repeat center;
 }
-.scale-content .content-down{
+.scale-content{
     display: block;
     transition: .3s;
-    margin-bottom: 70px;
+    margin-bottom: 95px;
 }
 .title-info{
     font-family: 'Roboto';
