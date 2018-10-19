@@ -5413,7 +5413,8 @@ a .page-bull{
     position: relative;
 }
 .visible, .open_tab {
-    display: block;
+    display: flex;
+    flex-direction: column;
     top: 0;
 }
 .toast-message{
@@ -5490,7 +5491,7 @@ a .page-bull{
     margin-right: 6px;
 }
 .content-down{
-    margin: 43px 30px 9px;
+    margin: 12px 30px 9px;
     display: none;
 }
 .content-down p{
@@ -5503,11 +5504,11 @@ a .page-bull{
     color: #262626;
 
 }
-.scale-content .wrapper-title-content .left-content p{
+.color-title .left-content p{
     color: #1A3EFF;
     transition: .3s;
 }
-.scale-content .wrapper-title-content .left-content button{
+.color-title .left-content button{
     background: url("../../images/chevron-blue.svg") no-repeat center;
 }
 .scale-content{
@@ -6388,7 +6389,6 @@ a .page-bull{
     display: none;
     width: 100%;
     justify-content: center;
-    background-color: black;
 }
 .carousel-modal-slider .carousel-control-prev {
     left: -18%;

@@ -547,6 +547,7 @@ $(document).ready(function () {
 
     $('.wrapper-title-content').on('click', function () {
         $(this)
+            .toggleClass('color-title')
             .parent()
             .find('.content-down')
             .toggleClass('scale-content');
