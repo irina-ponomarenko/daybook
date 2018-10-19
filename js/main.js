@@ -641,8 +641,7 @@ $(document).ready(function () {
     $("body").addClass("nohover");
 
     $('.close-block').click(function () {
-        $('.got-it-info').css('display', 'none');
-        $('.scale-content').css('margin-bottom', '30px');
+        $(this).closest('.drop-down-content').toggleClass('close-grey-block');
 
     });
 

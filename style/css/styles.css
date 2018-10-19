@@ -5515,6 +5515,12 @@ a .page-bull{
     transition: .3s;
     margin-bottom: 95px;
 }
+.close-grey-block .scale-content{
+    margin-bottom: 0;
+}
+.close-grey-block .got-it-info{
+    display: none;
+}
 .title-info{
     font-family: 'Roboto';
     font-style: normal;
